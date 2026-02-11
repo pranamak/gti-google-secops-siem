@@ -1,0 +1,1838 @@
+{
+    "dashboards": [
+        {
+            "dashboard": {
+                "name": "352d8500-b235-4830-a8f6-bb496b3982e7",
+                "displayName": "GTI Threat Lists",
+                "description": "Dashboard for Google Threat Intelligence Threat Lists.",
+                "definition": {
+                    "filters": [
+                        {
+                            "id": "GlobalTimeFilter",
+                            "dataSource": "GLOBAL",
+                            "filterOperatorAndFieldValues": [
+                                {
+                                    "filterOperator": "PAST",
+                                    "fieldValues": [
+                                        "1",
+                                        "WEEK"
+                                    ]
+                                }
+                            ],
+                            "displayName": "Global Time Filter",
+                            "chartIds": [
+                                "45034116-c108-4e3f-91a6-3253c6757fa6",
+                                "d4f4a9cb-6497-4d44-9e4e-5631155b17cf",
+                                "3c1c6295-c377-48b6-9da2-2c3d4c3a979c",
+                                "c4d0eac7-2c5a-4671-bd8e-b95d46b187ea",
+                                "21522383-ad8a-454c-88d1-42a84cf1a2f1",
+                                "008ae72b-0966-45a1-9e41-566aa1d20de2",
+                                "288b0bbe-d96c-43b6-b4ac-8d59fabd702c",
+                                "d2a8b44a-77af-457a-87bb-4bcd298db5d1",
+                                "94da7f39-5bfd-4dca-9c8b-6db9fb6ebeba",
+                                "d71d5a03-7f09-4dbe-8188-1747617853e1",
+                                "de20105f-3651-4fd7-bda8-1058bfe57944",
+                                "9e76688b-d8f9-4e95-898e-ace1c6d52bed",
+                                "6218ed41-a58e-4b46-8ff4-9de9b9532d3a"
+                            ],
+                            "isStandardTimeRangeFilter": true,
+                            "isStandardTimeRangeFilterEnabled": false
+                        },
+                        {
+                            "id": "efbf6a27-c3b9-4c83-bbc5-474a31e00621",
+                            "dataSource": "ENTITY",
+                            "fieldPath": "graph.metadata.entity_type",
+                            "filterOperatorAndFieldValues": [
+                                {
+                                    "filterOperator": "EQUAL",
+                                    "fieldValues": [
+                                        ""
+                                    ]
+                                }
+                            ],
+                            "displayName": "ENTITY TYPE",
+                            "chartIds": [
+                                "45034116-c108-4e3f-91a6-3253c6757fa6",
+                                "008ae72b-0966-45a1-9e41-566aa1d20de2",
+                                "288b0bbe-d96c-43b6-b4ac-8d59fabd702c",
+                                "32dc3164-0a56-4175-a33c-0651a1c56794",
+                                "d37b5266-beb8-4aea-ab74-e7c14785d21f",
+                                "d71d5a03-7f09-4dbe-8188-1747617853e1",
+                                "3c1c6295-c377-48b6-9da2-2c3d4c3a979c",
+                                "b67074c1-f5f0-4993-938b-a6495c2e1297",
+                                "e37bf5d4-672d-4089-a530-06a54fcd7671",
+                                "c4d0eac7-2c5a-4671-bd8e-b95d46b187ea",
+                                "d4f4a9cb-6497-4d44-9e4e-5631155b17cf"
+                            ]
+                        },
+                        {
+                            "id": "66dcc971-2af3-4d52-8c9a-476036d8b796",
+                            "dataSource": "ENTITY",
+                            "fieldPath": "graph.metadata.threat.severity",
+                            "filterOperatorAndFieldValues": [
+                                {
+                                    "filterOperator": "EQUAL",
+                                    "fieldValues": [
+                                        ""
+                                    ]
+                                }
+                            ],
+                            "displayName": "SEVERITY",
+                            "chartIds": [
+                                "45034116-c108-4e3f-91a6-3253c6757fa6",
+                                "008ae72b-0966-45a1-9e41-566aa1d20de2",
+                                "288b0bbe-d96c-43b6-b4ac-8d59fabd702c",
+                                "d4f4a9cb-6497-4d44-9e4e-5631155b17cf",
+                                "32dc3164-0a56-4175-a33c-0651a1c56794",
+                                "d37b5266-beb8-4aea-ab74-e7c14785d21f",
+                                "d71d5a03-7f09-4dbe-8188-1747617853e1",
+                                "3c1c6295-c377-48b6-9da2-2c3d4c3a979c",
+                                "b67074c1-f5f0-4993-938b-a6495c2e1297",
+                                "e37bf5d4-672d-4089-a530-06a54fcd7671",
+                                "c4d0eac7-2c5a-4671-bd8e-b95d46b187ea"
+                            ]
+                        },
+                        {
+                            "id": "8297d67d-8ed4-494b-843a-aee7389c816f",
+                            "dataSource": "ENTITY",
+                            "fieldPath": "graph.entity.file.tags",
+                            "filterOperatorAndFieldValues": [
+                                {
+                                    "filterOperator": "EQUAL",
+                                    "fieldValues": [
+                                        ""
+                                    ]
+                                }
+                            ],
+                            "displayName": "FILE TAGS",
+                            "chartIds": [
+                                "21522383-ad8a-454c-88d1-42a84cf1a2f1",
+                                "de20105f-3651-4fd7-bda8-1058bfe57944"
+                            ]
+                        },
+                        {
+                            "id": "79242dfe-fb8d-42e7-bed3-5dd6ca566e1e",
+                            "dataSource": "ENTITY",
+                            "fieldPath": "graph.entity.domain.tags",
+                            "filterOperatorAndFieldValues": [
+                                {
+                                    "filterOperator": "EQUAL",
+                                    "fieldValues": [
+                                        ""
+                                    ]
+                                }
+                            ],
+                            "displayName": "DOMAIN TAGS",
+                            "chartIds": [
+                                "d2a8b44a-77af-457a-87bb-4bcd298db5d1",
+                                "9e76688b-d8f9-4e95-898e-ace1c6d52bed"
+                            ]
+                        },
+                        {
+                            "id": "4ca440f9-1ce8-4965-9744-6b3634a99414",
+                            "dataSource": "ENTITY",
+                            "fieldPath": "graph.metadata.interval.start_time",
+                            "filterOperatorAndFieldValues": [
+                                {
+                                    "filterOperator": "PAST",
+                                    "fieldValues": [
+                                        "7",
+                                        "DAY"
+                                    ]
+                                }
+                            ],
+                            "displayName": "Indicator Active Time Range",
+                            "chartIds": [
+                                "45034116-c108-4e3f-91a6-3253c6757fa6",
+                                "21522383-ad8a-454c-88d1-42a84cf1a2f1",
+                                "94da7f39-5bfd-4dca-9c8b-6db9fb6ebeba",
+                                "008ae72b-0966-45a1-9e41-566aa1d20de2",
+                                "d2a8b44a-77af-457a-87bb-4bcd298db5d1",
+                                "288b0bbe-d96c-43b6-b4ac-8d59fabd702c",
+                                "de20105f-3651-4fd7-bda8-1058bfe57944",
+                                "d4f4a9cb-6497-4d44-9e4e-5631155b17cf",
+                                "32dc3164-0a56-4175-a33c-0651a1c56794",
+                                "d37b5266-beb8-4aea-ab74-e7c14785d21f",
+                                "d71d5a03-7f09-4dbe-8188-1747617853e1",
+                                "3c1c6295-c377-48b6-9da2-2c3d4c3a979c",
+                                "b67074c1-f5f0-4993-938b-a6495c2e1297",
+                                "6218ed41-a58e-4b46-8ff4-9de9b9532d3a",
+                                "e37bf5d4-672d-4089-a530-06a54fcd7671",
+                                "9e76688b-d8f9-4e95-898e-ace1c6d52bed",
+                                "c4d0eac7-2c5a-4671-bd8e-b95d46b187ea"
+                            ]
+                        }
+                    ],
+                    "charts": [
+                        {
+                            "dashboardChart": "815c4b0f-6c9b-4b39-8a4d-8171356cef11",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 96,
+                                "startY": 0,
+                                "spanY": 9
+                            }
+                        },
+                        {
+                            "dashboardChart": "d4f4a9cb-6497-4d44-9e4e-5631155b17cf",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 22,
+                                "startY": 9,
+                                "spanY": 22
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "efbf6a27-c3b9-4c83-bbc5-474a31e00621",
+                                "66dcc971-2af3-4d52-8c9a-476036d8b796",
+                                "4ca440f9-1ce8-4965-9744-6b3634a99414"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "3c1c6295-c377-48b6-9da2-2c3d4c3a979c",
+                            "chartLayout": {
+                                "startX": 22,
+                                "spanX": 43,
+                                "startY": 9,
+                                "spanY": 22
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "efbf6a27-c3b9-4c83-bbc5-474a31e00621",
+                                "66dcc971-2af3-4d52-8c9a-476036d8b796",
+                                "4ca440f9-1ce8-4965-9744-6b3634a99414"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "45034116-c108-4e3f-91a6-3253c6757fa6",
+                            "chartLayout": {
+                                "startX": 65,
+                                "spanX": 31,
+                                "startY": 9,
+                                "spanY": 22
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "efbf6a27-c3b9-4c83-bbc5-474a31e00621",
+                                "66dcc971-2af3-4d52-8c9a-476036d8b796",
+                                "4ca440f9-1ce8-4965-9744-6b3634a99414"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "c4d0eac7-2c5a-4671-bd8e-b95d46b187ea",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 96,
+                                "startY": 31,
+                                "spanY": 23
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "efbf6a27-c3b9-4c83-bbc5-474a31e00621",
+                                "66dcc971-2af3-4d52-8c9a-476036d8b796",
+                                "4ca440f9-1ce8-4965-9744-6b3634a99414"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "774801af-00b3-4619-8690-635e24f7d7cf",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 96,
+                                "startY": 87,
+                                "spanY": 8
+                            }
+                        },
+                        {
+                            "dashboardChart": "94da7f39-5bfd-4dca-9c8b-6db9fb6ebeba",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 48,
+                                "startY": 95,
+                                "spanY": 27
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "4ca440f9-1ce8-4965-9744-6b3634a99414"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "6218ed41-a58e-4b46-8ff4-9de9b9532d3a",
+                            "chartLayout": {
+                                "startX": 48,
+                                "spanX": 48,
+                                "startY": 95,
+                                "spanY": 27
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "4ca440f9-1ce8-4965-9744-6b3634a99414"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "87927b7f-41fb-4f7f-8af8-30de5cae6603",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 96,
+                                "startY": 122,
+                                "spanY": 7
+                            }
+                        },
+                        {
+                            "dashboardChart": "21522383-ad8a-454c-88d1-42a84cf1a2f1",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 49,
+                                "startY": 129,
+                                "spanY": 26
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "8297d67d-8ed4-494b-843a-aee7389c816f",
+                                "4ca440f9-1ce8-4965-9744-6b3634a99414"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "de20105f-3651-4fd7-bda8-1058bfe57944",
+                            "chartLayout": {
+                                "startX": 49,
+                                "spanX": 47,
+                                "startY": 129,
+                                "spanY": 26
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "8297d67d-8ed4-494b-843a-aee7389c816f",
+                                "4ca440f9-1ce8-4965-9744-6b3634a99414"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "09ffa00b-3ba5-4ff7-9828-dfee3b022da5",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 96,
+                                "startY": 155,
+                                "spanY": 6
+                            }
+                        },
+                        {
+                            "dashboardChart": "9e76688b-d8f9-4e95-898e-ace1c6d52bed",
+                            "chartLayout": {
+                                "startX": 48,
+                                "spanX": 48,
+                                "startY": 161,
+                                "spanY": 25
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "79242dfe-fb8d-42e7-bed3-5dd6ca566e1e",
+                                "4ca440f9-1ce8-4965-9744-6b3634a99414"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "d2a8b44a-77af-457a-87bb-4bcd298db5d1",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 48,
+                                "startY": 161,
+                                "spanY": 25
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "79242dfe-fb8d-42e7-bed3-5dd6ca566e1e",
+                                "4ca440f9-1ce8-4965-9744-6b3634a99414"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "008ae72b-0966-45a1-9e41-566aa1d20de2",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 96,
+                                "startY": 54,
+                                "spanY": 33
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "efbf6a27-c3b9-4c83-bbc5-474a31e00621",
+                                "66dcc971-2af3-4d52-8c9a-476036d8b796",
+                                "4ca440f9-1ce8-4965-9744-6b3634a99414"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "288b0bbe-d96c-43b6-b4ac-8d59fabd702c",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 32,
+                                "startY": 186,
+                                "spanY": 12
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "efbf6a27-c3b9-4c83-bbc5-474a31e00621",
+                                "66dcc971-2af3-4d52-8c9a-476036d8b796",
+                                "4ca440f9-1ce8-4965-9744-6b3634a99414"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "d71d5a03-7f09-4dbe-8188-1747617853e1",
+                            "chartLayout": {
+                                "startX": 32,
+                                "spanX": 33,
+                                "startY": 186,
+                                "spanY": 12
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "efbf6a27-c3b9-4c83-bbc5-474a31e00621",
+                                "66dcc971-2af3-4d52-8c9a-476036d8b796",
+                                "4ca440f9-1ce8-4965-9744-6b3634a99414"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "b67074c1-f5f0-4993-938b-a6495c2e1297",
+                            "chartLayout": {
+                                "startX": 65,
+                                "spanX": 31,
+                                "startY": 186,
+                                "spanY": 12
+                            },
+                            "filtersIds": [
+                                "efbf6a27-c3b9-4c83-bbc5-474a31e00621",
+                                "66dcc971-2af3-4d52-8c9a-476036d8b796",
+                                "4ca440f9-1ce8-4965-9744-6b3634a99414"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "e37bf5d4-672d-4089-a530-06a54fcd7671",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 32,
+                                "startY": 198,
+                                "spanY": 12
+                            },
+                            "filtersIds": [
+                                "efbf6a27-c3b9-4c83-bbc5-474a31e00621",
+                                "66dcc971-2af3-4d52-8c9a-476036d8b796",
+                                "4ca440f9-1ce8-4965-9744-6b3634a99414"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "d37b5266-beb8-4aea-ab74-e7c14785d21f",
+                            "chartLayout": {
+                                "startX": 32,
+                                "spanX": 33,
+                                "startY": 198,
+                                "spanY": 12
+                            },
+                            "filtersIds": [
+                                "efbf6a27-c3b9-4c83-bbc5-474a31e00621",
+                                "66dcc971-2af3-4d52-8c9a-476036d8b796",
+                                "4ca440f9-1ce8-4965-9744-6b3634a99414"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "32dc3164-0a56-4175-a33c-0651a1c56794",
+                            "chartLayout": {
+                                "startX": 65,
+                                "spanX": 31,
+                                "startY": 198,
+                                "spanY": 12
+                            },
+                            "filtersIds": [
+                                "efbf6a27-c3b9-4c83-bbc5-474a31e00621",
+                                "66dcc971-2af3-4d52-8c9a-476036d8b796",
+                                "4ca440f9-1ce8-4965-9744-6b3634a99414"
+                            ]
+                        }
+                    ]
+                },
+                "type": "CUSTOM",
+                "etag": "6f96b9571b7d93f3badffac1cedacb206c66cae860ebdf3da8ed0b9ea7580d97",
+                "access": "DASHBOARD_PRIVATE"
+            },
+            "dashboardCharts": [
+                {
+                    "name": "3c1c6295-c377-48b6-9da2-2c3d4c3a979c",
+                    "displayName": "IOC BY SEVERITY",
+                    "chartDatasource": {
+                        "dashboardQuery": "965fc2ea-b5ca-47ec-9849-b04452e80b2c",
+                        "dataSources": [
+                            "ENTITY"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesName": "none",
+                                "seriesType": "BAR",
+                                "encode": {
+                                    "x": "count",
+                                    "y": "severity"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#1a73e8"
+                                },
+                                "seriesUniqueValue": "none"
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE",
+                                "displayName": "TOTAL"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "CATEGORY",
+                                "displayName": "SEVERITY[Filter]"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "8340223ee2e1ae45336f5ceeea9bcca513f25df54f7a459c291c8d001d9ad557",
+                    "drillDownConfig": {
+                        "leftDrillDowns": [
+                            {
+                                "id": "CCEDC442-09A5-4F76-9AF8-A5398A71FF1A",
+                                "displayName": "SEVERITY FILTER",
+                                "customSettings": {
+                                    "newTab": true,
+                                    "filter": {
+                                        "dashboardFilters": [
+                                            {
+                                                "dashboardFilterId": "66dcc971-2af3-4d52-8c9a-476036d8b796",
+                                                "filterOperatorAndValues": [
+                                                    {
+                                                        "filterOperator": "EQUAL",
+                                                        "fieldValues": [
+                                                            "${severity}"
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "b67074c1-f5f0-4993-938b-a6495c2e1297",
+                    "displayName": "MEDIUM SEVERITY",
+                    "chartDatasource": {
+                        "dashboardQuery": "9cf0234e-dddd-44fb-af72-598900eb4c1c",
+                        "dataSources": [
+                            "ENTITY"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "TEXT",
+                                "label": "MEDIUM SEVERITY",
+                                "field": "count",
+                                "metricTrendConfig": {
+                                    "metricFormat": "METRIC_FORMAT_PLAIN_TEXT",
+                                    "metricDisplayTrend": "METRIC_DISPLAY_TREND_ABSOLUTE_VALUE",
+                                    "metricTrendType": "METRIC_TREND_TYPE_REGULAR"
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "6c4d01810e428ee6950be2e1a4ce8f20333111ed05068a38099e650272a5fcba",
+                    "drillDownConfig": {}
+                },
+                {
+                    "name": "6218ed41-a58e-4b46-8ff4-9de9b9532d3a",
+                    "displayName": "IOC URL CATEGORIES BY COUNT",
+                    "chartDatasource": {
+                        "dashboardQuery": "b9a19b87-5ba9-44fb-a52f-0b3f1a3dd486",
+                        "dataSources": [
+                            "ENTITY"
+                        ]
+                    },
+                    "visualization": {
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "columnDefs": [
+                            {
+                                "field": "category",
+                                "header": "CATEGORY"
+                            },
+                            {
+                                "field": "count",
+                                "header": "TOTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "1a38b0b17b6172688dbd0d17abf064817814f5a3cbf57acfc4486c237800308a",
+                    "drillDownConfig": {}
+                },
+                {
+                    "name": "d4f4a9cb-6497-4d44-9e4e-5631155b17cf",
+                    "displayName": "IOC BY ENTITY TYPE",
+                    "chartDatasource": {
+                        "dashboardQuery": "5536ebe6-dbb0-4977-9eb8-9a204da22332",
+                        "dataSources": [
+                            "ENTITY"
+                        ]
+                    },
+                    "visualization": {
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "columnDefs": [
+                            {
+                                "field": "entitytype",
+                                "header": "ENTITY TYPE[Filter]"
+                            },
+                            {
+                                "field": "count",
+                                "header": "TOTAL[Drill Down]"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "bc5e90d967e0911dc93d649768e92588182cc2ea05a9331e125e38a00fc1531c",
+                    "drillDownConfig": {
+                        "leftDrillDowns": [
+                            {
+                                "id": "C45481E0-EF36-4653-B24C-2C276AEC8F4F",
+                                "displayName": "ENTITY TYPE",
+                                "customSettings": {
+                                    "newTab": true,
+                                    "leftClickColumn": "entitytype",
+                                    "filter": {
+                                        "dashboardFilters": [
+                                            {
+                                                "dashboardFilterId": "efbf6a27-c3b9-4c83-bbc5-474a31e00621",
+                                                "filterOperatorAndValues": [
+                                                    {
+                                                        "filterOperator": "EQUAL",
+                                                        "fieldValues": [
+                                                            "${entitytype}"
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                }
+                            },
+                            {
+                                "id": "B544560B-DF5E-49DB-9829-A3784E35EC1D",
+                                "displayName": "ENTITY TYPE TOTAL DRILL DOWN",
+                                "customSettings": {
+                                    "newTab": true,
+                                    "leftClickColumn": "count",
+                                    "query": {
+                                        "query": "graph.metadata.vendor_name = \"Google\"\r\ngraph.metadata.product_name = \"Google Threat Intelligence\"\r\ngraph.additional.fields[\"threat_list_id\"] != \"\"\r\ngraph.metadata.entity_type = ${entitytype}\r\n$entity_id = graph.metadata.product_entity_id\r\nmatch:\r\n    $entity_id\r\noutcome:\r\n    $severity=array_distinct(graph.metadata.threat.severity)\r\n    $threat_score = array_distinct(graph.metadata.threat.risk_score)\r\n    $entity_type = array_distinct(graph.metadata.entity_type)\r\n    $threat_list_id=array_distinct(graph.additional.fields[\"threat_list_id\"])"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "94da7f39-5bfd-4dca-9c8b-6db9fb6ebeba",
+                    "displayName": "IOC URL BY RESPONSE CODE, LAST ANALYSIS",
+                    "chartDatasource": {
+                        "dashboardQuery": "476a7198-d501-4a46-8c62-2102aa3f7e2e",
+                        "dataSources": [
+                            "ENTITY"
+                        ]
+                    },
+                    "visualization": {
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "columnDefs": [
+                            {
+                                "field": "url",
+                                "header": "URL[Drill Down]"
+                            },
+                            {
+                                "field": "reponsecode",
+                                "header": "RESPONSE CODE"
+                            },
+                            {
+                                "field": "date",
+                                "header": "LAST ANALYSIS TIME"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "618b4dc680211685ef3142d04ea031959e9a37f9b4b18263399b52e4859b07b3",
+                    "drillDownConfig": {
+                        "leftDrillDowns": [
+                            {
+                                "id": "9429339B-F0DE-423E-B5A3-1189F9D909DD",
+                                "displayName": "URL Drill Down",
+                                "customSettings": {
+                                    "newTab": true,
+                                    "leftClickColumn": "url",
+                                    "query": {
+                                        "query": "graph.metadata.vendor_name = \"Google\"\r\ngraph.metadata.product_name = \"Google Threat Intelligence\"\r\ngraph.additional.fields[\"threat_list_id\"] != \"\"\r\ngraph.metadata.entity_type = \"URL\"\r\ngraph.entity.url = ${url}"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "de20105f-3651-4fd7-bda8-1058bfe57944",
+                    "displayName": "IOC FILE  TAGS COUNT",
+                    "chartDatasource": {
+                        "dashboardQuery": "b3848b40-673b-4daf-9d91-37358c061de3",
+                        "dataSources": [
+                            "ENTITY"
+                        ]
+                    },
+                    "visualization": {
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "columnDefs": [
+                            {
+                                "field": "tag",
+                                "header": "TAG[Filter]"
+                            },
+                            {
+                                "field": "count",
+                                "header": "TOTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "27d6add05e0c76d3d94a7803d7f15170777a0afbb1a51e6e4222138003a58a58",
+                    "drillDownConfig": {
+                        "leftDrillDowns": [
+                            {
+                                "id": "9F196F6E-92AC-49F4-A39F-91EFC7A7DBB0",
+                                "displayName": "FILE TAG FILTER",
+                                "customSettings": {
+                                    "newTab": true,
+                                    "leftClickColumn": "tag",
+                                    "filter": {
+                                        "dashboardFilters": [
+                                            {
+                                                "dashboardFilterId": "8297d67d-8ed4-494b-843a-aee7389c816f",
+                                                "filterOperatorAndValues": [
+                                                    {
+                                                        "filterOperator": "EQUAL",
+                                                        "fieldValues": [
+                                                            "${tag}"
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "288b0bbe-d96c-43b6-b4ac-8d59fabd702c",
+                    "displayName": "TOTAL INGESTED INDICATORS",
+                    "chartDatasource": {
+                        "dashboardQuery": "0de235d7-c25d-480d-97cd-05b22b4bd67a",
+                        "dataSources": [
+                            "ENTITY"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "TEXT",
+                                "label": "TOTAL INGESTED INDICATORS",
+                                "field": "count",
+                                "metricTrendConfig": {
+                                    "metricFormat": "METRIC_FORMAT_NUMBER",
+                                    "metricDisplayTrend": "METRIC_DISPLAY_TREND_ABSOLUTE_VALUE",
+                                    "metricTrendType": "METRIC_TREND_TYPE_REGULAR"
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "2230f70fad1789d4f6415bfeab90e7c1d0c0ff7a5b68a128fa0444ae77ee3903",
+                    "drillDownConfig": {}
+                },
+                {
+                    "name": "e37bf5d4-672d-4089-a530-06a54fcd7671",
+                    "displayName": "LOW SEVERITY",
+                    "chartDatasource": {
+                        "dashboardQuery": "8c08b956-9c39-4372-ac01-8ead32c994a9",
+                        "dataSources": [
+                            "ENTITY"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "TEXT",
+                                "label": "LOW SEVERITY",
+                                "field": "count",
+                                "metricTrendConfig": {
+                                    "metricFormat": "METRIC_FORMAT_NUMBER",
+                                    "metricDisplayTrend": "METRIC_DISPLAY_TREND_ABSOLUTE_VALUE",
+                                    "metricTrendType": "METRIC_TREND_TYPE_REGULAR"
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "ec22fa002aa5c2a706b726ff140e90682e839c05563bd67a81d27c1541911287",
+                    "drillDownConfig": {}
+                },
+                {
+                    "name": "c4d0eac7-2c5a-4671-bd8e-b95d46b187ea",
+                    "displayName": "IOC COUNT BY THREAT FEED, BY  DATE",
+                    "chartDatasource": {
+                        "dashboardQuery": "5e81fcf0-6c8e-4786-b864-c8620ed47ce7",
+                        "dataSources": [
+                            "ENTITY"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesName": "phishing",
+                                "seriesType": "BAR",
+                                "encode": {
+                                    "x": "date",
+                                    "y": "count"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#1a73e8"
+                                },
+                                "seriesUniqueValue": "phishing"
+                            },
+                            {
+                                "seriesName": "malware",
+                                "seriesType": "BAR",
+                                "encode": {
+                                    "x": "date",
+                                    "y": "count"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#eb730a"
+                                },
+                                "seriesUniqueValue": "malware"
+                            },
+                            {
+                                "seriesName": "ransomware",
+                                "seriesType": "BAR",
+                                "encode": {
+                                    "x": "date",
+                                    "y": "count"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#10a3b7"
+                                },
+                                "seriesUniqueValue": "ransomware"
+                            },
+                            {
+                                "seriesName": "cryptominer",
+                                "seriesType": "BAR",
+                                "encode": {
+                                    "x": "date",
+                                    "y": "count"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#ec453b"
+                                },
+                                "seriesUniqueValue": "cryptominer"
+                            },
+                            {
+                                "seriesName": "infostealer",
+                                "seriesType": "BAR",
+                                "encode": {
+                                    "x": "date",
+                                    "y": "count"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#e51f8f"
+                                },
+                                "seriesUniqueValue": "infostealer"
+                            },
+                            {
+                                "seriesName": "malicious-network-infrastructure",
+                                "seriesType": "BAR",
+                                "encode": {
+                                    "x": "date",
+                                    "y": "count"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#923ef9"
+                                },
+                                "seriesUniqueValue": "malicious-network-infrastructure"
+                            },
+                            {
+                                "seriesName": "threat-actor",
+                                "seriesType": "BAR",
+                                "encode": {
+                                    "x": "date",
+                                    "y": "count"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#4aa207"
+                                },
+                                "seriesUniqueValue": "threat-actor"
+                            },
+                            {
+                                "seriesName": "mobile",
+                                "seriesType": "BAR",
+                                "encode": {
+                                    "x": "date",
+                                    "y": "count"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#5350fb"
+                                },
+                                "seriesUniqueValue": "mobile"
+                            },
+                            {
+                                "seriesName": "vulnerability-weaponization",
+                                "seriesType": "BAR",
+                                "encode": {
+                                    "x": "date",
+                                    "y": "count"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#009886"
+                                },
+                                "seriesUniqueValue": "vulnerability-weaponization"
+                            },
+                            {
+                                "seriesName": "trending",
+                                "seriesType": "BAR",
+                                "encode": {
+                                    "x": "date",
+                                    "y": "count"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#6f7585"
+                                },
+                                "seriesUniqueValue": "trending"
+                            },
+                            {
+                                "seriesName": "first-stage-delivery-vectors",
+                                "seriesType": "BAR",
+                                "encode": {
+                                    "x": "date",
+                                    "y": "count"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#1a73e8"
+                                },
+                                "seriesUniqueValue": "first-stage-delivery-vectors"
+                            },
+                            {
+                                "seriesName": "linux",
+                                "seriesType": "BAR",
+                                "encode": {
+                                    "x": "date",
+                                    "y": "count"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#eb730a"
+                                },
+                                "seriesUniqueValue": "linux"
+                            },
+                            {
+                                "seriesName": "iot",
+                                "seriesType": "BAR",
+                                "encode": {
+                                    "x": "date",
+                                    "y": "count"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#10a3b7"
+                                },
+                                "seriesUniqueValue": "iot"
+                            },
+                            {
+                                "seriesName": "osx",
+                                "seriesType": "BAR",
+                                "encode": {
+                                    "x": "date",
+                                    "y": "count"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#ec453b"
+                                },
+                                "seriesUniqueValue": "osx"
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "CATEGORY",
+                                "displayName": "DATE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE",
+                                "displayName": "COUNT"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "top": 12,
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "seriesColumn": [
+                            "threatlistid"
+                        ],
+                        "groupingType": "Grouped"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "04218a9c373367cec2e650ae3d4795711b7701dafee38e30aef09a44c629c8bf",
+                    "drillDownConfig": {}
+                },
+                {
+                    "name": "45034116-c108-4e3f-91a6-3253c6757fa6",
+                    "displayName": "IOC COUNT BY VT THREAT FEED",
+                    "chartDatasource": {
+                        "dashboardQuery": "a4f23fb6-3fc5-446f-9d71-9880d583f914",
+                        "dataSources": [
+                            "ENTITY"
+                        ]
+                    },
+                    "visualization": {
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "columnDefs": [
+                            {
+                                "field": "threatlistid",
+                                "header": "THREAT LIST ID"
+                            },
+                            {
+                                "field": "count",
+                                "header": "TOTAL[Drill Down]"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "0c30fa7f5a80b5836d7d78507a065ddb6565d392d967d17801988564698096cd",
+                    "drillDownConfig": {
+                        "leftDrillDowns": [
+                            {
+                                "id": "2C52438E-86C0-4533-83B0-2CE2C2191B40",
+                                "displayName": "Threat List Count Drill Down",
+                                "customSettings": {
+                                    "newTab": true,
+                                    "leftClickColumn": "count",
+                                    "query": {
+                                        "query": "graph.metadata.vendor_name = \"Google\"\r\ngraph.metadata.product_name = \"Google Threat Intelligence\"\r\ngraph.additional.fields[\"threat_list_id\"] = ${threatlistid}\r\n$entity_id = graph.metadata.product_entity_id\r\nmatch:\r\n    $entity_id\r\noutcome:\r\n    $severity=array_distinct(graph.metadata.threat.severity)\r\n    $threat_score = array_distinct(graph.metadata.threat.risk_score)\r\n    $entity_type = array_distinct(graph.metadata.entity_type)\r\n    $threat_list_id=array_distinct(graph.additional.fields[\"threat_list_id\"])"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "d37b5266-beb8-4aea-ab74-e7c14785d21f",
+                    "displayName": "NONE SEVERITY",
+                    "chartDatasource": {
+                        "dashboardQuery": "c7681e7c-0937-4177-97a1-addcfa9ae444",
+                        "dataSources": [
+                            "ENTITY"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "TEXT",
+                                "label": "NONE SEVERITY",
+                                "field": "count",
+                                "metricTrendConfig": {
+                                    "metricFormat": "METRIC_FORMAT_NUMBER",
+                                    "metricDisplayTrend": "METRIC_DISPLAY_TREND_ABSOLUTE_VALUE",
+                                    "metricTrendType": "METRIC_TREND_TYPE_REGULAR"
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "1ffb5e88eea618fcf17ce72cccee88cc047a930a7393619f8d275852fa306647",
+                    "drillDownConfig": {}
+                },
+                {
+                    "name": "d71d5a03-7f09-4dbe-8188-1747617853e1",
+                    "displayName": "HIGH SEVERITY",
+                    "chartDatasource": {
+                        "dashboardQuery": "8245d663-988c-440f-84a8-f07b08521b0a",
+                        "dataSources": [
+                            "ENTITY"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "TEXT",
+                                "label": "HIGH SEVERITY",
+                                "field": "count",
+                                "metricTrendConfig": {
+                                    "metricFormat": "METRIC_FORMAT_PLAIN_TEXT",
+                                    "metricDisplayTrend": "METRIC_DISPLAY_TREND_ABSOLUTE_VALUE",
+                                    "metricTrendType": "METRIC_TREND_TYPE_REGULAR"
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "f5bcb12e72d4eb369f84f8625fec626ae1e053372499ab882ccd4616a50337c8",
+                    "drillDownConfig": {}
+                },
+                {
+                    "name": "09ffa00b-3ba5-4ff7-9828-dfee3b022da5",
+                    "displayName": "markdown",
+                    "visualization": {
+                        "markdown": {
+                            "content": "## DOMAIN IOCS \n---\n#### A Domain object encapsulates information pertaining to a specific domain or Fully Qualified Domain Name (FQDN).",
+                            "properties": {
+                                "backgroundColor": "transparent"
+                            }
+                        }
+                    },
+                    "tileType": "TILE_TYPE_MARKDOWN",
+                    "etag": "aa81f8bd25d3ef9668660cbfcba68d5728473dc254416f330615c7187ef1647e"
+                },
+                {
+                    "name": "008ae72b-0966-45a1-9e41-566aa1d20de2",
+                    "displayName": "INGESTED INDICATORS OVER TIME",
+                    "chartDatasource": {
+                        "dashboardQuery": "644a9cb3-421b-49a3-92c1-3a77d96eb616",
+                        "dataSources": [
+                            "ENTITY"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesName": "MEDIUM",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "date",
+                                    "y": "count"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#1a73e8"
+                                },
+                                "seriesUniqueValue": "MEDIUM"
+                            },
+                            {
+                                "seriesName": "LOW",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "date",
+                                    "y": "count"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#eb730a"
+                                },
+                                "seriesUniqueValue": "LOW"
+                            },
+                            {
+                                "seriesName": "HIGH",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "date",
+                                    "y": "count"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#10a3b7"
+                                },
+                                "seriesUniqueValue": "HIGH"
+                            },
+                            {
+                                "seriesName": "NONE",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "date",
+                                    "y": "count"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#ec453b"
+                                },
+                                "seriesUniqueValue": "NONE"
+                            },
+                            {
+                                "seriesName": "UNKNOWN_SEVERITY",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "date",
+                                    "y": "count"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#e51f8f"
+                                },
+                                "seriesUniqueValue": "UNKNOWN_SEVERITY"
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "CATEGORY",
+                                "displayName": "DATE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE",
+                                "displayName": "COUNT"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "top": 12,
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "seriesColumn": [
+                            "severity"
+                        ],
+                        "groupingType": "Grouped"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "24071476bdb80bd5d0f092b4253445cd40a811079ffd6830009045bc3fcb77ad",
+                    "drillDownConfig": {}
+                },
+                {
+                    "name": "21522383-ad8a-454c-88d1-42a84cf1a2f1",
+                    "displayName": "MD5 AND FILES BY LAST ANALYSIS TIME",
+                    "chartDatasource": {
+                        "dashboardQuery": "6fec155f-e50c-491c-b8fb-845f92c100e8",
+                        "dataSources": [
+                            "ENTITY"
+                        ]
+                    },
+                    "visualization": {
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "columnDefs": [
+                            {
+                                "field": "md5",
+                                "header": "MD5[Drill Down]"
+                            },
+                            {
+                                "field": "file",
+                                "header": "FILE "
+                            },
+                            {
+                                "field": "date",
+                                "header": "LAST ANALYSIS TIME"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "8908d2cc7620dad8fbd2066ad8889e0d8212f407553d9eb65b93f6523712e195",
+                    "drillDownConfig": {
+                        "leftDrillDowns": [
+                            {
+                                "id": "D541FEB5-3DF3-4C90-B48A-B3D29BEEA7A9",
+                                "displayName": "MD5 Drill Down",
+                                "customSettings": {
+                                    "newTab": true,
+                                    "leftClickColumn": "md5",
+                                    "query": {
+                                        "query": "graph.metadata.vendor_name = \"Google\"\r\ngraph.metadata.product_name = \"Google Threat Intelligence\"\r\ngraph.additional.fields[\"threat_list_id\"] != \"\"\r\ngraph.metadata.entity_type = \"FILE\"\r\ngraph.entity.file.md5 = ${md5}"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "9e76688b-d8f9-4e95-898e-ace1c6d52bed",
+                    "displayName": " IOC DOMAIN JARM COUNT",
+                    "chartDatasource": {
+                        "dashboardQuery": "18d2e2cd-5c30-4328-b025-36d13a26dae4",
+                        "dataSources": [
+                            "ENTITY"
+                        ]
+                    },
+                    "visualization": {
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "columnDefs": [
+                            {
+                                "field": "jarm",
+                                "header": "JARM"
+                            },
+                            {
+                                "field": "count",
+                                "header": "TOTAL[Drill Down]"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "b77929d702f934f2576f9d04bd45b5ca169d22cf6163231f1b1905eaff53128a",
+                    "drillDownConfig": {
+                        "leftDrillDowns": [
+                            {
+                                "id": "0E56101E-B203-4DDB-9BBD-01B8106AB198",
+                                "displayName": "JARM TOTAL DRILL DOWN",
+                                "customSettings": {
+                                    "newTab": true,
+                                    "leftClickColumn": "count",
+                                    "query": {
+                                        "query": "graph.metadata.vendor_name = \"Google\"\r\ngraph.metadata.product_name = \"Google Threat Intelligence\"\r\ngraph.additional.fields[\"threat_list_id\"] != \"\"\r\ngraph.metadata.entity_type = \"DOMAIN_NAME\"\r\ngraph.entity.domain.jarm = ${jarm}\r\n$entity_id = graph.metadata.product_entity_id\r\nmatch:\r\n    $entity_id\r\noutcome:\r\n    $severity=array_distinct(graph.metadata.threat.severity)\r\n    $threat_score = array_distinct(graph.metadata.threat.risk_score)\r\n    $entity_type = array_distinct(graph.metadata.entity_type)\r\n    $threat_list_id=array_distinct(graph.additional.fields[\"threat_list_id\"])"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "815c4b0f-6c9b-4b39-8a4d-8171356cef11",
+                    "displayName": "markdown",
+                    "visualization": {
+                        "markdown": {
+                            "content": "## GTI Categorised Threat Lists  ![alt text](https://files.readme.io/2bd0d6e09e34d1a8075ca7c9fb7a1ff76a11f2636cef55fbcdc89017121f9724-gti-favicon-colored.svg)\n---\t\n#### This dashboard shows GTI Categorised Threat Lists as normalized into the Google SecOps Entity Context Graph (ECG).\n&nbsp;\n#### Categorized threat lists are near real-time loc lists that can be used to drive hunting/detection/blocking workflows. They are grouped into categories that can be used to target specific technologies/tech stacks/threats: ransomware, malicious network infrastructure, mobile, OS X, TOP + Trending locs, etc.\n---\t\n",
+                            "properties": {
+                                "backgroundColor": "transparent"
+                            }
+                        }
+                    },
+                    "tileType": "TILE_TYPE_MARKDOWN",
+                    "etag": "a3b5bc14b2ddeb14f44a29b02926bc51c99dc0c119f9c92af733d837727ec728"
+                },
+                {
+                    "name": "d2a8b44a-77af-457a-87bb-4bcd298db5d1",
+                    "displayName": "IOC DOMAIN TAGS COUNT",
+                    "chartDatasource": {
+                        "dashboardQuery": "998f4127-e5db-4647-91e9-220f616f8814",
+                        "dataSources": [
+                            "ENTITY"
+                        ]
+                    },
+                    "visualization": {
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "columnDefs": [
+                            {
+                                "field": "tag",
+                                "header": "TAG[Filter]"
+                            },
+                            {
+                                "field": "count",
+                                "header": "TOTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "c92ba315e434a039f1359d10e6fe38e7e5a1f49e30245304ed9cf091789b5213",
+                    "drillDownConfig": {
+                        "leftDrillDowns": [
+                            {
+                                "id": "8F5F9FCF-4200-4F11-A959-C568C22758AD",
+                                "displayName": "DOMAIN TAG FILTER",
+                                "customSettings": {
+                                    "newTab": true,
+                                    "leftClickColumn": "tag",
+                                    "filter": {
+                                        "dashboardFilters": [
+                                            {
+                                                "dashboardFilterId": "79242dfe-fb8d-42e7-bed3-5dd6ca566e1e",
+                                                "filterOperatorAndValues": [
+                                                    {
+                                                        "filterOperator": "EQUAL",
+                                                        "fieldValues": [
+                                                            "${tag}"
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "87927b7f-41fb-4f7f-8af8-30de5cae6603",
+                    "displayName": "markdown",
+                    "visualization": {
+                        "markdown": {
+                            "content": "## FILE IOCS \n---\n#### File objects represent a fundamental component of the Google Threat Intelligence (GTI) platform. GTI maintains an extensive repository of over two billion files that have undergone detailed analysis. A file object can be acquired by uploading a new file for analysis, querying for an existing file hash, or through various other search functionalities within the service.",
+                            "properties": {
+                                "backgroundColor": "transparent"
+                            }
+                        }
+                    },
+                    "tileType": "TILE_TYPE_MARKDOWN",
+                    "etag": "b61681b02f8118cf32153eb92654fdc3a24a32d32c94260ed317d5b9dfbb5c84"
+                },
+                {
+                    "name": "774801af-00b3-4619-8690-635e24f7d7cf",
+                    "displayName": "markdown",
+                    "visualization": {
+                        "markdown": {
+                            "content": "## URL IOCS \n---\n#### A `URL` (Uniform Resource Locator) object is distinct from a Domain object in that it specifies the complete path to a particular resource, whereas a domain represents the top-level address (e.g., `www.example.com/page.html` VS. `example.com`). Within Google Threat Intelligence (GTI), `URLs` serve a dual purpose. They are not only analyzed as standalone entities but also provide crucial contextual information by linking to files, domains, and other indicators observed at that specific web location.",
+                            "properties": {
+                                "backgroundColor": "transparent"
+                            }
+                        }
+                    },
+                    "tileType": "TILE_TYPE_MARKDOWN",
+                    "etag": "f11fe18309e64dab7b987123672b4d095b9e508f0431d2b9ee49f7b6bbb02b7a"
+                },
+                {
+                    "name": "32dc3164-0a56-4175-a33c-0651a1c56794",
+                    "displayName": "UNIQUE THREAT LIST ID",
+                    "chartDatasource": {
+                        "dashboardQuery": "ca9ee2a1-2d36-451d-8757-424770db70f7",
+                        "dataSources": [
+                            "ENTITY"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "TEXT",
+                                "label": "THREAT LIST ID COUNT",
+                                "field": "count",
+                                "metricTrendConfig": {
+                                    "metricFormat": "METRIC_FORMAT_NUMBER",
+                                    "metricDisplayTrend": "METRIC_DISPLAY_TREND_ABSOLUTE_VALUE",
+                                    "metricTrendType": "METRIC_TREND_TYPE_REGULAR"
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "1f2513727228e33a69222fd9be1adff109935138e76d890d5a24c542cbea936d",
+                    "drillDownConfig": {}
+                }
+            ],
+            "dashboardQueries": [
+                {
+                    "name": "6fec155f-e50c-491c-b8fb-845f92c100e8",
+                    "query": "graph.metadata.vendor_name = \"Google\"\r\ngraph.metadata.product_name = \"Google Threat Intelligence\"\r\ngraph.additional.fields[\"threat_list_id\"] != \"\"\r\ngraph.metadata.entity_type = \"FILE\"\r\n$date = timestamp.get_timestamp(cast.as_int(graph.additional.fields[\"last_analysis_date\"]))\r\n$md5 = graph.entity.file.md5\r\n$file = graph.metadata.product_entity_id\r\nmatch:\r\n    $md5,$date,$file\r\norder:\r\n    $date desc\r\nlimit:\r\n    10000",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "90"
+                        }
+                    },
+                    "etag": "b84cd2a6f5062e9415c061beffe95b701d616cff7ac813de08572aefac1a93db"
+                },
+                {
+                    "name": "9cf0234e-dddd-44fb-af72-598900eb4c1c",
+                    "query": "graph.metadata.vendor_name = \"Google\"\r\ngraph.metadata.product_name = \"Google Threat Intelligence\"\r\ngraph.additional.fields[\"threat_list_id\"] != \"\"\r\ngraph.metadata.threat.severity = \"MEDIUM\"\r\n$entityid = graph.metadata.product_entity_id\r\noutcome:\r\n    $count=count_distinct($entityid)",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "90"
+                        }
+                    },
+                    "etag": "ae547b85bbc1727d26e404af6b0c234d4646c7c6f99244c401edc10424fde14e"
+                },
+                {
+                    "name": "18d2e2cd-5c30-4328-b025-36d13a26dae4",
+                    "query": "graph.metadata.vendor_name = \"Google\"\r\ngraph.metadata.product_name = \"Google Threat Intelligence\"\r\ngraph.additional.fields[\"threat_list_id\"] != \"\"\r\ngraph.metadata.entity_type = \"DOMAIN_NAME\"\r\ngraph.entity.domain.jarm != \"\"\r\n$entityid = graph.metadata.product_entity_id\r\n$jarm = graph.entity.domain.jarm\r\nmatch:\r\n    $jarm\r\noutcome:\r\n    $count = count_distinct($entityid)\r\norder:\r\n    $count desc\r\nlimit:\r\n    10000",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "90"
+                        }
+                    },
+                    "etag": "f1f2a2ab8915580d1e786956704af55c49405d27a21b7efdbf32726887e520b2"
+                },
+                {
+                    "name": "a4f23fb6-3fc5-446f-9d71-9880d583f914",
+                    "query": "graph.metadata.vendor_name = \"Google\"\r\ngraph.metadata.product_name = \"Google Threat Intelligence\"\r\ngraph.additional.fields[\"threat_list_id\"] != \"\"\r\n$entityid = graph.metadata.product_entity_id\r\n$threatlistid = graph.additional.fields[\"threat_list_id\"]\r\nmatch:\r\n    $threatlistid\r\noutcome:\r\n    $count=count_distinct($entityid)\r\norder:\r\n    $count desc\r\nlimit:\r\n    10000",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "90"
+                        }
+                    },
+                    "etag": "acb2784db0fbeaa30df5d83625f0f362d7695c549b770c0b5bf3acaeac67636f"
+                },
+                {
+                    "name": "c7681e7c-0937-4177-97a1-addcfa9ae444",
+                    "query": "graph.metadata.vendor_name = \"Google\"\r\ngraph.metadata.product_name = \"Google Threat Intelligence\"\r\ngraph.additional.fields[\"threat_list_id\"] != \"\"\r\ngraph.metadata.threat.severity = \"NONE\"\r\n$entityid = graph.metadata.product_entity_id\r\noutcome:\r\n    $count=count_distinct($entityid)",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "90"
+                        }
+                    },
+                    "etag": "b5b6f1ecc10e65e7eee4ecf8a46cd3a2b035d476cae437683ee4f35d8e76cb80"
+                },
+                {
+                    "name": "0de235d7-c25d-480d-97cd-05b22b4bd67a",
+                    "query": "graph.metadata.vendor_name = \"Google\"\r\ngraph.metadata.product_name = \"Google Threat Intelligence\"\r\ngraph.additional.fields[\"threat_list_id\"] != \"\"\r\n$entityid = graph.metadata.product_entity_id\r\noutcome:\r\n    $count=count_distinct($entityid)",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "90"
+                        }
+                    },
+                    "etag": "fe97a3178a9e296f8cf478fffcccb871935eda8f6e20c68187cf946b44f1b245"
+                },
+                {
+                    "name": "5e81fcf0-6c8e-4786-b864-c8620ed47ce7",
+                    "query": "graph.metadata.vendor_name = \"Google\"\r\ngraph.metadata.product_name = \"Google Threat Intelligence\"\r\ngraph.additional.fields[\"threat_list_id\"] != \"\"\r\n$threatlistid = graph.additional.fields[\"threat_list_id\"]\r\n$date=timestamp.get_timestamp(graph.metadata.interval.start_time.seconds, \"%Y-%m-%d\")\r\n$entityid = graph.metadata.product_entity_id\r\nmatch:\r\n    $date, $threatlistid\r\noutcome:\r\n    $count=count_distinct($entityid)\r\norder:\r\n    $count desc\r\nlimit:\r\n    10000\r\n",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "90"
+                        }
+                    },
+                    "etag": "031eba12f29d49e18a89e9146ed4357e9839d5c9649f93c1222f41ed713769dc"
+                },
+                {
+                    "name": "b9a19b87-5ba9-44fb-a52f-0b3f1a3dd486",
+                    "query": "graph.metadata.vendor_name = \"Google\"\r\ngraph.metadata.product_name = \"Google Threat Intelligence\"\r\ngraph.additional.fields[\"threat_list_id\"] != \"\"\r\ngraph.metadata.entity_type = \"URL\"\r\n$entityid = graph.metadata.product_entity_id\r\n$category = graph.entity.url_metadata.categories\r\n$category != \"\"\r\nmatch:\r\n    $category\r\noutcome:\r\n    $count = count_distinct($entityid)\r\norder:\r\n    $count desc\r\nlimit:\r\n    10000",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "90"
+                        }
+                    },
+                    "etag": "ba906849c2ee9d4169af3985068f940dd4fda8a525f97bdeae896151239188b8"
+                },
+                {
+                    "name": "8245d663-988c-440f-84a8-f07b08521b0a",
+                    "query": "graph.metadata.vendor_name = \"Google\"\r\ngraph.metadata.product_name = \"Google Threat Intelligence\"\r\ngraph.additional.fields[\"threat_list_id\"] != \"\"\r\ngraph.metadata.threat.severity = \"HIGH\"\r\n$entityid = graph.metadata.product_entity_id\r\noutcome:\r\n    $count=count_distinct($entityid)",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "90"
+                        }
+                    },
+                    "etag": "50f2dc74c6cd0b5d37356bb8fc35754b9a5af276bfb34fb7f44fc65623306151"
+                },
+                {
+                    "name": "644a9cb3-421b-49a3-92c1-3a77d96eb616",
+                    "query": "graph.metadata.vendor_name = \"Google\"\r\ngraph.metadata.product_name = \"Google Threat Intelligence\"\r\ngraph.additional.fields[\"threat_list_id\"] != \"\"\r\n$date=timestamp.get_timestamp(graph.metadata.interval.start_time.seconds, \"%Y-%m-%d\")\r\n$severity = graph.metadata.threat.severity\r\n$entityid = graph.metadata.product_entity_id\r\nmatch:\r\n    $date, $severity\r\noutcome:\r\n    $count=count_distinct($entityid)\r\norder:\r\n    $count desc\r\nlimit:\r\n    10000",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "90"
+                        }
+                    },
+                    "etag": "4f965b3c36affcc0ae5ab78ffca51e0936333343b4167d1be768d6dc46c13aff"
+                },
+                {
+                    "name": "8c08b956-9c39-4372-ac01-8ead32c994a9",
+                    "query": "graph.metadata.vendor_name = \"Google\"\r\ngraph.metadata.product_name = \"Google Threat Intelligence\"\r\ngraph.additional.fields[\"threat_list_id\"] != \"\"\r\ngraph.metadata.threat.severity = \"LOW\"\r\n$entityid = graph.metadata.product_entity_id\r\noutcome:\r\n    $count=count_distinct($entityid)",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "90"
+                        }
+                    },
+                    "etag": "600d75027946fb29d961d4d970ac6ff0b70412bfc6c888c7dcd61931749e030a"
+                },
+                {
+                    "name": "476a7198-d501-4a46-8c62-2102aa3f7e2e",
+                    "query": "graph.metadata.vendor_name = \"Google\"\r\ngraph.metadata.product_name = \"Google Threat Intelligence\"\r\ngraph.additional.fields[\"threat_list_id\"] != \"\"\r\ngraph.metadata.entity_type = \"URL\"\r\n$reponsecode = if(graph.entity.url_metadata.last_http_response_code!=0, cast.as_string(graph.entity.url_metadata.last_http_response_code), \"-\")\r\n$date = timestamp.get_timestamp(cast.as_int(graph.additional.fields[\"last_analysis_date\"]))\r\n$url = graph.entity.url\r\nmatch:\r\n    $url,$reponsecode,$date\r\norder:\r\n    $date desc\r\nlimit:\r\n    10000",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "90"
+                        }
+                    },
+                    "etag": "f4c34a9ee952d9199089b359bd4a4acf22740b643553638463e7ca83eccc16e5"
+                },
+                {
+                    "name": "b3848b40-673b-4daf-9d91-37358c061de3",
+                    "query": "graph.metadata.vendor_name = \"Google\"\r\ngraph.metadata.product_name = \"Google Threat Intelligence\"\r\ngraph.additional.fields[\"threat_list_id\"] != \"\"\r\ngraph.metadata.entity_type = \"FILE\"\r\ngraph.entity.file.tags != \"\"\r\n$entityid = graph.metadata.product_entity_id\r\n$tag = graph.entity.file.tags\r\nmatch:\r\n    $tag\r\noutcome:\r\n    $count = count_distinct($entityid)\r\norder:\r\n    $count desc\r\nlimit:\r\n    10000",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "90"
+                        }
+                    },
+                    "etag": "53e568a66afb42070faaea40445ea240568c6786a8a97618538aa17fa828dc40"
+                },
+                {
+                    "name": "998f4127-e5db-4647-91e9-220f616f8814",
+                    "query": "graph.metadata.vendor_name = \"Google\"\r\ngraph.metadata.product_name = \"Google Threat Intelligence\"\r\ngraph.additional.fields[\"threat_list_id\"] != \"\"\r\ngraph.metadata.entity_type = \"DOMAIN_NAME\"\r\ngraph.entity.domain.tags != \"\"\r\n$entityid = graph.metadata.product_entity_id\r\n$tag = graph.entity.domain.tags\r\nmatch:\r\n    $tag\r\noutcome:\r\n    $count = count_distinct($entityid)\r\norder:\r\n    $count desc\r\nlimit:\r\n    10000",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "90"
+                        }
+                    },
+                    "etag": "b49a70defdaf3d1807ba402623782a73161f20020cc20f064ad3851d2d5677d7"
+                },
+                {
+                    "name": "5536ebe6-dbb0-4977-9eb8-9a204da22332",
+                    "query": "graph.metadata.vendor_name = \"Google\"\r\ngraph.metadata.product_name = \"Google Threat Intelligence\"\r\ngraph.additional.fields[\"threat_list_id\"] != \"\"\r\n$entityid = graph.metadata.product_entity_id\r\n$entitytype = graph.metadata.entity_type\r\nmatch:\r\n    $entitytype\r\noutcome:\r\n    $count=count_distinct($entityid)\r\norder:\r\n    $count desc\r\nlimit:\r\n    10000",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "90"
+                        }
+                    },
+                    "etag": "e8769e701319d3a5c314bd4e0c1ff91e81a964fe3ba5f5a17f4d0f464990906e"
+                },
+                {
+                    "name": "ca9ee2a1-2d36-451d-8757-424770db70f7",
+                    "query": "graph.metadata.vendor_name = \"Google\"\r\ngraph.metadata.product_name = \"Google Threat Intelligence\"\r\ngraph.additional.fields[\"threat_list_id\"] != \"\"\r\n$entityid = graph.additional.fields[\"threat_list_id\"]\r\noutcome:\r\n    $count=count_distinct($entityid)",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "90"
+                        }
+                    },
+                    "etag": "34b7379a7bf0e1d36fd5158005f415c6908766f965c36f9111e7b87941821026"
+                },
+                {
+                    "name": "965fc2ea-b5ca-47ec-9849-b04452e80b2c",
+                    "query": "graph.metadata.vendor_name = \"Google\"\r\ngraph.metadata.product_name = \"Google Threat Intelligence\"\r\ngraph.additional.fields[\"threat_list_id\"] != \"\"\r\n$entityid = graph.metadata.product_entity_id\r\n$severity = graph.metadata.threat.severity\r\nmatch:\r\n    $severity\r\noutcome:\r\n    $count=count_distinct($entityid)\r\norder:\r\n    $count desc\r\nlimit:\r\n    10000",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "90"
+                        }
+                    },
+                    "etag": "989fe88e20eb5afeb8ed38546726cc2ea79a917a0d8d204b15d24b055b1b71b5"
+                }
+            ]
+        }
+    ]
+}
