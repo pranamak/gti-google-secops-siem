@@ -1,0 +1,3365 @@
+{
+    "dashboards": [
+        {
+            "dashboard": {
+                "name": "1d842aa7-a44e-4d7f-a7f9-1953ae51ec02",
+                "displayName": "GTI Threat Intelligence",
+                "definition": {
+                    "filters": [
+                        {
+                            "id": "GlobalTimeFilter",
+                            "dataSource": "GLOBAL",
+                            "filterOperatorAndFieldValues": [
+                                {
+                                    "filterOperator": "PAST",
+                                    "fieldValues": [
+                                        "1",
+                                        "DAY"
+                                    ]
+                                }
+                            ],
+                            "displayName": "Global Time Filter",
+                            "chartIds": [
+                                "58f96a02-46c9-49c2-86ee-41cfdc72b8d0"
+                            ],
+                            "isStandardTimeRangeFilter": true,
+                            "isStandardTimeRangeFilterEnabled": false
+                        },
+                        {
+                            "id": "7906a298-c726-4cef-93b3-2cf156696212",
+                            "dataSource": "ENTITY",
+                            "fieldPath": "graph.metadata.interval.start_time",
+                            "filterOperatorAndFieldValues": [
+                                {
+                                    "filterOperator": "PAST",
+                                    "fieldValues": [
+                                        "7",
+                                        "DAY"
+                                    ]
+                                }
+                            ],
+                            "displayName": "Indicator Active Time Range",
+                            "chartIds": [
+                                "5db4c795-9ed7-48fc-a0a9-f49368cd938c",
+                                "58f96a02-46c9-49c2-86ee-41cfdc72b8d0",
+                                "c0017c3d-6a8f-4fad-afd4-cdc4a9502787",
+                                "c3cf152c-f3d9-49f3-9715-1deb44304c16",
+                                "8730a25b-009d-4e88-a4e6-e98119f5f2ff",
+                                "ef5a5745-f803-4904-8418-27d1d8c83e7b",
+                                "894ee188-d228-410e-a4e3-c3d8285a9502",
+                                "6c9af89d-75db-4801-95e8-6721d17e4195",
+                                "18631297-3f70-4a40-b53f-4c432fe70bc3",
+                                "bf552d11-78eb-465a-9b70-8b6ed1a15c20",
+                                "514e20e7-2350-408a-9d7e-5ff181c90f3c",
+                                "1f461695-6ba9-48a2-beed-dc8891308305",
+                                "fe72a141-a0ed-4c49-8e12-f10a6492ec9e",
+                                "20722fb5-154f-44d3-b154-315b6b3116d3",
+                                "518c303c-b176-4a7d-9355-be7488944f0a",
+                                "82180ea2-0fe5-4cc0-bbbe-daaa914e6f70",
+                                "2f07f4bb-6dd6-4d5e-a363-2ba63d060c23",
+                                "966ad63f-6aa3-44b8-b394-580b891b7630",
+                                "909cbec6-b096-49d3-88ae-3b77ae3943e4",
+                                "7ad402f5-29af-4021-93e5-21f62951efcc",
+                                "9b7ef6db-ab92-47c8-8f4a-9e2e2879c383",
+                                "756e3928-2997-40f6-8789-59b1860e7026",
+                                "327b5d65-db0a-4d73-85ce-cd436fe29974",
+                                "9fb2f7bc-2578-46cc-a765-a3dc9959de0b",
+                                "a6c61b8d-0986-4ff2-a0fd-a6e581af2005",
+                                "f88b5ee8-4d8c-48fb-adc9-2b511fc60156",
+                                "021899e3-c318-4b50-997a-93e024c06229",
+                                "f46c67fe-2fab-4010-a2a0-b0d0d14694bb",
+                                "e98fa5e6-8dc6-4e33-b36c-938bddb1cfe3",
+                                "441865b0-0d2d-4ec9-83cd-fb38b9a361c1",
+                                "9f0070ea-9944-4a71-b303-cd7425a09c9f",
+                                "f09a7dac-ceba-4aef-bc53-78013b221aab"
+                            ]
+                        }
+                    ],
+                    "charts": [
+                        {
+                            "dashboardChart": "58f96a02-46c9-49c2-86ee-41cfdc72b8d0",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 49,
+                                "startY": 8,
+                                "spanY": 26
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "7906a298-c726-4cef-93b3-2cf156696212"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "f09a7dac-ceba-4aef-bc53-78013b221aab",
+                            "chartLayout": {
+                                "startX": 49,
+                                "spanX": 47,
+                                "startY": 8,
+                                "spanY": 26
+                            },
+                            "filtersIds": [
+                                "7906a298-c726-4cef-93b3-2cf156696212"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "6c9af89d-75db-4801-95e8-6721d17e4195",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 33,
+                                "startY": 57,
+                                "spanY": 12
+                            },
+                            "filtersIds": [
+                                "7906a298-c726-4cef-93b3-2cf156696212"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "5db4c795-9ed7-48fc-a0a9-f49368cd938c",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 33,
+                                "startY": 69,
+                                "spanY": 12
+                            },
+                            "filtersIds": [
+                                "7906a298-c726-4cef-93b3-2cf156696212"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "ef5a5745-f803-4904-8418-27d1d8c83e7b",
+                            "chartLayout": {
+                                "startX": 33,
+                                "spanX": 32,
+                                "startY": 57,
+                                "spanY": 12
+                            },
+                            "filtersIds": [
+                                "7906a298-c726-4cef-93b3-2cf156696212"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "894ee188-d228-410e-a4e3-c3d8285a9502",
+                            "chartLayout": {
+                                "startX": 65,
+                                "spanX": 30,
+                                "startY": 57,
+                                "spanY": 12
+                            },
+                            "filtersIds": [
+                                "7906a298-c726-4cef-93b3-2cf156696212"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "c3cf152c-f3d9-49f3-9715-1deb44304c16",
+                            "chartLayout": {
+                                "startX": 33,
+                                "spanX": 32,
+                                "startY": 69,
+                                "spanY": 12
+                            },
+                            "filtersIds": [
+                                "7906a298-c726-4cef-93b3-2cf156696212"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "c0017c3d-6a8f-4fad-afd4-cdc4a9502787",
+                            "chartLayout": {
+                                "startX": 65,
+                                "spanX": 30,
+                                "startY": 69,
+                                "spanY": 12
+                            },
+                            "filtersIds": [
+                                "7906a298-c726-4cef-93b3-2cf156696212"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "8730a25b-009d-4e88-a4e6-e98119f5f2ff",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 96,
+                                "startY": 34,
+                                "spanY": 23
+                            },
+                            "filtersIds": [
+                                "7906a298-c726-4cef-93b3-2cf156696212"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "072991a9-cd36-44df-8709-d7059a1a5014",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 95,
+                                "startY": 0,
+                                "spanY": 8
+                            }
+                        },
+                        {
+                            "dashboardChart": "1f461695-6ba9-48a2-beed-dc8891308305",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 20,
+                                "startY": 355,
+                                "spanY": 12
+                            },
+                            "filtersIds": [
+                                "7906a298-c726-4cef-93b3-2cf156696212"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "021899e3-c318-4b50-997a-93e024c06229",
+                            "chartLayout": {
+                                "startX": 20,
+                                "spanX": 19,
+                                "startY": 355,
+                                "spanY": 12
+                            },
+                            "filtersIds": [
+                                "7906a298-c726-4cef-93b3-2cf156696212"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "bf552d11-78eb-465a-9b70-8b6ed1a15c20",
+                            "chartLayout": {
+                                "startX": 39,
+                                "spanX": 18,
+                                "startY": 355,
+                                "spanY": 12
+                            },
+                            "filtersIds": [
+                                "7906a298-c726-4cef-93b3-2cf156696212"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "a6c61b8d-0986-4ff2-a0fd-a6e581af2005",
+                            "chartLayout": {
+                                "startX": 57,
+                                "spanX": 19,
+                                "startY": 355,
+                                "spanY": 12
+                            },
+                            "filtersIds": [
+                                "7906a298-c726-4cef-93b3-2cf156696212"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "756e3928-2997-40f6-8789-59b1860e7026",
+                            "chartLayout": {
+                                "startX": 76,
+                                "spanX": 20,
+                                "startY": 355,
+                                "spanY": 12
+                            },
+                            "filtersIds": [
+                                "7906a298-c726-4cef-93b3-2cf156696212"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "ebde4d26-329a-468a-85ae-bce48f56f335",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 96,
+                                "startY": 81,
+                                "spanY": 7
+                            }
+                        },
+                        {
+                            "dashboardChart": "fe72a141-a0ed-4c49-8e12-f10a6492ec9e",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 34,
+                                "startY": 88,
+                                "spanY": 24
+                            },
+                            "filtersIds": [
+                                "7906a298-c726-4cef-93b3-2cf156696212"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "f46c67fe-2fab-4010-a2a0-b0d0d14694bb",
+                            "chartLayout": {
+                                "startX": 34,
+                                "spanX": 31,
+                                "startY": 88,
+                                "spanY": 24
+                            },
+                            "filtersIds": [
+                                "7906a298-c726-4cef-93b3-2cf156696212"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "966ad63f-6aa3-44b8-b394-580b891b7630",
+                            "chartLayout": {
+                                "startX": 65,
+                                "spanX": 31,
+                                "startY": 88,
+                                "spanY": 24
+                            },
+                            "filtersIds": [
+                                "7906a298-c726-4cef-93b3-2cf156696212"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "d043c9a2-ce1a-47ea-9633-8163e61a3d60",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 96,
+                                "startY": 349,
+                                "spanY": 6
+                            }
+                        },
+                        {
+                            "dashboardChart": "f88b5ee8-4d8c-48fb-adc9-2b511fc60156",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 96,
+                                "startY": 112,
+                                "spanY": 25
+                            },
+                            "filtersIds": [
+                                "7906a298-c726-4cef-93b3-2cf156696212"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "d396c973-b6db-4cc5-84ac-d4df0d5f2831",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 96,
+                                "startY": 137,
+                                "spanY": 6
+                            }
+                        },
+                        {
+                            "dashboardChart": "909cbec6-b096-49d3-88ae-3b77ae3943e4",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 48,
+                                "startY": 143,
+                                "spanY": 23
+                            },
+                            "filtersIds": [
+                                "7906a298-c726-4cef-93b3-2cf156696212"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "e98fa5e6-8dc6-4e33-b36c-938bddb1cfe3",
+                            "chartLayout": {
+                                "startX": 48,
+                                "spanX": 48,
+                                "startY": 143,
+                                "spanY": 23
+                            },
+                            "filtersIds": [
+                                "7906a298-c726-4cef-93b3-2cf156696212"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "441865b0-0d2d-4ec9-83cd-fb38b9a361c1",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 96,
+                                "startY": 166,
+                                "spanY": 25
+                            },
+                            "filtersIds": [
+                                "7906a298-c726-4cef-93b3-2cf156696212"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "df98e0e2-3f94-4915-b4e5-f4ebc54634fe",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 96,
+                                "startY": 191,
+                                "spanY": 8
+                            }
+                        },
+                        {
+                            "dashboardChart": "9b7ef6db-ab92-47c8-8f4a-9e2e2879c383",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 48,
+                                "startY": 199,
+                                "spanY": 24
+                            },
+                            "filtersIds": [
+                                "7906a298-c726-4cef-93b3-2cf156696212"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "518c303c-b176-4a7d-9355-be7488944f0a",
+                            "chartLayout": {
+                                "startX": 48,
+                                "spanX": 47,
+                                "startY": 199,
+                                "spanY": 24
+                            },
+                            "filtersIds": [
+                                "7906a298-c726-4cef-93b3-2cf156696212"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "9f0070ea-9944-4a71-b303-cd7425a09c9f",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 96,
+                                "startY": 223,
+                                "spanY": 23
+                            },
+                            "filtersIds": [
+                                "7906a298-c726-4cef-93b3-2cf156696212"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "de6ee875-b536-4049-8016-61083e6416cf",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 96,
+                                "startY": 246,
+                                "spanY": 6
+                            }
+                        },
+                        {
+                            "dashboardChart": "18631297-3f70-4a40-b53f-4c432fe70bc3",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 31,
+                                "startY": 252,
+                                "spanY": 26
+                            },
+                            "filtersIds": [
+                                "7906a298-c726-4cef-93b3-2cf156696212"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "327b5d65-db0a-4d73-85ce-cd436fe29974",
+                            "chartLayout": {
+                                "startX": 31,
+                                "spanX": 33,
+                                "startY": 252,
+                                "spanY": 26
+                            },
+                            "filtersIds": [
+                                "7906a298-c726-4cef-93b3-2cf156696212"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "514e20e7-2350-408a-9d7e-5ff181c90f3c",
+                            "chartLayout": {
+                                "startX": 64,
+                                "spanX": 32,
+                                "startY": 252,
+                                "spanY": 26
+                            },
+                            "filtersIds": [
+                                "7906a298-c726-4cef-93b3-2cf156696212"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "7ad402f5-29af-4021-93e5-21f62951efcc",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 96,
+                                "startY": 278,
+                                "spanY": 21
+                            },
+                            "filtersIds": [
+                                "7906a298-c726-4cef-93b3-2cf156696212"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "bc99e4a6-ca78-488d-98c4-c08ffc9d39b6",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 96,
+                                "startY": 299,
+                                "spanY": 6
+                            }
+                        },
+                        {
+                            "dashboardChart": "20722fb5-154f-44d3-b154-315b6b3116d3",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 34,
+                                "startY": 305,
+                                "spanY": 23
+                            },
+                            "filtersIds": [
+                                "7906a298-c726-4cef-93b3-2cf156696212"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "82180ea2-0fe5-4cc0-bbbe-daaa914e6f70",
+                            "chartLayout": {
+                                "startX": 34,
+                                "spanX": 32,
+                                "startY": 305,
+                                "spanY": 23
+                            },
+                            "filtersIds": [
+                                "7906a298-c726-4cef-93b3-2cf156696212"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "9fb2f7bc-2578-46cc-a765-a3dc9959de0b",
+                            "chartLayout": {
+                                "startX": 66,
+                                "spanX": 30,
+                                "startY": 305,
+                                "spanY": 23
+                            },
+                            "filtersIds": [
+                                "7906a298-c726-4cef-93b3-2cf156696212"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "2f07f4bb-6dd6-4d5e-a363-2ba63d060c23",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 96,
+                                "startY": 328,
+                                "spanY": 21
+                            },
+                            "filtersIds": [
+                                "7906a298-c726-4cef-93b3-2cf156696212"
+                            ]
+                        }
+                    ]
+                },
+                "type": "CUSTOM",
+                "etag": "7fceb6cbdce8dedbbd37c2851965e07c445f4c079960df9010662a3d4ff0402c",
+                "access": "DASHBOARD_PRIVATE"
+            },
+            "dashboardCharts": [
+                {
+                    "name": "6c9af89d-75db-4801-95e8-6721d17e4195",
+                    "displayName": "TOTAL INGESTED INDICATORS",
+                    "chartDatasource": {
+                        "dashboardQuery": "d02a294b-9888-46ff-9175-a22438443c98",
+                        "dataSources": [
+                            "ENTITY"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "TEXT",
+                                "label": "TOTAL INGESTED INDICATORS",
+                                "field": "count",
+                                "metricTrendConfig": {
+                                    "metricFormat": "METRIC_FORMAT_PLAIN_TEXT",
+                                    "metricDisplayTrend": "METRIC_DISPLAY_TREND_ABSOLUTE_VALUE",
+                                    "metricTrendType": "METRIC_TREND_TYPE_REGULAR"
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "4f377b8ca5732f04054a48f80ed03b244604f1780c2f5cac3fc28b0c3f976bf2",
+                    "drillDownConfig": {}
+                },
+                {
+                    "name": "756e3928-2997-40f6-8789-59b1860e7026",
+                    "displayName": "VPN, TOR AND PROXY IPS",
+                    "chartDatasource": {
+                        "dashboardQuery": "88a1d48c-398b-4c8d-b904-279c82fd911b",
+                        "dataSources": [
+                            "ENTITY"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "TEXT",
+                                "label": "VPN, TOR AND PROXY IPS",
+                                "field": "count",
+                                "metricTrendConfig": {
+                                    "metricFormat": "METRIC_FORMAT_PLAIN_TEXT",
+                                    "metricDisplayTrend": "METRIC_DISPLAY_TREND_ABSOLUTE_VALUE",
+                                    "metricTrendType": "METRIC_TREND_TYPE_REGULAR"
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "fb1d60ed92da4ea4e05087765b044b87e0cbde007e92cf04c48cc1bc756d7f1c",
+                    "drillDownConfig": {}
+                },
+                {
+                    "name": "2f07f4bb-6dd6-4d5e-a363-2ba63d060c23",
+                    "displayName": "VPN, TOR AND PROXY IP ADDRESSES",
+                    "chartDatasource": {
+                        "dashboardQuery": "a04b9a1a-a28e-4791-b063-7fbbc50a0aaa",
+                        "dataSources": [
+                            "ENTITY"
+                        ]
+                    },
+                    "visualization": {
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "columnDefs": [
+                            {
+                                "field": "time",
+                                "header": "LAST INGESTED IN SECOPS"
+                            },
+                            {
+                                "field": "entityid",
+                                "header": "IP ADDRESS[Redirect To GTI]"
+                            },
+                            {
+                                "field": "verdict",
+                                "header": "VERDICT"
+                            },
+                            {
+                                "field": "threatscore",
+                                "header": "THREAT SCORE"
+                            },
+                            {
+                                "field": "severity",
+                                "header": "SEVERITY"
+                            },
+                            {
+                                "field": "detections",
+                                "header": "NO. OF DETECTIONS"
+                            },
+                            {
+                                "field": "location",
+                                "header": "COUNTRY"
+                            },
+                            {
+                                "field": "tags",
+                                "header": "TAGS[Drill Down]"
+                            },
+                            {
+                                "field": "network",
+                                "header": "NETWORK"
+                            },
+                            {
+                                "field": "as",
+                                "header": "AUTONOMOUS SYSTEM OWNER"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "360628b2ddbfa859a8313d08feb467cbef73170b0da5a0adc76927eb787a1332",
+                    "drillDownConfig": {
+                        "leftDrillDowns": [
+                            {
+                                "id": "87C585F5-8CD4-4E2B-9F55-ADAAC8D0E4F7",
+                                "displayName": "FULL REPORT",
+                                "customSettings": {
+                                    "newTab": true,
+                                    "leftClickColumn": "entityid",
+                                    "externalLink": {
+                                        "link": "https://www.virustotal.com/gui/ip-address/${entityid}"
+                                    }
+                                }
+                            },
+                            {
+                                "id": "F572A653-A0DE-45C1-B947-B178159FA3A1",
+                                "displayName": "VPN, TOR AND PROXY IP ADDRESSES TAGS",
+                                "customSettings": {
+                                    "newTab": true,
+                                    "leftClickColumn": "tags",
+                                    "query": {
+                                        "query": "graph.metadata.vendor_name = \"Google\"\r\ngraph.metadata.product_name = \"Google Threat Intelligence\"\r\ngraph.additional.fields[\"threat_list_id\"] = \"\"\r\ngraph.metadata.entity_type = \"IP_ADDRESS\"\r\ngraph.metadata.product_entity_id = ${entityid}\r\ngraph.entity.artifact.tags = /.*vpn.*/ or graph.entity.artifact.tags = /.*tor.*/ or graph.entity.artifact.tags = /.*proxy.*/\r\n$tags = graph.entity.artifact.tags\r\nmatch:\r\n    $tags"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "072991a9-cd36-44df-8709-d7059a1a5014",
+                    "displayName": "markdown",
+                    "visualization": {
+                        "markdown": {
+                            "content": "## GTI Threat Intelligence ![alt text](https://files.readme.io/2bd0d6e09e34d1a8075ca7c9fb7a1ff76a11f2636cef55fbcdc89017121f9724-gti-favicon-colored.svg)\n---\t\n#### This dashboard shows GTI IOC Stream as normalized into the Google SecOps Entity Context Graph (ECG).\n&nbsp;\n#### The IOC Stream dashboard provides detailed information about IOC Stream indicators.",
+                            "properties": {
+                                "backgroundColor": "transparent"
+                            }
+                        }
+                    },
+                    "tileType": "TILE_TYPE_MARKDOWN",
+                    "etag": "509350330a24c3b046a401a76b7d623db857724074e69483533b35b5690832fc"
+                },
+                {
+                    "name": "bc99e4a6-ca78-488d-98c4-c08ffc9d39b6",
+                    "displayName": "markdown",
+                    "visualization": {
+                        "markdown": {
+                            "content": "## VPN, TOR AND PROXY IPs\n---\n#### An object representing IPs tagged as VPNs, Tor, and Proxy. The data is a subset of the IP Addresses.",
+                            "properties": {
+                                "backgroundColor": "transparent"
+                            }
+                        }
+                    },
+                    "tileType": "TILE_TYPE_MARKDOWN",
+                    "etag": "4fad5c27f3274ac34bc1712593a3bc1642549e782f601e3dca104254b731a8d9"
+                },
+                {
+                    "name": "9f0070ea-9944-4a71-b303-cd7425a09c9f",
+                    "displayName": "URLS",
+                    "chartDatasource": {
+                        "dashboardQuery": "1212fe1a-b2c0-453b-ab11-5b38292d39cc",
+                        "dataSources": [
+                            "ENTITY"
+                        ]
+                    },
+                    "visualization": {
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "columnDefs": [
+                            {
+                                "field": "time",
+                                "header": "LAST INGESTED IN SECOPS"
+                            },
+                            {
+                                "field": "url",
+                                "header": "URL[Redirect To GTI]"
+                            },
+                            {
+                                "field": "entityid",
+                                "header": "ENTITY ID"
+                            },
+                            {
+                                "field": "threatscore",
+                                "header": "THREAT SCORE"
+                            },
+                            {
+                                "field": "verdict",
+                                "header": "VERDICT"
+                            },
+                            {
+                                "field": "severity",
+                                "header": "SEVERITY"
+                            },
+                            {
+                                "field": "tld",
+                                "header": "TOP LEVEL DOMAIN"
+                            },
+                            {
+                                "field": "detections",
+                                "header": "NO. OF DETECTIONS"
+                            },
+                            {
+                                "field": "tags",
+                                "header": "TAGS[Drill Down]"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "c101da3f2813a89e377a8990b2daa7d88f778fab65bc0946a7cf9fa4aba6e9ed",
+                    "drillDownConfig": {
+                        "leftDrillDowns": [
+                            {
+                                "id": "854857B3-FED4-4BC4-B8C8-245E8A1FF136",
+                                "displayName": "FILL REPORT",
+                                "customSettings": {
+                                    "newTab": true,
+                                    "leftClickColumn": "url",
+                                    "externalLink": {
+                                        "link": "https://www.virustotal.com/gui/url/${entityid}"
+                                    }
+                                }
+                            },
+                            {
+                                "id": "B9972382-0D78-49F6-A53A-F7C389CACB4E",
+                                "displayName": "URL TAGS",
+                                "customSettings": {
+                                    "newTab": true,
+                                    "leftClickColumn": "tags",
+                                    "query": {
+                                        "query": "graph.metadata.vendor_name = \"Google\"\r\ngraph.metadata.product_name = \"Google Threat Intelligence\"\r\ngraph.additional.fields[\"threat_list_id\"] = \"\"\r\ngraph.metadata.entity_type = \"URL\"\r\ngraph.metadata.product_entity_id = ${entityid}\r\n$tags = graph.entity.url_metadata.tags\r\nmatch:\r\n    $tags"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "021899e3-c318-4b50-997a-93e024c06229",
+                    "displayName": "FLAGGED DOMAINS",
+                    "chartDatasource": {
+                        "dashboardQuery": "cfb0c9cd-7f66-47c7-a2f1-5c79f0b1df7d",
+                        "dataSources": [
+                            "ENTITY"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "TEXT",
+                                "label": "FLAGGED DOMAINS",
+                                "field": "count",
+                                "metricTrendConfig": {
+                                    "metricFormat": "METRIC_FORMAT_PLAIN_TEXT",
+                                    "metricDisplayTrend": "METRIC_DISPLAY_TREND_ABSOLUTE_VALUE",
+                                    "metricTrendType": "METRIC_TREND_TYPE_REGULAR"
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "cc807bc1d2233f85c2bbff662e8c0c699266ef5eb14119f2118e35213ef4fee0",
+                    "drillDownConfig": {}
+                },
+                {
+                    "name": "514e20e7-2350-408a-9d7e-5ff181c90f3c",
+                    "displayName": "TOP 10 IP ADDRESSES BY VERDICT",
+                    "chartDatasource": {
+                        "dashboardQuery": "42030725-cd96-4292-b648-107ab31ccbe6",
+                        "dataSources": [
+                            "ENTITY"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "PIE",
+                                "encode": {
+                                    "value": "count",
+                                    "itemName": "verdict"
+                                },
+                                "dataLabel": {
+                                    "show": true
+                                },
+                                "radius": [
+                                    "0%",
+                                    "70%"
+                                ],
+                                "itemStyle": {
+                                    "color": "undefined"
+                                },
+                                "itemColors": {
+                                    "colors": [
+                                        {
+                                            "key": "MALICIOUS",
+                                            "value": {
+                                                "color": "#eb730a",
+                                                "label": "MALICIOUS"
+                                            }
+                                        },
+                                        {
+                                            "key": "SUSPICIOUS",
+                                            "value": {
+                                                "color": "#1a73e8",
+                                                "label": "SUSPICIOUS"
+                                            }
+                                        },
+                                        {
+                                            "key": "UNDETECTED",
+                                            "value": {
+                                                "color": "#10a3b7",
+                                                "label": "UNDETECTED"
+                                            }
+                                        },
+                                        {
+                                            "key": "THREAT_VERDICT_UNSPECIFIED",
+                                            "value": {
+                                                "color": "#ec453b",
+                                                "label": "THREAT_VERDICT_UNSPECIFIED"
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "top": 12,
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "1226dc8a05d27918f08afa833a0e3146f5e0e2bb6b24e1f4a87538a45d8d0c4f",
+                    "drillDownConfig": {}
+                },
+                {
+                    "name": "518c303c-b176-4a7d-9355-be7488944f0a",
+                    "displayName": "TOP 10 URLS BY VERDICT",
+                    "chartDatasource": {
+                        "dashboardQuery": "7713a75b-426e-4684-9e41-4f0c9618a0a1",
+                        "dataSources": [
+                            "ENTITY"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "PIE",
+                                "encode": {
+                                    "value": "count",
+                                    "itemName": "verdict"
+                                },
+                                "dataLabel": {
+                                    "show": true
+                                },
+                                "radius": [
+                                    "0%",
+                                    "70%"
+                                ],
+                                "itemStyle": {
+                                    "color": "undefined"
+                                },
+                                "itemColors": {
+                                    "colors": [
+                                        {
+                                            "key": "MALICIOUS",
+                                            "value": {
+                                                "color": "#1a73e8",
+                                                "label": "MALICIOUS"
+                                            }
+                                        },
+                                        {
+                                            "key": "UNDETECTED",
+                                            "value": {
+                                                "color": "#eb730a",
+                                                "label": "UNDETECTED"
+                                            }
+                                        },
+                                        {
+                                            "key": "SUSPICIOUS",
+                                            "value": {
+                                                "color": "#10a3b7",
+                                                "label": "SUSPICIOUS"
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "top": 12,
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "f7882f430b66b11d46d9b1fcea2079549c294e00b570adb87a80a34d58d0a9b1",
+                    "drillDownConfig": {}
+                },
+                {
+                    "name": "327b5d65-db0a-4d73-85ce-cd436fe29974",
+                    "displayName": "TOP 10 IP ADDRESSES BY AUTONOMOUS SYSTEM OWNER",
+                    "chartDatasource": {
+                        "dashboardQuery": "95d9b0d7-c93c-44ad-a450-905477f0eb7e",
+                        "dataSources": [
+                            "ENTITY"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "PIE",
+                                "encode": {
+                                    "value": "count",
+                                    "itemName": "owner"
+                                },
+                                "dataLabel": {
+                                    "show": true
+                                },
+                                "radius": [
+                                    "0%",
+                                    "70%"
+                                ],
+                                "itemStyle": {
+                                    "color": "undefined"
+                                },
+                                "itemColors": {
+                                    "colors": [
+                                        {
+                                            "key": "AS-COLOCROSSING",
+                                            "value": {
+                                                "color": "#1a73e8",
+                                                "label": "AS-COLOCROSSING"
+                                            }
+                                        },
+                                        {
+                                            "key": "EMPTY",
+                                            "value": {
+                                                "color": "#eb730a",
+                                                "label": "EMPTY"
+                                            }
+                                        },
+                                        {
+                                            "key": "DIGITALOCEAN-ASN",
+                                            "value": {
+                                                "color": "#e51f8f",
+                                                "label": "DIGITALOCEAN-ASN"
+                                            }
+                                        },
+                                        {
+                                            "key": "BUCKEYECABLEVISION",
+                                            "value": {
+                                                "color": "#ec453b",
+                                                "label": "BUCKEYECABLEVISION"
+                                            }
+                                        },
+                                        {
+                                            "key": "MAXKO d.o.o.",
+                                            "value": {
+                                                "color": "#e51f8f",
+                                                "label": "MAXKO d.o.o."
+                                            }
+                                        },
+                                        {
+                                            "key": "MICROSOFT-CORP-MSN-AS-BLOCK",
+                                            "value": {
+                                                "color": "#923ef9",
+                                                "label": "MICROSOFT-CORP-MSN-AS-BLOCK"
+                                            }
+                                        },
+                                        {
+                                            "key": "CHARTER-20115",
+                                            "value": {
+                                                "color": "#4aa207",
+                                                "label": "CHARTER-20115"
+                                            }
+                                        },
+                                        {
+                                            "key": "metaspinner net GmbH",
+                                            "value": {
+                                                "color": "#1a73e8",
+                                                "label": "metaspinner net GmbH"
+                                            }
+                                        },
+                                        {
+                                            "key": "LVLT-3549",
+                                            "value": {
+                                                "color": "#009886",
+                                                "label": "LVLT-3549"
+                                            }
+                                        },
+                                        {
+                                            "key": "Railnet LLC",
+                                            "value": {
+                                                "color": "#eb730a",
+                                                "label": "Railnet LLC"
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "top": 12,
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "4aa0a46322e32c442926cd8332dcfd4a55f0f11fe7b869462fa5f082d5b2c11e",
+                    "drillDownConfig": {}
+                },
+                {
+                    "name": "18631297-3f70-4a40-b53f-4c432fe70bc3",
+                    "displayName": "TOP 10 IP ADDRESSES BY COUNTRY",
+                    "chartDatasource": {
+                        "dashboardQuery": "1a85fa08-792c-4528-bfe3-e1adad2fd245",
+                        "dataSources": [
+                            "ENTITY"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "PIE",
+                                "encode": {
+                                    "value": "count",
+                                    "itemName": "country"
+                                },
+                                "dataLabel": {
+                                    "show": true
+                                },
+                                "radius": [
+                                    "0%",
+                                    "70%"
+                                ],
+                                "itemStyle": {
+                                    "color": "undefined"
+                                },
+                                "itemColors": {
+                                    "colors": [
+                                        {
+                                            "key": "US",
+                                            "value": {
+                                                "color": "#1a73e8",
+                                                "label": "US"
+                                            }
+                                        },
+                                        {
+                                            "key": "NL",
+                                            "value": {
+                                                "color": "#e51f8f",
+                                                "label": "NL"
+                                            }
+                                        },
+                                        {
+                                            "key": "DE",
+                                            "value": {
+                                                "color": "#ec453b",
+                                                "label": "DE"
+                                            }
+                                        },
+                                        {
+                                            "key": "HU",
+                                            "value": {
+                                                "color": "#ec453b",
+                                                "label": "HU"
+                                            }
+                                        },
+                                        {
+                                            "key": "RU",
+                                            "value": {
+                                                "color": "#e51f8f",
+                                                "label": "RU"
+                                            }
+                                        },
+                                        {
+                                            "key": "TR",
+                                            "value": {
+                                                "color": "#10a3b7",
+                                                "label": "TR"
+                                            }
+                                        },
+                                        {
+                                            "key": "CH",
+                                            "value": {
+                                                "color": "#4aa207",
+                                                "label": "CH"
+                                            }
+                                        },
+                                        {
+                                            "key": "CA",
+                                            "value": {
+                                                "color": "#5350fb",
+                                                "label": "CA"
+                                            }
+                                        },
+                                        {
+                                            "key": "GB",
+                                            "value": {
+                                                "color": "#009886",
+                                                "label": "GB"
+                                            }
+                                        },
+                                        {
+                                            "key": "BG",
+                                            "value": {
+                                                "color": "#eb730a",
+                                                "label": "BG"
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "top": 12,
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "5f2759e7b5c40fd07a5a95005de2217e6d18648a8db8915b14445f9ee9bdf072",
+                    "drillDownConfig": {}
+                },
+                {
+                    "name": "f09a7dac-ceba-4aef-bc53-78013b221aab",
+                    "displayName": "INGESTED INDICATORS BY NOTIFICATION ORIGIN",
+                    "chartDatasource": {
+                        "dashboardQuery": "b5fecbe9-b141-4cd8-a993-7ea31a5fbb27",
+                        "dataSources": [
+                            "ENTITY"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesName": "none",
+                                "seriesType": "BAR",
+                                "encode": {
+                                    "x": "count",
+                                    "y": "notificationorigin"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#1a73e8"
+                                },
+                                "seriesUniqueValue": "none"
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "CATEGORY",
+                                "displayName": "COUNT"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "CATEGORY",
+                                "displayName": "NOTIFICATION ORIGIN"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "aed9f1ea42b3949c9af8ffe11b606efe6e23be54e7acfbcae6b456d2ef74f46c",
+                    "drillDownConfig": {}
+                },
+                {
+                    "name": "c3cf152c-f3d9-49f3-9715-1deb44304c16",
+                    "displayName": "NONE SEVERITY",
+                    "chartDatasource": {
+                        "dashboardQuery": "1ebe8781-2dcf-45ed-86a7-da6dd7d0269b",
+                        "dataSources": [
+                            "ENTITY"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "TEXT",
+                                "label": "NONE SEVERITY",
+                                "field": "count",
+                                "metricTrendConfig": {
+                                    "metricFormat": "METRIC_FORMAT_NUMBER",
+                                    "metricDisplayTrend": "METRIC_DISPLAY_TREND_ABSOLUTE_VALUE",
+                                    "metricTrendType": "METRIC_TREND_TYPE_REGULAR"
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "8b1d4f10392307d53c517a8885509f5dcb687b99fd531ac2b945729a75016870",
+                    "drillDownConfig": {}
+                },
+                {
+                    "name": "8730a25b-009d-4e88-a4e6-e98119f5f2ff",
+                    "displayName": "INGESTED INDICATORS SEVERITY OVER TIME",
+                    "chartDatasource": {
+                        "dashboardQuery": "a0813a5e-3c78-48a1-99b6-2769c5b496d7",
+                        "dataSources": [
+                            "ENTITY"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesName": "LOW",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "time",
+                                    "y": "count"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#1a73e8"
+                                },
+                                "seriesUniqueValue": "LOW"
+                            },
+                            {
+                                "seriesName": "UNKNOWN_SEVERITY",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "time",
+                                    "y": "count"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#eb730a"
+                                },
+                                "seriesUniqueValue": "UNKNOWN_SEVERITY"
+                            },
+                            {
+                                "seriesName": "HIGH",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "time",
+                                    "y": "count"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#10a3b7"
+                                },
+                                "seriesUniqueValue": "HIGH"
+                            },
+                            {
+                                "seriesName": "MEDIUM",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "time",
+                                    "y": "count"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#ec453b"
+                                },
+                                "seriesUniqueValue": "MEDIUM"
+                            },
+                            {
+                                "seriesName": "NONE",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "time",
+                                    "y": "count"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#e51f8f"
+                                },
+                                "seriesUniqueValue": "NONE"
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "CATEGORY",
+                                "displayName": "TIME"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE",
+                                "displayName": "COUNT"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "top": 12,
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "seriesColumn": [
+                            "severity"
+                        ],
+                        "groupingType": "Grouped"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "f3e3e1073f654946228ef88820c6050508846fda7aa602a0b3cdcc6b5bf8357b",
+                    "drillDownConfig": {}
+                },
+                {
+                    "name": "909cbec6-b096-49d3-88ae-3b77ae3943e4",
+                    "displayName": "TOP 10 DOMAINS BY VERDICT",
+                    "chartDatasource": {
+                        "dashboardQuery": "eeebbf35-10be-4005-bc2c-09df72d862a0",
+                        "dataSources": [
+                            "ENTITY"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "PIE",
+                                "encode": {
+                                    "value": "count",
+                                    "itemName": "verdict"
+                                },
+                                "dataLabel": {
+                                    "show": true
+                                },
+                                "radius": [
+                                    "0%",
+                                    "70%"
+                                ],
+                                "itemStyle": {
+                                    "color": "undefined"
+                                },
+                                "itemColors": {
+                                    "colors": [
+                                        {
+                                            "key": "MALICIOUS",
+                                            "value": {
+                                                "color": "#1a73e8",
+                                                "label": "MALICIOUS"
+                                            }
+                                        },
+                                        {
+                                            "key": "SUSPICIOUS",
+                                            "value": {
+                                                "color": "#10a3b7",
+                                                "label": "SUSPICIOUS"
+                                            }
+                                        },
+                                        {
+                                            "key": "THREAT_VERDICT_UNSPECIFIED",
+                                            "value": {
+                                                "color": "#eb730a",
+                                                "label": "THREAT_VERDICT_UNSPECIFIED"
+                                            }
+                                        },
+                                        {
+                                            "key": "UNDETECTED",
+                                            "value": {
+                                                "color": "#ec453b",
+                                                "label": "UNDETECTED"
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "top": 12,
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "e2d392603ffacd0684bb2c6ec0c454e6ee8774afc15c645dfee11372913c0bc3",
+                    "drillDownConfig": {}
+                },
+                {
+                    "name": "c0017c3d-6a8f-4fad-afd4-cdc4a9502787",
+                    "displayName": "UNKNOWN SEVERITY",
+                    "chartDatasource": {
+                        "dashboardQuery": "c530d64e-177f-46cc-95ab-8ea3c1099e21",
+                        "dataSources": [
+                            "ENTITY"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "TEXT",
+                                "label": "UNKNOWN SEVERITY",
+                                "field": "count",
+                                "metricTrendConfig": {
+                                    "metricFormat": "METRIC_FORMAT_PLAIN_TEXT",
+                                    "metricDisplayTrend": "METRIC_DISPLAY_TREND_ABSOLUTE_VALUE",
+                                    "metricTrendType": "METRIC_TREND_TYPE_REGULAR"
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "a98bb7696a1dcef9f7cf1ac6313896de965e0e8a3f7ebf758dcdfca6fad76cc3",
+                    "drillDownConfig": {}
+                },
+                {
+                    "name": "9b7ef6db-ab92-47c8-8f4a-9e2e2879c383",
+                    "displayName": "TOP 10 URLS BY TOP LEVEL DOMAIN",
+                    "chartDatasource": {
+                        "dashboardQuery": "3dbc3843-53ce-4f78-b2e7-28b1ace6d916",
+                        "dataSources": [
+                            "ENTITY"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "PIE",
+                                "encode": {
+                                    "value": "count",
+                                    "itemName": "tld"
+                                },
+                                "dataLabel": {
+                                    "show": true
+                                },
+                                "radius": [
+                                    "0%",
+                                    "70%"
+                                ],
+                                "itemStyle": {
+                                    "color": "undefined"
+                                },
+                                "itemColors": {
+                                    "colors": [
+                                        {
+                                            "key": "org",
+                                            "value": {
+                                                "color": "#ec453b",
+                                                "label": "org"
+                                            }
+                                        },
+                                        {
+                                            "key": "com",
+                                            "value": {
+                                                "color": "#10a3b7",
+                                                "label": "com"
+                                            }
+                                        },
+                                        {
+                                            "key": "EMPTY",
+                                            "value": {
+                                                "color": "#6f7585",
+                                                "label": "EMPTY"
+                                            }
+                                        },
+                                        {
+                                            "key": "ru",
+                                            "value": {
+                                                "color": "#009886",
+                                                "label": "ru"
+                                            }
+                                        },
+                                        {
+                                            "key": "shop",
+                                            "value": {
+                                                "color": "#eb730a",
+                                                "label": "shop"
+                                            }
+                                        },
+                                        {
+                                            "key": "top",
+                                            "value": {
+                                                "color": "#1a73e8",
+                                                "label": "top"
+                                            }
+                                        },
+                                        {
+                                            "key": "su",
+                                            "value": {
+                                                "color": "#4aa207",
+                                                "label": "su"
+                                            }
+                                        },
+                                        {
+                                            "key": "me",
+                                            "value": {
+                                                "color": "#e51f8f",
+                                                "label": "me"
+                                            }
+                                        },
+                                        {
+                                            "key": "my",
+                                            "value": {
+                                                "color": "#eb730a",
+                                                "label": "my"
+                                            }
+                                        },
+                                        {
+                                            "key": "xin",
+                                            "value": {
+                                                "color": "#6f7585",
+                                                "label": "xin"
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "top": 12,
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "df03f5cb499921295a9c32f52b6f58cd1a157f1e5f6253c8856caf82ce6b6e5e",
+                    "drillDownConfig": {}
+                },
+                {
+                    "name": "894ee188-d228-410e-a4e3-c3d8285a9502",
+                    "displayName": "MEDIUM SEVERITY",
+                    "chartDatasource": {
+                        "dashboardQuery": "c08c9d0a-67c5-47e8-9c29-58c52e0db778",
+                        "dataSources": [
+                            "ENTITY"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "TEXT",
+                                "label": "MEDIUM SEVERITY",
+                                "field": "count",
+                                "metricTrendConfig": {
+                                    "metricFormat": "METRIC_FORMAT_PLAIN_TEXT",
+                                    "metricDisplayTrend": "METRIC_DISPLAY_TREND_ABSOLUTE_VALUE",
+                                    "metricTrendType": "METRIC_TREND_TYPE_REGULAR"
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "0c9ae16a315332624d231c4e326dbc08417efa261e63b25879b8b7b4e71b2b56",
+                    "drillDownConfig": {}
+                },
+                {
+                    "name": "fe72a141-a0ed-4c49-8e12-f10a6492ec9e",
+                    "displayName": "TOP 10 FILES BY FILE TYPE",
+                    "chartDatasource": {
+                        "dashboardQuery": "2f8c73fc-5f07-40e5-9fd6-e7207a42495a",
+                        "dataSources": [
+                            "ENTITY"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "PIE",
+                                "encode": {
+                                    "value": "count",
+                                    "itemName": "tags"
+                                },
+                                "dataLabel": {
+                                    "show": true
+                                },
+                                "radius": [
+                                    "0%",
+                                    "70%"
+                                ],
+                                "itemStyle": {
+                                    "color": "undefined"
+                                },
+                                "itemColors": {
+                                    "colors": [
+                                        {
+                                            "key": "executable",
+                                            "value": {
+                                                "color": "#6f7585",
+                                                "label": "executable"
+                                            }
+                                        },
+                                        {
+                                            "key": "windows",
+                                            "value": {
+                                                "color": "#10a3b7",
+                                                "label": "windows"
+                                            }
+                                        },
+                                        {
+                                            "key": "win32",
+                                            "value": {
+                                                "color": "#e51f8f",
+                                                "label": "win32"
+                                            }
+                                        },
+                                        {
+                                            "key": "pe",
+                                            "value": {
+                                                "color": "#1a73e8",
+                                                "label": "pe"
+                                            }
+                                        },
+                                        {
+                                            "key": "peexe",
+                                            "value": {
+                                                "color": "#923ef9",
+                                                "label": "peexe"
+                                            }
+                                        },
+                                        {
+                                            "key": "overlay",
+                                            "value": {
+                                                "color": "#ec453b",
+                                                "label": "overlay"
+                                            }
+                                        },
+                                        {
+                                            "key": "64bits",
+                                            "value": {
+                                                "color": "#5350fb",
+                                                "label": "64bits"
+                                            }
+                                        },
+                                        {
+                                            "key": "detect-debug-environment",
+                                            "value": {
+                                                "color": "#4aa207",
+                                                "label": "detect-debug-environment"
+                                            }
+                                        },
+                                        {
+                                            "key": "long-sleeps",
+                                            "value": {
+                                                "color": "#5350fb",
+                                                "label": "long-sleeps"
+                                            }
+                                        },
+                                        {
+                                            "key": "spreader",
+                                            "value": {
+                                                "color": "#eb730a",
+                                                "label": "spreader"
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "top": 12,
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "e60ced0cb91c7eaff22aae436d0a3767e196fa70665db07ca9150d3f30500855",
+                    "drillDownConfig": {}
+                },
+                {
+                    "name": "d043c9a2-ce1a-47ea-9633-8163e61a3d60",
+                    "displayName": "markdown",
+                    "visualization": {
+                        "markdown": {
+                            "content": "## FLAGGED IOCS \n---\n#### It displays the count of malicious flagged IOCs.\n",
+                            "properties": {
+                                "backgroundColor": "transparent"
+                            }
+                        }
+                    },
+                    "tileType": "TILE_TYPE_MARKDOWN",
+                    "etag": "e919db71b94b9f36a485ec2496bfd805602e70e312116ba7ba86e85812d05d65"
+                },
+                {
+                    "name": "9fb2f7bc-2578-46cc-a765-a3dc9959de0b",
+                    "displayName": "TOP 10 VPN, TOR AND PROXY IP ADDRESSES BY VERDICT",
+                    "chartDatasource": {
+                        "dashboardQuery": "3a5b6f52-20f7-41dc-a023-f659623611a9",
+                        "dataSources": [
+                            "ENTITY"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "PIE",
+                                "encode": {
+                                    "value": "count",
+                                    "itemName": "verdict"
+                                },
+                                "dataLabel": {
+                                    "show": true
+                                },
+                                "radius": [
+                                    "0%",
+                                    "70%"
+                                ],
+                                "itemStyle": {
+                                    "color": "undefined"
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "top": 12,
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "2700ff8dddbcc43df458648f0130ac9b9df56b49e393e97f3aa7c1bde3149e41",
+                    "drillDownConfig": {}
+                },
+                {
+                    "name": "d396c973-b6db-4cc5-84ac-d4df0d5f2831",
+                    "displayName": "markdown",
+                    "visualization": {
+                        "markdown": {
+                            "content": "## DOMAIN IOCS \n---\n#### A Domain object encapsulates information pertaining to a specific domain or Fully Qualified Domain Name (FQDN).",
+                            "properties": {
+                                "backgroundColor": "transparent"
+                            }
+                        }
+                    },
+                    "tileType": "TILE_TYPE_MARKDOWN",
+                    "etag": "b04ad53c46945a451ca6a400e36e4a7076991a66951c1cda83cb715fed8b1bed"
+                },
+                {
+                    "name": "966ad63f-6aa3-44b8-b394-580b891b7630",
+                    "displayName": "TOP 10 FILES BY VERDICT",
+                    "chartDatasource": {
+                        "dashboardQuery": "49ffcf60-1522-4289-953b-871fa6dffc00",
+                        "dataSources": [
+                            "ENTITY"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "PIE",
+                                "encode": {
+                                    "value": "count",
+                                    "itemName": "verdict"
+                                },
+                                "dataLabel": {
+                                    "show": true
+                                },
+                                "radius": [
+                                    "0%",
+                                    "70%"
+                                ],
+                                "itemStyle": {
+                                    "color": "undefined"
+                                },
+                                "itemColors": {
+                                    "colors": [
+                                        {
+                                            "key": "MALICIOUS",
+                                            "value": {
+                                                "color": "#1a73e8",
+                                                "label": "MALICIOUS"
+                                            }
+                                        },
+                                        {
+                                            "key": "THREAT_VERDICT_UNSPECIFIED",
+                                            "value": {
+                                                "color": "#eb730a",
+                                                "label": "THREAT_VERDICT_UNSPECIFIED"
+                                            }
+                                        },
+                                        {
+                                            "key": "UNDETECTED",
+                                            "value": {
+                                                "color": "#10a3b7",
+                                                "label": "UNDETECTED"
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "top": 12,
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "a42041cc71a0b98071a94ba15a1db2b58ae347dce78ceb4ae1819f3655673eb9",
+                    "drillDownConfig": {}
+                },
+                {
+                    "name": "f46c67fe-2fab-4010-a2a0-b0d0d14694bb",
+                    "displayName": "TOP 10 FILES BY THREAT LABEL",
+                    "chartDatasource": {
+                        "dashboardQuery": "a9fda052-8e4c-4212-af26-91403f150d69",
+                        "dataSources": [
+                            "ENTITY"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "PIE",
+                                "encode": {
+                                    "value": "count",
+                                    "itemName": "threatlabel"
+                                },
+                                "dataLabel": {
+                                    "show": true
+                                },
+                                "radius": [
+                                    "0%",
+                                    "70%"
+                                ],
+                                "itemStyle": {
+                                    "color": "undefined"
+                                },
+                                "itemColors": {
+                                    "colors": [
+                                        {
+                                            "key": "miner.toolxmr/xmrminer",
+                                            "value": {
+                                                "color": "#10a3b7",
+                                                "label": "miner.toolxmr/xmrminer"
+                                            }
+                                        },
+                                        {
+                                            "key": "miner.banload/gen8",
+                                            "value": {
+                                                "color": "#009886",
+                                                "label": "miner.banload/gen8"
+                                            }
+                                        },
+                                        {
+                                            "key": "miner.xmrminer/grandoreiro",
+                                            "value": {
+                                                "color": "#e51f8f",
+                                                "label": "miner.xmrminer/grandoreiro"
+                                            }
+                                        },
+                                        {
+                                            "key": "miner.xmrminer/toolxmr",
+                                            "value": {
+                                                "color": "#923ef9",
+                                                "label": "miner.xmrminer/toolxmr"
+                                            }
+                                        },
+                                        {
+                                            "key": "miner.banload",
+                                            "value": {
+                                                "color": "#e51f8f",
+                                                "label": "miner.banload"
+                                            }
+                                        },
+                                        {
+                                            "key": "miner.banload/malxmr",
+                                            "value": {
+                                                "color": "#1a73e8",
+                                                "label": "miner.banload/malxmr"
+                                            }
+                                        },
+                                        {
+                                            "key": "miner.banload/bcnn",
+                                            "value": {
+                                                "color": "#5350fb",
+                                                "label": "miner.banload/bcnn"
+                                            }
+                                        },
+                                        {
+                                            "key": "miner.banload/bitminer",
+                                            "value": {
+                                                "color": "#eb730a",
+                                                "label": "miner.banload/bitminer"
+                                            }
+                                        },
+                                        {
+                                            "key": "miner.toolxmr/xmrig",
+                                            "value": {
+                                                "color": "#5350fb",
+                                                "label": "miner.toolxmr/xmrig"
+                                            }
+                                        },
+                                        {
+                                            "key": "miner.xmrminer/malxmr",
+                                            "value": {
+                                                "color": "#6f7585",
+                                                "label": "miner.xmrminer/malxmr"
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "top": 12,
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "f83bfe81758d506a1a6f837d65d96e73814dfdab44148002584cd53817feaad6",
+                    "drillDownConfig": {}
+                },
+                {
+                    "name": "441865b0-0d2d-4ec9-83cd-fb38b9a361c1",
+                    "displayName": "DOMAINS",
+                    "chartDatasource": {
+                        "dashboardQuery": "f0910022-0d3f-45ad-86aa-55795ed9e282",
+                        "dataSources": [
+                            "ENTITY"
+                        ]
+                    },
+                    "visualization": {
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "columnDefs": [
+                            {
+                                "field": "time",
+                                "header": "LAST INGESTED IN SECOPS"
+                            },
+                            {
+                                "field": "entityid",
+                                "header": "DOMAIN[Redirect To GTI]"
+                            },
+                            {
+                                "field": "threatscore",
+                                "header": "THREAT SCORE"
+                            },
+                            {
+                                "field": "verdict",
+                                "header": "VERDICT"
+                            },
+                            {
+                                "field": "severity",
+                                "header": "SEVERITY"
+                            },
+                            {
+                                "field": "tld",
+                                "header": "TOP LEVEL DOMAIN"
+                            },
+                            {
+                                "field": "detections",
+                                "header": "NO. OF DETECTIONS"
+                            },
+                            {
+                                "field": "tag",
+                                "header": "TAGS[Drill Down]"
+                            },
+                            {
+                                "field": "firstsubmissiontime",
+                                "header": "CREATION DATE"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "c9d5292e4acb81974dc0d6b64316c77e7ced687c0624ea707ee46b69e2c3699f",
+                    "drillDownConfig": {
+                        "leftDrillDowns": [
+                            {
+                                "id": "3A52B3B5-5453-4A67-AB6F-252784284AE3",
+                                "displayName": "FULL REPORT",
+                                "customSettings": {
+                                    "newTab": true,
+                                    "leftClickColumn": "entityid",
+                                    "externalLink": {
+                                        "link": "https://www.virustotal.com/gui/domain/${entityid}"
+                                    }
+                                }
+                            },
+                            {
+                                "id": "127D217A-B8E8-417B-9B2F-2DED74F3D745",
+                                "displayName": "DOMAIN TAGS",
+                                "customSettings": {
+                                    "newTab": true,
+                                    "leftClickColumn": "tag",
+                                    "query": {
+                                        "query": "graph.metadata.vendor_name = \"Google\"\r\ngraph.metadata.product_name = \"Google Threat Intelligence\"\r\ngraph.additional.fields[\"threat_list_id\"] = \"\"\r\ngraph.metadata.entity_type = \"DOMAIN_NAME\"\r\ngraph.metadata.product_entity_id = ${entityid}\r\nmatch:\r\n    graph.entity.domain.tags\r\n\r\n"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "de6ee875-b536-4049-8016-61083e6416cf",
+                    "displayName": "markdown",
+                    "visualization": {
+                        "markdown": {
+                            "content": "## IP ADDRESS\n---\n#### An IP Address object encapsulates information about a specific IP address.",
+                            "properties": {
+                                "backgroundColor": "transparent"
+                            }
+                        }
+                    },
+                    "tileType": "TILE_TYPE_MARKDOWN",
+                    "etag": "e903a1485a53ae41eedb4587b482d09535c2518410e1668f0b5083d4207c9b15"
+                },
+                {
+                    "name": "20722fb5-154f-44d3-b154-315b6b3116d3",
+                    "displayName": "TOP 10 VPN, TOR AND PROXY IP ADDRESSES BY COUNTRY",
+                    "chartDatasource": {
+                        "dashboardQuery": "4ee309fc-7281-4925-a3b6-35a13c2a3fb1",
+                        "dataSources": [
+                            "ENTITY"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "PIE",
+                                "encode": {
+                                    "value": "count",
+                                    "itemName": "country"
+                                },
+                                "dataLabel": {
+                                    "show": true
+                                },
+                                "radius": [
+                                    "0%",
+                                    "70%"
+                                ],
+                                "itemStyle": {
+                                    "color": "undefined"
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "top": 12,
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "782f17c8dbceb46d978f0585dcdaa03387e80e3228995c13d0204aabe91561fe",
+                    "drillDownConfig": {}
+                },
+                {
+                    "name": "1f461695-6ba9-48a2-beed-dc8891308305",
+                    "displayName": "FLAGGED FILES",
+                    "chartDatasource": {
+                        "dashboardQuery": "b0554a5c-5530-4a21-b10f-20ab80bf16cc",
+                        "dataSources": [
+                            "ENTITY"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "TEXT",
+                                "label": "FLAGGED FILES",
+                                "field": "count",
+                                "metricTrendConfig": {
+                                    "metricFormat": "METRIC_FORMAT_PLAIN_TEXT",
+                                    "metricDisplayTrend": "METRIC_DISPLAY_TREND_ABSOLUTE_VALUE",
+                                    "metricTrendType": "METRIC_TREND_TYPE_REGULAR"
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "95cd57f4efb8bddf9d11a30bdfffc3384da19527eab877ecb933892a3625d6e5",
+                    "drillDownConfig": {}
+                },
+                {
+                    "name": "e98fa5e6-8dc6-4e33-b36c-938bddb1cfe3",
+                    "displayName": "TOP 10 DOMAIN BY TOP LEVEL DOMAIN",
+                    "chartDatasource": {
+                        "dashboardQuery": "1927e9f1-cf71-44e1-881a-63d0c8b8bbf4",
+                        "dataSources": [
+                            "ENTITY"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "PIE",
+                                "encode": {
+                                    "value": "count",
+                                    "itemName": "tld"
+                                },
+                                "dataLabel": {
+                                    "show": true
+                                },
+                                "radius": [
+                                    "0%",
+                                    "70%"
+                                ],
+                                "itemStyle": {
+                                    "color": "undefined"
+                                },
+                                "itemColors": {
+                                    "colors": [
+                                        {
+                                            "key": "ru",
+                                            "value": {
+                                                "color": "#923ef9",
+                                                "label": "ru"
+                                            }
+                                        },
+                                        {
+                                            "key": "su",
+                                            "value": {
+                                                "color": "#4aa207",
+                                                "label": "su"
+                                            }
+                                        },
+                                        {
+                                            "key": "com",
+                                            "value": {
+                                                "color": "#e51f8f",
+                                                "label": "com"
+                                            }
+                                        },
+                                        {
+                                            "key": "top",
+                                            "value": {
+                                                "color": "#ec453b",
+                                                "label": "top"
+                                            }
+                                        },
+                                        {
+                                            "key": "shop",
+                                            "value": {
+                                                "color": "#10a3b7",
+                                                "label": "shop"
+                                            }
+                                        },
+                                        {
+                                            "key": "in",
+                                            "value": {
+                                                "color": "#1a73e8",
+                                                "label": "in"
+                                            }
+                                        },
+                                        {
+                                            "key": "style",
+                                            "value": {
+                                                "color": "#1a73e8",
+                                                "label": "style"
+                                            }
+                                        },
+                                        {
+                                            "key": "app",
+                                            "value": {
+                                                "color": "#eb730a",
+                                                "label": "app"
+                                            }
+                                        },
+                                        {
+                                            "key": "dev",
+                                            "value": {
+                                                "color": "#eb730a",
+                                                "label": "dev"
+                                            }
+                                        },
+                                        {
+                                            "key": "link",
+                                            "value": {
+                                                "color": "#009886",
+                                                "label": "link"
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "top": 12,
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "74640a1626c00a5010e511212e545f0978265dd813af9701d58fcac903115c78",
+                    "drillDownConfig": {}
+                },
+                {
+                    "name": "ef5a5745-f803-4904-8418-27d1d8c83e7b",
+                    "displayName": "HIGH SEVERITY",
+                    "chartDatasource": {
+                        "dashboardQuery": "2d221a28-3461-4d00-9fe1-fd76716aa3b2",
+                        "dataSources": [
+                            "ENTITY"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "TEXT",
+                                "label": "HIGH SEVERITY",
+                                "field": "count",
+                                "metricTrendConfig": {
+                                    "metricFormat": "METRIC_FORMAT_PLAIN_TEXT",
+                                    "metricDisplayTrend": "METRIC_DISPLAY_TREND_ABSOLUTE_VALUE",
+                                    "metricTrendType": "METRIC_TREND_TYPE_REGULAR"
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "f6cc6bb4e90d5cf0a5f3371fe74a4db2320a0554df808dd34d9efd5a393c713e",
+                    "drillDownConfig": {}
+                },
+                {
+                    "name": "ebde4d26-329a-468a-85ae-bce48f56f335",
+                    "displayName": "markdown",
+                    "visualization": {
+                        "markdown": {
+                            "content": "## FILE IOCS \n---\n#### File objects represent a fundamental component of the Google Threat Intelligence (GTI) platform. GTI maintains an extensive repository of over two billion files that have undergone detailed analysis. A file object can be acquired by uploading a new file for analysis, querying for an existing file hash, or through various other search functionalities within the service.",
+                            "properties": {
+                                "backgroundColor": "transparent"
+                            }
+                        }
+                    },
+                    "tileType": "TILE_TYPE_MARKDOWN",
+                    "etag": "2a6729d5b56ef92b3284328b9db8898b16205310ae9d39e775ff4f60b7173c01"
+                },
+                {
+                    "name": "df98e0e2-3f94-4915-b4e5-f4ebc54634fe",
+                    "displayName": "markdown",
+                    "visualization": {
+                        "markdown": {
+                            "content": "## URL IOCS \n---\n#### A `URL` (Uniform Resource Locator) object is distinct from a Domain object in that it specifies the complete path to a particular resource, whereas a domain represents the top-level address (e.g., `www.example.com/page.html` VS. `example.com`). Within Google Threat Intelligence (GTI), `URLs` serve a dual purpose. They are not only analyzed as standalone entities but also provide crucial contextual information by linking to files, domains, and other indicators observed at that specific web location.",
+                            "properties": {
+                                "backgroundColor": "transparent"
+                            }
+                        }
+                    },
+                    "tileType": "TILE_TYPE_MARKDOWN",
+                    "etag": "a55ad39b6e30761f4e482810fc76c1595560a75f46c0fb2e702f23bfe9110452"
+                },
+                {
+                    "name": "58f96a02-46c9-49c2-86ee-41cfdc72b8d0",
+                    "displayName": "INGESTED INDICATORS BY TYPE",
+                    "chartDatasource": {
+                        "dashboardQuery": "e38f844e-1eb7-47eb-9b80-b23474c09af8",
+                        "dataSources": [
+                            "ENTITY"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesName": "none",
+                                "seriesType": "BAR",
+                                "encode": {
+                                    "x": "count",
+                                    "y": "entitytype"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#1a73e8"
+                                },
+                                "seriesUniqueValue": "none"
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE",
+                                "displayName": "COUNT"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "CATEGORY",
+                                "displayName": "ENTITY TYPE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "793cc80a87393c72f00b7fe200a7d9ebec9fcbbcb9f610e3dcd21a880ea6679b",
+                    "drillDownConfig": {}
+                },
+                {
+                    "name": "5db4c795-9ed7-48fc-a0a9-f49368cd938c",
+                    "displayName": "LOW SEVERITY",
+                    "chartDatasource": {
+                        "dashboardQuery": "c95f21b3-2f11-439d-a022-a52e0cc7fb16",
+                        "dataSources": [
+                            "ENTITY"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "TEXT",
+                                "label": "LOW SEVERITY",
+                                "field": "count",
+                                "metricTrendConfig": {
+                                    "metricFormat": "METRIC_FORMAT_PLAIN_TEXT",
+                                    "metricDisplayTrend": "METRIC_DISPLAY_TREND_ABSOLUTE_VALUE",
+                                    "metricTrendType": "METRIC_TREND_TYPE_REGULAR"
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "d68212d344e2f904f26c189a531e108ca399ce7307b0ba8e405a81c67f118cca",
+                    "drillDownConfig": {}
+                },
+                {
+                    "name": "f88b5ee8-4d8c-48fb-adc9-2b511fc60156",
+                    "displayName": "FILES",
+                    "chartDatasource": {
+                        "dashboardQuery": "0ed837da-60ac-44dc-a4b8-1a9c6ae4b9eb",
+                        "dataSources": [
+                            "ENTITY"
+                        ]
+                    },
+                    "visualization": {
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "columnDefs": [
+                            {
+                                "field": "time",
+                                "header": "LAST INGESTED IN SECOPS"
+                            },
+                            {
+                                "field": "entityid",
+                                "header": "FILE HASH[Redirect To GTI]"
+                            },
+                            {
+                                "field": "threatscore",
+                                "header": "THREAT SCORE"
+                            },
+                            {
+                                "field": "verdict",
+                                "header": "VERDICT"
+                            },
+                            {
+                                "field": "severity",
+                                "header": "SEVERITY"
+                            },
+                            {
+                                "field": "detections",
+                                "header": "NO. OF DETECTIONS"
+                            },
+                            {
+                                "field": "filetypes",
+                                "header": "FILE TYPE[Drill Down]"
+                            },
+                            {
+                                "field": "threatlabel",
+                                "header": "THREAT LABEL"
+                            },
+                            {
+                                "field": "firstsubmissiontime",
+                                "header": "FIRST SEEN IN GTI"
+                            },
+                            {
+                                "field": "yararules",
+                                "header": "YARA RULES"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "69b00f81cfe562e2504445610f93b6bbab7bf7afff688e850fe3753a2520126b",
+                    "drillDownConfig": {
+                        "leftDrillDowns": [
+                            {
+                                "id": "B731E5EE-961B-49A1-AB3B-BBAD0C75B56F",
+                                "displayName": "Full Report",
+                                "customSettings": {
+                                    "newTab": true,
+                                    "leftClickColumn": "entityid",
+                                    "externalLink": {
+                                        "link": "https://www.virustotal.com/gui/file/${entityid}"
+                                    }
+                                }
+                            },
+                            {
+                                "id": "2F58F69F-D44C-44BF-A3AB-C75B88E12954",
+                                "displayName": "FILE TYPE",
+                                "customSettings": {
+                                    "newTab": true,
+                                    "leftClickColumn": "filetypes",
+                                    "query": {
+                                        "query": "graph.metadata.vendor_name = \"Google\"\r\ngraph.metadata.product_name = \"Google Threat Intelligence\"\r\ngraph.additional.fields[\"threat_list_id\"] = \"\"\r\ngraph.metadata.entity_type = \"FILE\"\r\ngraph.metadata.product_entity_id = ${entityid}\r\n$tags = graph.entity.file.tags\r\nmatch:\r\n    $tags"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "82180ea2-0fe5-4cc0-bbbe-daaa914e6f70",
+                    "displayName": "TOP 10 VPN, TOR AND PROXY P ADDRESSES BY AUTONOMOUS SYSTEM OWNER",
+                    "chartDatasource": {
+                        "dashboardQuery": "b176574d-e791-40aa-866a-777d66e84de8",
+                        "dataSources": [
+                            "ENTITY"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "PIE",
+                                "encode": {
+                                    "value": "count",
+                                    "itemName": "owner"
+                                },
+                                "dataLabel": {
+                                    "show": true
+                                },
+                                "radius": [
+                                    "0%",
+                                    "70%"
+                                ],
+                                "itemStyle": {
+                                    "color": "undefined"
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "top": 12,
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "80de0459ab4bb2650704ed5aaee94445b70dade9a583f7eb6795be1f0192e488",
+                    "drillDownConfig": {}
+                },
+                {
+                    "name": "bf552d11-78eb-465a-9b70-8b6ed1a15c20",
+                    "displayName": "FLAGGED URLS",
+                    "chartDatasource": {
+                        "dashboardQuery": "6c2d1a54-ad5f-4c0a-98e6-e3c20cc61538",
+                        "dataSources": [
+                            "ENTITY"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "TEXT",
+                                "label": "FLAGGED URLs",
+                                "field": "count",
+                                "metricTrendConfig": {
+                                    "metricFormat": "METRIC_FORMAT_PLAIN_TEXT",
+                                    "metricDisplayTrend": "METRIC_DISPLAY_TREND_ABSOLUTE_VALUE",
+                                    "metricTrendType": "METRIC_TREND_TYPE_REGULAR"
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "a9e5abe5fbfea5496d6464aa04c9c2fdae2aa75c11fb1625fc73f0115f513c0b",
+                    "drillDownConfig": {}
+                },
+                {
+                    "name": "a6c61b8d-0986-4ff2-a0fd-a6e581af2005",
+                    "displayName": "FLAGGED IP ADDRESSES",
+                    "chartDatasource": {
+                        "dashboardQuery": "244e7a9c-7585-4b8b-aea4-1d90ef579e09",
+                        "dataSources": [
+                            "ENTITY"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "TEXT",
+                                "label": "FLAGGED ADDRESSES",
+                                "field": "count",
+                                "metricTrendConfig": {
+                                    "metricFormat": "METRIC_FORMAT_PLAIN_TEXT",
+                                    "metricDisplayTrend": "METRIC_DISPLAY_TREND_ABSOLUTE_VALUE",
+                                    "metricTrendType": "METRIC_TREND_TYPE_REGULAR"
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "ff8e8dd09e970f311c8918181aa802ff7dfe9d5e0848163f23d35a93fde66f10",
+                    "drillDownConfig": {}
+                },
+                {
+                    "name": "7ad402f5-29af-4021-93e5-21f62951efcc",
+                    "displayName": "IP ADDRESSES",
+                    "chartDatasource": {
+                        "dashboardQuery": "3a61e881-f508-4679-8541-9bf583ddb944",
+                        "dataSources": [
+                            "ENTITY"
+                        ]
+                    },
+                    "visualization": {
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "columnDefs": [
+                            {
+                                "field": "time",
+                                "header": "LAST INGESTED IN SECOPS"
+                            },
+                            {
+                                "field": "entityid",
+                                "header": "IP ADDRESS[Redirect To GTI]"
+                            },
+                            {
+                                "field": "threatscore",
+                                "header": "THREAT SCORE"
+                            },
+                            {
+                                "field": "verdict",
+                                "header": "VERDICT"
+                            },
+                            {
+                                "field": "severity",
+                                "header": "SEVERITY "
+                            },
+                            {
+                                "field": "detections",
+                                "header": "NO. OF DETECTIONS"
+                            },
+                            {
+                                "field": "location",
+                                "header": "COUNTRY"
+                            },
+                            {
+                                "field": "tags",
+                                "header": "TAGS[Drill Down]"
+                            },
+                            {
+                                "field": "network",
+                                "header": "NETWORK"
+                            },
+                            {
+                                "field": "as",
+                                "header": "AUTONOMOUS SYSTEM OWNER"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "432b6a7afe2abb51287d1aa988a29ad3304356bf2968cd6f37126ef6b15b0c8f",
+                    "drillDownConfig": {
+                        "leftDrillDowns": [
+                            {
+                                "id": "87C585F5-8CD4-4E2B-9F55-ADAAC8D0E4F7",
+                                "displayName": "FULL REPORT",
+                                "customSettings": {
+                                    "newTab": true,
+                                    "leftClickColumn": "entityid",
+                                    "externalLink": {
+                                        "link": "https://www.virustotal.com/gui/ip-address/${entityid}"
+                                    }
+                                }
+                            },
+                            {
+                                "id": "72AC279A-FDF4-405F-B74F-5936F3F84324",
+                                "displayName": "IP ADDRESS TAGS",
+                                "customSettings": {
+                                    "newTab": true,
+                                    "leftClickColumn": "tags",
+                                    "query": {
+                                        "query": "graph.metadata.vendor_name = \"Google\"\r\ngraph.metadata.product_name = \"Google Threat Intelligence\"\r\ngraph.additional.fields[\"threat_list_id\"] = \"\"\r\ngraph.metadata.entity_type = \"IP_ADDRESS\"\r\ngraph.metadata.product_entity_id = ${entityid}\r\n$tags = graph.entity.artifact.tags\r\nmatch:\r\n    $tags"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                }
+            ],
+            "dashboardQueries": [
+                {
+                    "name": "a04b9a1a-a28e-4791-b063-7fbbc50a0aaa",
+                    "query": "graph.metadata.vendor_name = \"Google\"\r\ngraph.metadata.product_name = \"Google Threat Intelligence\"\r\ngraph.additional.fields[\"threat_list_id\"] = \"\"\r\ngraph.metadata.entity_type = \"IP_ADDRESS\"\r\ngraph.entity.artifact.tags = /.*vpn.*/ or graph.entity.artifact.tags = /.*tor.*/ or graph.entity.artifact.tags = /.*proxy.*/\r\n$ingestedtime = timestamp.get_timestamp(graph.metadata.collected_timestamp.seconds, \"%Y-%m-%d %H:%M:%S\")\r\n$verdict = graph.metadata.threat.threat_verdict\r\n$entityid = graph.metadata.product_entity_id\r\n$threatscore = graph.metadata.threat.risk_score\r\n$severity = graph.metadata.threat.severity\r\n$tag = graph.entity.artifact.tags\r\n$as = if(graph.entity.artifact.as_owner!=\"\",graph.entity.artifact.as_owner,\"-\")\r\n$detections = graph.metadata.threat.verdict_info.malicious_count\r\n$location = if(graph.entity.artifact.location.country_or_region!=\"\",graph.entity.artifact.location.country_or_region,\"-\")\r\n$network = if(graph.entity.artifact.network.ip_subnet_range!=\"\", graph.entity.artifact.network.ip_subnet_range, \"-\")\r\nmatch:\r\n    $entityid, $verdict, $threatscore, $severity, $as, $detections, $location, $network\r\noutcome:\r\n    $time = window.last(cast.as_int($ingestedtime), $ingestedtime)\r\n    $tags = re.replace((arrays.join_string(array_distinct(if($tag!=\"\", $tag, \"-\")),\",\")), \"(,-)|(-,)\",\"\")\r\norder:\r\n    $time desc\r\nlimit:\r\n    10000\r\n",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "90"
+                        }
+                    },
+                    "etag": "7a11c0e153221e2fdc3a65811fe2855c62afba1458957f041c1c8c6ec1cc0658"
+                },
+                {
+                    "name": "95d9b0d7-c93c-44ad-a450-905477f0eb7e",
+                    "query": "graph.metadata.vendor_name = \"Google\"\r\ngraph.metadata.product_name = \"Google Threat Intelligence\"\r\ngraph.additional.fields[\"threat_list_id\"] = \"\"\r\ngraph.metadata.entity_type = \"IP_ADDRESS\"\r\n$owner = graph.entity.artifact.as_owner\r\n$entityid = graph.metadata.product_entity_id\r\nmatch:\r\n    $owner\r\noutcome:\r\n    $count = count_distinct($entityid)\r\norder:\r\n    $count desc\r\nlimit:\r\n    10",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "90"
+                        }
+                    },
+                    "etag": "6a633d20e6fa35e315a11fc6c3f33c6090c8c13343a49c02d612a6f8b7f79bdb"
+                },
+                {
+                    "name": "a9fda052-8e4c-4212-af26-91403f150d69",
+                    "query": "graph.metadata.vendor_name = \"Google\"\r\ngraph.metadata.product_name = \"Google Threat Intelligence\"\r\ngraph.additional.fields[\"threat_list_id\"] = \"\"\r\ngraph.metadata.entity_type = \"FILE\"\r\n$threatlabel = graph.additional.fields[\"popular_threat_classification_suggested_threat_label\"]\r\n$entityid = graph.metadata.product_entity_id\r\nmatch:\r\n    $threatlabel\r\noutcome:\r\n    $count = count_distinct($entityid)\r\norder:\r\n    $count desc\r\nlimit:\r\n    10\r\n",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "90"
+                        }
+                    },
+                    "etag": "17f5f9641237fbfbf970ef33ff47a96a2fc0504a00f32f03762ca05022cde8b6"
+                },
+                {
+                    "name": "3a61e881-f508-4679-8541-9bf583ddb944",
+                    "query": "graph.metadata.vendor_name = \"Google\"\r\ngraph.metadata.product_name = \"Google Threat Intelligence\"\r\ngraph.additional.fields[\"threat_list_id\"] = \"\"\r\ngraph.metadata.entity_type = \"IP_ADDRESS\"\r\n$ingestedtime = timestamp.get_timestamp(graph.metadata.collected_timestamp.seconds, \"%Y-%m-%d %H:%M:%S\")\r\n$verdict = graph.metadata.threat.threat_verdict\r\n$entityid = graph.metadata.product_entity_id\r\n$threatscore = graph.metadata.threat.risk_score\r\n$severity = graph.metadata.threat.severity\r\n$tag = graph.entity.artifact.tags\r\n$as = if(graph.entity.artifact.as_owner!=\"\",graph.entity.artifact.as_owner,\"-\")\r\n$detections = graph.metadata.threat.verdict_info.malicious_count\r\n$location = if(graph.entity.artifact.location.country_or_region!=\"\",graph.entity.artifact.location.country_or_region,\"-\")\r\n$network = if(graph.entity.artifact.network.ip_subnet_range!=\"\", graph.entity.artifact.network.ip_subnet_range, \"-\")\r\nmatch:\r\n    $entityid, $verdict, $threatscore, $severity, $as, $detections, $location, $network\r\noutcome:\r\n    $time = window.last(cast.as_int($ingestedtime), $ingestedtime)\r\n    $tags = re.replace((arrays.join_string(array_distinct(if($tag!=\"\", $tag, \"-\")),\",\")), \"(,-)|(-,)\",\"\")\r\norder:\r\n    $time desc\r\nlimit:\r\n    10000\r\n",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "90"
+                        }
+                    },
+                    "etag": "04b1bfbf88ce99125d4b9a506bb9e4ee8f350c9cb071c792c29840cca6edfb69"
+                },
+                {
+                    "name": "0ed837da-60ac-44dc-a4b8-1a9c6ae4b9eb",
+                    "query": "graph.metadata.vendor_name = \"Google\"\r\ngraph.metadata.product_name = \"Google Threat Intelligence\"\r\ngraph.additional.fields[\"threat_list_id\"] = \"\"\r\ngraph.metadata.entity_type = \"FILE\"\r\n$ingestedtime = timestamp.get_timestamp(graph.metadata.collected_timestamp.seconds, \"%Y-%m-%d %H:%M:%S\")\r\n$verdict = graph.metadata.threat.threat_verdict\r\n$entityid = graph.metadata.product_entity_id\r\n$threatscore = graph.metadata.threat.risk_score\r\n$severity = graph.metadata.threat.severity\r\n$filetype = graph.entity.file.tags\r\n$threatlabel = if(graph.additional.fields[\"popular_threat_classification_suggested_threat_label\"]!=\"\",graph.additional.fields[\"popular_threat_classification_suggested_threat_label\"], \"-\")\r\n$firstsubmissiontime = timestamp.get_timestamp(graph.entity.file.first_submission_time.seconds, \"%Y-%m-%d %H:%M:%S\")\r\n$detections = graph.metadata.threat.verdict_info.malicious_count\r\n$yararules = if(graph.additional.fields[\"crowdsourced_yara_results_count\"]!=\"-\",cast.as_string(cast.as_int(graph.additional.fields[\"crowdsourced_yara_results_count\"]) + 1), \"0\")\r\n$threatscore != 0\r\nmatch:\r\n    $entityid, $verdict, $threatscore, $severity, $firstsubmissiontime, $detections, $threatlabel, $yararules\r\noutcome:\r\n    $time = window.last(cast.as_int($ingestedtime), $ingestedtime)\r\n    $filetypes = re.replace((arrays.join_string(array_distinct(if($filetype!=\"\", $filetype, \"-\")),\",\")), \"(,-)|(-,)\",\"\")\r\norder:\r\n    $time desc\r\nlimit:\r\n    10000\r\n",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "90"
+                        }
+                    },
+                    "etag": "cfcddecf59611697d10f4ac5245cd85c1f6fa65db2b2e2329174e09b6194884b"
+                },
+                {
+                    "name": "1927e9f1-cf71-44e1-881a-63d0c8b8bbf4",
+                    "query": "graph.metadata.vendor_name = \"Google\"\r\ngraph.metadata.product_name = \"Google Threat Intelligence\"\r\ngraph.additional.fields[\"threat_list_id\"] = \"\"\r\ngraph.metadata.entity_type = \"DOMAIN_NAME\"\r\n$tld = graph.additional.fields[\"tld\"]\r\n$entityid = graph.metadata.product_entity_id\r\nmatch:\r\n    $tld\r\noutcome:\r\n    $count = count_distinct($entityid)\r\norder:\r\n    $count desc\r\nlimit:\r\n    10\r\n",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "90"
+                        }
+                    },
+                    "etag": "d79a01f41988f9948f64695630c75f0082af5b860d154782d7df11a27d9ff416"
+                },
+                {
+                    "name": "49ffcf60-1522-4289-953b-871fa6dffc00",
+                    "query": "graph.metadata.vendor_name = \"Google\"\r\ngraph.metadata.product_name = \"Google Threat Intelligence\"\r\ngraph.additional.fields[\"threat_list_id\"] = \"\"\r\ngraph.metadata.entity_type = \"FILE\"\r\n$verdict = graph.metadata.threat.threat_verdict\r\n$entityid = graph.metadata.product_entity_id\r\nmatch:\r\n    $verdict\r\noutcome:\r\n    $count = count_distinct($entityid)\r\norder:\r\n    $count desc\r\nlimit:\r\n    10\r\n",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "90"
+                        }
+                    },
+                    "etag": "972830edc330ff9b833e23fc1dbb0d100a9882c5aa47b6f046fdd151d540c409"
+                },
+                {
+                    "name": "2d221a28-3461-4d00-9fe1-fd76716aa3b2",
+                    "query": "graph.metadata.vendor_name = \"Google\"\r\ngraph.metadata.product_name = \"Google Threat Intelligence\"\r\ngraph.additional.fields[\"threat_list_id\"] = \"\"\r\ngraph.metadata.threat.severity = \"HIGH\"\r\n$entityid = graph.metadata.product_entity_id\r\noutcome:\r\n    $count=count_distinct($entityid)",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "90"
+                        }
+                    },
+                    "etag": "0ac83851bd788f985a01d200c6947c39ff6e5c97a7cf4787e6443e75947fe0d5"
+                },
+                {
+                    "name": "1a85fa08-792c-4528-bfe3-e1adad2fd245",
+                    "query": "graph.metadata.vendor_name = \"Google\"\r\ngraph.metadata.product_name = \"Google Threat Intelligence\"\r\ngraph.additional.fields[\"threat_list_id\"] = \"\"\r\ngraph.metadata.entity_type = \"IP_ADDRESS\"\r\n$country = graph.entity.artifact.location.country_or_region\r\n$entityid = graph.metadata.product_entity_id\r\nmatch:\r\n    $country\r\noutcome:\r\n    $count = count_distinct($entityid)\r\norder:\r\n    $count desc\r\nlimit:\r\n    10\r\n",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "90"
+                        }
+                    },
+                    "etag": "816410728853b7182b1b3540dcf00870a540f4168b2351fdfb89f6dc1ce44888"
+                },
+                {
+                    "name": "c530d64e-177f-46cc-95ab-8ea3c1099e21",
+                    "query": "graph.metadata.vendor_name = \"Google\"\r\ngraph.metadata.product_name = \"Google Threat Intelligence\"\r\ngraph.additional.fields[\"threat_list_id\"] = \"\"\r\ngraph.metadata.threat.severity = \"UNKNOWN_SEVERITY\"\r\n$entityid = graph.metadata.product_entity_id\r\noutcome:\r\n    $count=count_distinct($entityid)",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "90"
+                        }
+                    },
+                    "etag": "76331d487b5ac19219b72e91721020be35a8138950a3b9514995ebea5f41a48f"
+                },
+                {
+                    "name": "1212fe1a-b2c0-453b-ab11-5b38292d39cc",
+                    "query": "graph.metadata.vendor_name = \"Google\"\r\ngraph.metadata.product_name = \"Google Threat Intelligence\"\r\ngraph.additional.fields[\"threat_list_id\"] = \"\"\r\ngraph.metadata.entity_type = \"URL\"\r\n$ingestedtime = timestamp.get_timestamp(graph.metadata.collected_timestamp.seconds, \"%Y-%m-%d %H:%M:%S\")\r\n$verdict = graph.metadata.threat.threat_verdict\r\n$entityid = graph.metadata.product_entity_id\r\n$url = graph.entity.url\r\n$threatscore = graph.metadata.threat.risk_score\r\n$severity = graph.metadata.threat.severity\r\n$tld = if(graph.additional.fields[\"tld\"]!=\"\", graph.additional.fields[\"tld\"], \"-\")\r\n$tag = graph.entity.url_metadata.tags\r\n$detections = graph.metadata.threat.verdict_info.malicious_count\r\nmatch:\r\n    $entityid, $verdict, $url, $threatscore, $severity, $tld, $detections\r\noutcome:\r\n    $time = window.last(cast.as_int($ingestedtime), $ingestedtime)\r\n    $tags = re.replace((arrays.join_string(array_distinct(if($tag!=\"\", $tag, \"-\")),\",\")), \"(,-)|(-,)\",\"\")\r\norder:\r\n    $time desc\r\nlimit:\r\n    10000\r\n\r\n",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "90"
+                        }
+                    },
+                    "etag": "8c633dadfa9be1a108267d849661b5b7dc447c235444a34e56a5f9a4e1c9770b"
+                },
+                {
+                    "name": "6c2d1a54-ad5f-4c0a-98e6-e3c20cc61538",
+                    "query": "graph.metadata.vendor_name = \"Google\"\r\ngraph.metadata.product_name = \"Google Threat Intelligence\"\r\ngraph.additional.fields[\"threat_list_id\"] = \"\"\r\ngraph.metadata.entity_type = \"URL\"\r\ngraph.metadata.threat.threat_verdict = \"MALICIOUS\" or graph.metadata.threat.threat_verdict = \"SUSPICIOUS\"\r\n$entityid = graph.metadata.product_entity_id\r\noutcome:\r\n    $count = count_distinct($entityid)\r\n",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "90"
+                        }
+                    },
+                    "etag": "e3c766130f9b34320b4a8b37b2c1ea84b2af28e2fde2668681e787fb9581c95b"
+                },
+                {
+                    "name": "88a1d48c-398b-4c8d-b904-279c82fd911b",
+                    "query": "graph.metadata.vendor_name = \"Google\"\r\ngraph.metadata.product_name = \"Google Threat Intelligence\"\r\ngraph.additional.fields[\"threat_list_id\"] = \"\"\r\ngraph.metadata.entity_type = \"IP_ADDRESS\"\r\ngraph.entity.artifact.tags = /.*vpn.*/ or graph.entity.artifact.tags = /.*tor.*/ or graph.entity.artifact.tags = /.*proxy.*/\r\n$entityid = graph.metadata.product_entity_id\r\noutcome:\r\n    $count = count_distinct($entityid)\r\n",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "90"
+                        }
+                    },
+                    "etag": "5c05f3b0107685a9f5fa69d1b4e329bc7f5888789a79fa0c4847f5643e9b6959"
+                },
+                {
+                    "name": "e38f844e-1eb7-47eb-9b80-b23474c09af8",
+                    "query": "graph.metadata.vendor_name = \"Google\"\r\ngraph.metadata.product_name = \"Google Threat Intelligence\"\r\ngraph.additional.fields[\"threat_list_id\"] = \"\"\r\n$entityid = graph.metadata.product_entity_id\r\n$entitytype = graph.metadata.entity_type\r\nmatch:\r\n    $entitytype\r\noutcome:\r\n    $count=count_distinct($entityid)\r\norder:\r\n    $count desc\r\nlimit:\r\n    10000",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "90"
+                        }
+                    },
+                    "etag": "33ac3f11e8c779d8ce67f6a503b627ba8fcfb967cd2501aa05b846c0f564dcd9"
+                },
+                {
+                    "name": "d02a294b-9888-46ff-9175-a22438443c98",
+                    "query": "graph.metadata.vendor_name = \"Google\"\r\ngraph.metadata.product_name = \"Google Threat Intelligence\"\r\ngraph.additional.fields[\"threat_list_id\"] = \"\"\r\n$entityid = graph.metadata.product_entity_id\r\noutcome:\r\n    $count=count_distinct($entityid)",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "90"
+                        }
+                    },
+                    "etag": "b43f359dfedb5376d7596605317c4e59d0dcb6c506b069ac6dc1bf1bd71991b2"
+                },
+                {
+                    "name": "cfb0c9cd-7f66-47c7-a2f1-5c79f0b1df7d",
+                    "query": "graph.metadata.vendor_name = \"Google\"\r\ngraph.metadata.product_name = \"Google Threat Intelligence\"\r\ngraph.additional.fields[\"threat_list_id\"] = \"\"\r\ngraph.metadata.entity_type = \"DOMAIN_NAME\"\r\ngraph.metadata.threat.threat_verdict = \"MALICIOUS\" or graph.metadata.threat.threat_verdict = \"SUSPICIOUS\"\r\n$entityid = graph.metadata.product_entity_id\r\noutcome:\r\n    $count = count_distinct($entityid)\r\n",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "90"
+                        }
+                    },
+                    "etag": "533ee72d790cccbcca82d5e66e2ecc09dd5e553efe7238c44016a565ca5f876c"
+                },
+                {
+                    "name": "2f8c73fc-5f07-40e5-9fd6-e7207a42495a",
+                    "query": "graph.metadata.vendor_name = \"Google\"\r\ngraph.metadata.product_name = \"Google Threat Intelligence\"\r\ngraph.additional.fields[\"threat_list_id\"] = \"\"\r\ngraph.metadata.entity_type = \"FILE\"\r\n$tags = graph.entity.file.tags\r\n$entityid = graph.metadata.product_entity_id\r\nmatch:\r\n    $tags\r\noutcome:\r\n    $count = count_distinct($entityid)\r\norder:\r\n    $count desc\r\nlimit:\r\n    10\r\n",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "90"
+                        }
+                    },
+                    "etag": "97dbabf87d2fd3b4fb18b74ffdf22b36922f553b2aa4b8566c3b2f1404400f73"
+                },
+                {
+                    "name": "1ebe8781-2dcf-45ed-86a7-da6dd7d0269b",
+                    "query": "graph.metadata.vendor_name = \"Google\"\r\ngraph.metadata.product_name = \"Google Threat Intelligence\"\r\ngraph.additional.fields[\"threat_list_id\"] = \"\"\r\ngraph.metadata.threat.severity = \"NONE\"\r\n$entityid = graph.metadata.product_entity_id\r\noutcome:\r\n    $count=count_distinct($entityid)",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "90"
+                        }
+                    },
+                    "etag": "44591b33d8326d2bd22665952d251cb86f4ef75fc3c5107d89d7d51cef056abf"
+                },
+                {
+                    "name": "a0813a5e-3c78-48a1-99b6-2769c5b496d7",
+                    "query": "graph.metadata.vendor_name = \"Google\"\r\ngraph.metadata.product_name = \"Google Threat Intelligence\"\r\ngraph.additional.fields[\"threat_list_id\"] = \"\"\r\n$time=timestamp.get_timestamp(graph.metadata.interval.start_time.seconds, \"%Y-%m-%d\")\r\n$severity = graph.metadata.threat.severity\r\n$entityid = graph.metadata.product_entity_id\r\nmatch:\r\n    $time, $severity\r\noutcome:\r\n    $count=count_distinct($entityid)\r\norder:\r\n    $count desc\r\nlimit:\r\n    10000",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "90"
+                        }
+                    },
+                    "etag": "112564d39778090adfc57b79547f0884da651a9485ad93c3018efd50505e3c40"
+                },
+                {
+                    "name": "3a5b6f52-20f7-41dc-a023-f659623611a9",
+                    "query": "graph.metadata.vendor_name = \"Google\"\r\ngraph.metadata.product_name = \"Google Threat Intelligence\"\r\ngraph.additional.fields[\"threat_list_id\"] = \"\"\r\ngraph.metadata.entity_type = \"IP_ADDRESS\"\r\ngraph.entity.artifact.tags = /.*vpn.*/ or graph.entity.artifact.tags = /.*tor.*/ or graph.entity.artifact.tags = /.*proxy.*/\r\n$verdict = graph.metadata.threat.threat_verdict\r\n$entityid = graph.metadata.product_entity_id\r\nmatch:\r\n    $verdict\r\noutcome:\r\n    $count = count_distinct($entityid)\r\norder:\r\n    $count desc\r\nlimit:\r\n    10\r\n",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "90"
+                        }
+                    },
+                    "etag": "3d8c149f9deb8d36aeec4bcbf4aeb9188510602d380a9dd6c2adbcb953e28239"
+                },
+                {
+                    "name": "7713a75b-426e-4684-9e41-4f0c9618a0a1",
+                    "query": "graph.metadata.vendor_name = \"Google\"\r\ngraph.metadata.product_name = \"Google Threat Intelligence\"\r\ngraph.additional.fields[\"threat_list_id\"] = \"\"\r\ngraph.metadata.entity_type = \"URL\"\r\n$verdict = graph.metadata.threat.threat_verdict\r\n$entityid = graph.metadata.product_entity_id\r\nmatch:\r\n    $verdict\r\noutcome:\r\n    $count = count_distinct($entityid)\r\norder:\r\n    $count desc\r\nlimit:\r\n    10",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "90"
+                        }
+                    },
+                    "etag": "6da9685541b120c6ec9f2d52e989523b7534a50bb1c66a92bb5325c9cab190d4"
+                },
+                {
+                    "name": "eeebbf35-10be-4005-bc2c-09df72d862a0",
+                    "query": "graph.metadata.vendor_name = \"Google\"\r\ngraph.metadata.product_name = \"Google Threat Intelligence\"\r\ngraph.additional.fields[\"threat_list_id\"] = \"\"\r\ngraph.metadata.entity_type = \"DOMAIN_NAME\"\r\n$verdict = graph.metadata.threat.threat_verdict\r\n$entityid = graph.metadata.product_entity_id\r\nmatch:\r\n    $verdict\r\noutcome:\r\n    $count = count_distinct($entityid)\r\norder:\r\n    $count desc\r\nlimit: \r\n    10",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "90"
+                        }
+                    },
+                    "etag": "a4ff92b9a210aaab467a12dab7748132969ab0d4953c64e4e5efac73c69ca283"
+                },
+                {
+                    "name": "f0910022-0d3f-45ad-86aa-55795ed9e282",
+                    "query": "graph.metadata.vendor_name = \"Google\"\r\ngraph.metadata.product_name = \"Google Threat Intelligence\"\r\ngraph.additional.fields[\"threat_list_id\"] = \"\"\r\ngraph.metadata.entity_type = \"DOMAIN_NAME\"\r\n$ingestedtime = timestamp.get_timestamp(graph.metadata.collected_timestamp.seconds, \"%Y-%m-%d %H:%M:%S\")\r\n$verdict = graph.metadata.threat.threat_verdict\r\n$entityid = graph.metadata.product_entity_id\r\n$threatscore = graph.metadata.threat.risk_score\r\n$severity = graph.metadata.threat.severity\r\n$tld = if(graph.additional.fields[\"tld\"]!=\"\", graph.additional.fields[\"tld\"], \"-\")\r\n$tags = graph.entity.domain.tags\r\n$firstsubmissiontime = timestamp.get_timestamp(graph.entity.domain.creation_time.seconds, \"%Y-%m-%d %H:%M:%S\")\r\n$detections = graph.metadata.threat.verdict_info.malicious_count\r\nmatch:\r\n    $entityid, $verdict, $threatscore, $severity, $tld, $firstsubmissiontime, $detections\r\noutcome:\r\n    $time = window.last(cast.as_int($ingestedtime), $ingestedtime)\r\n    $tag = re.replace((arrays.join_string(array_distinct(if($tags!=\"\", $tags, \"-\")),\",\")), \"(,-)|(-,)\",\"\")\r\norder:\r\n    $time desc\r\nlimit:\r\n    10000\r\n\r\n\r\n\r\n",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "90"
+                        }
+                    },
+                    "etag": "309963b5c8285ca2c1862b92c037ca905cb2208dbe52646b5659ab9492994285"
+                },
+                {
+                    "name": "b176574d-e791-40aa-866a-777d66e84de8",
+                    "query": "graph.metadata.vendor_name = \"Google\"\r\ngraph.metadata.product_name = \"Google Threat Intelligence\"\r\ngraph.additional.fields[\"threat_list_id\"] = \"\"\r\ngraph.metadata.entity_type = \"IP_ADDRESS\"\r\ngraph.entity.artifact.tags = /.*vpn.*/ or graph.entity.artifact.tags = /.*tor.*/ or graph.entity.artifact.tags = /.*proxy.*/\r\n$owner = graph.entity.artifact.as_owner\r\n$entityid = graph.metadata.product_entity_id\r\nmatch:\r\n    $owner\r\noutcome:\r\n    $count = count_distinct($entityid)\r\norder:\r\n    $count desc\r\nlimit:\r\n    10\r\n",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "90"
+                        }
+                    },
+                    "etag": "f9305187d827d9a6d770607657aedf0f608be7b7cb0465f6dc47fafde6d9df8b"
+                },
+                {
+                    "name": "b5fecbe9-b141-4cd8-a993-7ea31a5fbb27",
+                    "query": "graph.metadata.vendor_name = \"Google\"\r\ngraph.metadata.product_name = \"Google Threat Intelligence\"\r\ngraph.metadata.event_metadata.product_log_id != \"\"\r\n$notificationid = graph.metadata.event_metadata.product_log_id\r\n$notificationorigin = graph.additional.fields[\"origin\"]\r\nmatch:\r\n    $notificationorigin\r\noutcome:\r\n    $count=count_distinct($notificationid)\r\norder:\r\n    $count desc\r\nlimit:\r\n    10000",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "MONTH",
+                            "startTimeVal": "6"
+                        }
+                    },
+                    "etag": "9ab5da02fc293562c9936b316b20d182a3bf3b4c5df22d7715b794f32447270f"
+                },
+                {
+                    "name": "c08c9d0a-67c5-47e8-9c29-58c52e0db778",
+                    "query": "graph.metadata.vendor_name = \"Google\"\r\ngraph.metadata.product_name = \"Google Threat Intelligence\"\r\ngraph.additional.fields[\"threat_list_id\"] = \"\"\r\ngraph.metadata.threat.severity = \"MEDIUM\"\r\n$entityid = graph.metadata.product_entity_id\r\noutcome:\r\n    $count=count_distinct($entityid)",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "90"
+                        }
+                    },
+                    "etag": "0ba9a697cd72cd89ff4ace8a5d378ed7f95bd65c84fde8506bb686f5f6baa09e"
+                },
+                {
+                    "name": "3dbc3843-53ce-4f78-b2e7-28b1ace6d916",
+                    "query": "graph.metadata.vendor_name = \"Google\"\r\ngraph.metadata.product_name = \"Google Threat Intelligence\"\r\ngraph.additional.fields[\"threat_list_id\"] = \"\"\r\ngraph.metadata.entity_type = \"URL\"\r\n$tld = graph.additional.fields[\"tld\"]\r\n$entityid = graph.metadata.product_entity_id\r\nmatch:\r\n    $tld\r\noutcome:\r\n    $count = count_distinct($entityid)\r\norder:\r\n    $count desc\r\nlimit:\r\n    10",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "90"
+                        }
+                    },
+                    "etag": "d6cde5b041ae9755fa748ea4c194b1ab6bbd9aee228fa9f528bf089827827f2f"
+                },
+                {
+                    "name": "c95f21b3-2f11-439d-a022-a52e0cc7fb16",
+                    "query": "graph.metadata.vendor_name = \"Google\"\r\ngraph.metadata.product_name = \"Google Threat Intelligence\"\r\ngraph.additional.fields[\"threat_list_id\"] = \"\"\r\ngraph.metadata.threat.severity = \"LOW\"\r\n$entityid = graph.metadata.product_entity_id\r\noutcome:\r\n    $count=count_distinct($entityid)",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "90"
+                        }
+                    },
+                    "etag": "a793226481e9b65efcf511a6057e85899b4708cb9faaf9a44bdc7c3563c16484"
+                },
+                {
+                    "name": "42030725-cd96-4292-b648-107ab31ccbe6",
+                    "query": "graph.metadata.vendor_name = \"Google\"\r\ngraph.metadata.product_name = \"Google Threat Intelligence\"\r\ngraph.additional.fields[\"threat_list_id\"] = \"\"\r\ngraph.metadata.entity_type = \"IP_ADDRESS\"\r\n$verdict = graph.metadata.threat.threat_verdict\r\n$entityid = graph.metadata.product_entity_id\r\nmatch:\r\n    $verdict\r\noutcome:\r\n    $count = count_distinct($entityid)\r\norder:\r\n    $count desc\r\n",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "90"
+                        }
+                    },
+                    "etag": "b64ec7af0730cbaf99154b0b6c5313133a750fd7459db4ae0dbc17bb3a120b70"
+                },
+                {
+                    "name": "244e7a9c-7585-4b8b-aea4-1d90ef579e09",
+                    "query": "graph.metadata.vendor_name = \"Google\"\r\ngraph.metadata.product_name = \"Google Threat Intelligence\"\r\ngraph.additional.fields[\"threat_list_id\"] = \"\"\r\ngraph.metadata.entity_type = \"IP_ADDRESS\"\r\ngraph.metadata.threat.threat_verdict = \"MALICIOUS\" or graph.metadata.threat.threat_verdict = \"SUSPICIOUS\"\r\n$entityid = graph.metadata.product_entity_id\r\noutcome:\r\n    $count = count_distinct($entityid)\r\n",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "90"
+                        }
+                    },
+                    "etag": "44691264579dfbe2138d7e22992487b22dc3b91bc0ebf1f92841ffe95ded2204"
+                },
+                {
+                    "name": "4ee309fc-7281-4925-a3b6-35a13c2a3fb1",
+                    "query": "graph.metadata.vendor_name = \"Google\"\r\ngraph.metadata.product_name = \"Google Threat Intelligence\"\r\ngraph.additional.fields[\"threat_list_id\"] = \"\"\r\ngraph.metadata.entity_type = \"IP_ADDRESS\"\r\ngraph.entity.artifact.tags = /.*vpn.*/ or graph.entity.artifact.tags = /.*tor.*/ or graph.entity.artifact.tags = /.*proxy.*/\r\n$country = graph.entity.artifact.location.country_or_region\r\n$entityid = graph.metadata.product_entity_id\r\nmatch:\r\n    $country\r\noutcome:\r\n    $count = count_distinct($entityid)\r\norder:\r\n    $count desc\r\nlimit:\r\n    10\r\n",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "90"
+                        }
+                    },
+                    "etag": "4f06596cd2b96e5ff9f18068af88af9a4550dc9657b0390c6477ac5cb8da197f"
+                },
+                {
+                    "name": "b0554a5c-5530-4a21-b10f-20ab80bf16cc",
+                    "query": "graph.metadata.vendor_name = \"Google\"\r\ngraph.metadata.product_name = \"Google Threat Intelligence\"\r\ngraph.additional.fields[\"threat_list_id\"] = \"\"\r\ngraph.metadata.entity_type = \"FILE\"\r\ngraph.metadata.threat.threat_verdict = \"MALICIOUS\" or graph.metadata.threat.threat_verdict = \"SUSPICIOUS\"\r\n$entityid = graph.metadata.product_entity_id\r\noutcome:\r\n    $count = count_distinct($entityid)\r\n",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "90"
+                        }
+                    },
+                    "etag": "7f40495efee79fb342d9c0f62c649abc3af6cc27f9f50479866f3726a0536a8f"
+                }
+            ]
+        }
+    ]
+}

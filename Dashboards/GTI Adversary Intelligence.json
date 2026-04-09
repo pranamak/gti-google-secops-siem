@@ -1,0 +1,820 @@
+{
+    "dashboards": [
+        {
+            "dashboard": {
+                "name": "129b5c75-bf74-4cb5-8ece-bc3dca4f9598",
+                "displayName": "GTI Adversary Intelligence",
+                "definition": {
+                    "filters": [
+                        {
+                            "id": "GlobalTimeFilter",
+                            "dataSource": "GLOBAL",
+                            "filterOperatorAndFieldValues": [
+                                {
+                                    "filterOperator": "PAST",
+                                    "fieldValues": [
+                                        "1",
+                                        "DAY"
+                                    ]
+                                }
+                            ],
+                            "displayName": "Global Time Filter",
+                            "chartIds": [
+                                "80c66009-d8d1-4466-b14e-67a39b158f55",
+                                "b4572ed8-decc-4fd0-ab2b-696e3c1bb2e4",
+                                "f6892a43-56c9-47f0-bd7e-cebfff29f712",
+                                "6b048ea6-2a1e-4005-8c8a-d78cbcc25256",
+                                "de906ecc-a32d-41d6-a98d-91e9bb2e6621",
+                                "a5d5d6fc-cd20-4cd7-88f4-f4c219e7b0a5",
+                                "73ba036d-e895-4456-8608-2cedb306e64f",
+                                "18eb971d-b374-41da-849f-b02103734ffd"
+                            ],
+                            "isStandardTimeRangeFilter": true,
+                            "isStandardTimeRangeFilterEnabled": false
+                        },
+                        {
+                            "id": "bbbd4cec-7e58-4527-8ea7-f5da9b0b65b8",
+                            "dataSource": "ENTITY",
+                            "fieldPath": "graph.metadata.threat.associations.type",
+                            "filterOperatorAndFieldValues": [
+                                {
+                                    "filterOperator": "EQUAL",
+                                    "fieldValues": [
+                                        ""
+                                    ]
+                                }
+                            ],
+                            "displayName": "ASSOCIATION TYPE",
+                            "chartIds": [
+                                "80c66009-d8d1-4466-b14e-67a39b158f55",
+                                "b4572ed8-decc-4fd0-ab2b-696e3c1bb2e4",
+                                "f6892a43-56c9-47f0-bd7e-cebfff29f712",
+                                "6b048ea6-2a1e-4005-8c8a-d78cbcc25256",
+                                "de906ecc-a32d-41d6-a98d-91e9bb2e6621",
+                                "a5d5d6fc-cd20-4cd7-88f4-f4c219e7b0a5",
+                                "73ba036d-e895-4456-8608-2cedb306e64f",
+                                "18eb971d-b374-41da-849f-b02103734ffd"
+                            ]
+                        },
+                        {
+                            "id": "0fea9cd0-c3c4-42b3-8045-eacd13c71dd4",
+                            "dataSource": "ENTITY",
+                            "fieldPath": "graph.metadata.interval.start_time",
+                            "filterOperatorAndFieldValues": [
+                                {
+                                    "filterOperator": "PAST",
+                                    "fieldValues": [
+                                        "7",
+                                        "DAY"
+                                    ]
+                                }
+                            ],
+                            "displayName": "Indicator Active Time Range",
+                            "chartIds": [
+                                "80c66009-d8d1-4466-b14e-67a39b158f55",
+                                "b4572ed8-decc-4fd0-ab2b-696e3c1bb2e4",
+                                "f6892a43-56c9-47f0-bd7e-cebfff29f712",
+                                "6b048ea6-2a1e-4005-8c8a-d78cbcc25256",
+                                "de906ecc-a32d-41d6-a98d-91e9bb2e6621",
+                                "a5d5d6fc-cd20-4cd7-88f4-f4c219e7b0a5",
+                                "73ba036d-e895-4456-8608-2cedb306e64f",
+                                "18eb971d-b374-41da-849f-b02103734ffd"
+                            ]
+                        }
+                    ],
+                    "charts": [
+                        {
+                            "dashboardChart": "73ba036d-e895-4456-8608-2cedb306e64f",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 32,
+                                "startY": 112,
+                                "spanY": 14
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "bbbd4cec-7e58-4527-8ea7-f5da9b0b65b8",
+                                "0fea9cd0-c3c4-42b3-8045-eacd13c71dd4"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "de906ecc-a32d-41d6-a98d-91e9bb2e6621",
+                            "chartLayout": {
+                                "startX": 32,
+                                "spanX": 32,
+                                "startY": 112,
+                                "spanY": 14
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "bbbd4cec-7e58-4527-8ea7-f5da9b0b65b8",
+                                "0fea9cd0-c3c4-42b3-8045-eacd13c71dd4"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "b4572ed8-decc-4fd0-ab2b-696e3c1bb2e4",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 95,
+                                "startY": 35,
+                                "spanY": 27
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "bbbd4cec-7e58-4527-8ea7-f5da9b0b65b8",
+                                "0fea9cd0-c3c4-42b3-8045-eacd13c71dd4"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "18eb971d-b374-41da-849f-b02103734ffd",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 95,
+                                "startY": 62,
+                                "spanY": 22
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "bbbd4cec-7e58-4527-8ea7-f5da9b0b65b8",
+                                "0fea9cd0-c3c4-42b3-8045-eacd13c71dd4"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "02a0dcdc-3303-458b-8e00-3e888e3a0cbb",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 94,
+                                "startY": 0,
+                                "spanY": 8
+                            }
+                        },
+                        {
+                            "dashboardChart": "6b048ea6-2a1e-4005-8c8a-d78cbcc25256",
+                            "chartLayout": {
+                                "startX": 64,
+                                "spanX": 31,
+                                "startY": 112,
+                                "spanY": 14
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "bbbd4cec-7e58-4527-8ea7-f5da9b0b65b8",
+                                "0fea9cd0-c3c4-42b3-8045-eacd13c71dd4"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "80c66009-d8d1-4466-b14e-67a39b158f55",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 95,
+                                "startY": 84,
+                                "spanY": 28
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "bbbd4cec-7e58-4527-8ea7-f5da9b0b65b8",
+                                "0fea9cd0-c3c4-42b3-8045-eacd13c71dd4"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "a5d5d6fc-cd20-4cd7-88f4-f4c219e7b0a5",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 47,
+                                "startY": 8,
+                                "spanY": 27
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "bbbd4cec-7e58-4527-8ea7-f5da9b0b65b8",
+                                "0fea9cd0-c3c4-42b3-8045-eacd13c71dd4"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "f6892a43-56c9-47f0-bd7e-cebfff29f712",
+                            "chartLayout": {
+                                "startX": 47,
+                                "spanX": 48,
+                                "startY": 8,
+                                "spanY": 27
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "bbbd4cec-7e58-4527-8ea7-f5da9b0b65b8",
+                                "0fea9cd0-c3c4-42b3-8045-eacd13c71dd4"
+                            ]
+                        }
+                    ]
+                },
+                "type": "CUSTOM",
+                "etag": "13d82ea195288e26bdbe451c5a694aa972eeb311563357d76f32bc659c73af99",
+                "access": "DASHBOARD_PRIVATE"
+            },
+            "dashboardCharts": [
+                {
+                    "name": "b4572ed8-decc-4fd0-ab2b-696e3c1bb2e4",
+                    "displayName": "MALWARE",
+                    "chartDatasource": {
+                        "dashboardQuery": "d55ec086-64e2-4e82-be47-43afc7d03b89",
+                        "dataSources": [
+                            "ENTITY"
+                        ]
+                    },
+                    "visualization": {
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "columnDefs": [
+                            {
+                                "field": "assoction_name",
+                                "header": "ASSOCIATION NAME[Redirect To GTI]"
+                            },
+                            {
+                                "field": "metadata.threat.associations.type",
+                                "header": "ASSOCIATION TYPE"
+                            },
+                            {
+                                "field": "ioc",
+                                "header": "IOC VALUE[Redirect To GTI]"
+                            },
+                            {
+                                "field": "entity_type",
+                                "header": "IOC TYPE"
+                            },
+                            {
+                                "field": "time",
+                                "header": "MALWARE INGESTION IN SECOPS"
+                            },
+                            {
+                                "field": "metadata.product_entity_id",
+                                "header": "ENTITY ID"
+                            },
+                            {
+                                "field": "association_id",
+                                "header": "ASSOCIATION ID"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "d1a553d8037d6d3848f224910729977e9fd13df589473ef8c1c07e420d765d8d",
+                    "drillDownConfig": {
+                        "leftDrillDowns": [
+                            {
+                                "id": "4E8FD4F7-E8FE-402E-8D80-4F370AEFDEB5",
+                                "displayName": "FULL REPORT",
+                                "customSettings": {
+                                    "newTab": true,
+                                    "leftClickColumn": "ioc",
+                                    "externalLink": {
+                                        "link": "https://www.virustotal.com/gui/${entity_type}/${metadata.product_entity_id}"
+                                    }
+                                }
+                            },
+                            {
+                                "id": "465FCE6C-EE78-427B-9619-20935FECDDE5",
+                                "displayName": "COLLECTION_DETAILS",
+                                "customSettings": {
+                                    "newTab": true,
+                                    "leftClickColumn": "assoction_name",
+                                    "externalLink": {
+                                        "link": "https://www.virustotal.com/gui/collection/${association_id}"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "18eb971d-b374-41da-849f-b02103734ffd",
+                    "displayName": "THREAT ACTORS",
+                    "chartDatasource": {
+                        "dashboardQuery": "83cad874-4e52-494e-9b09-9e3e0b5b48f6",
+                        "dataSources": [
+                            "ENTITY"
+                        ]
+                    },
+                    "visualization": {
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "columnDefs": [
+                            {
+                                "field": "assoction_name",
+                                "header": "ASSOCIATION NAME[Redirect To GTI]"
+                            },
+                            {
+                                "field": "metadata.threat.associations.type",
+                                "header": "ASSOCIATION TYPE"
+                            },
+                            {
+                                "field": "ioc",
+                                "header": "IOC VALUE[Redirect To GTI]"
+                            },
+                            {
+                                "field": "entity_type",
+                                "header": "IOC TYPE"
+                            },
+                            {
+                                "field": "time",
+                                "header": "THREAT ACTORS INGESTION IN SECOPS"
+                            },
+                            {
+                                "field": "metadata.product_entity_id",
+                                "header": "ENTITY ID"
+                            },
+                            {
+                                "field": "association_id",
+                                "header": "ASSOCIATION ID"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "eb6b71591838270931e049dc3847726136c482982ebafd342eb9cf61cacbed9a",
+                    "drillDownConfig": {
+                        "leftDrillDowns": [
+                            {
+                                "id": "C326E324-7802-488F-801A-DF4534364369",
+                                "displayName": "Full Report",
+                                "customSettings": {
+                                    "newTab": true,
+                                    "leftClickColumn": "ioc",
+                                    "externalLink": {
+                                        "link": "https://www.virustotal.com/gui/${entity_type}/${metadata.product_entity_id}"
+                                    }
+                                }
+                            },
+                            {
+                                "id": "432A7B52-BE75-45AF-8F9E-3616B0091D28",
+                                "displayName": "COLLECTION_DETAILS",
+                                "customSettings": {
+                                    "newTab": true,
+                                    "leftClickColumn": "assoction_name",
+                                    "externalLink": {
+                                        "link": "https://www.virustotal.com/gui/collection/${association_id}"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "6b048ea6-2a1e-4005-8c8a-d78cbcc25256",
+                    "displayName": "CAMPAIGNS AND REPORTS FOUND",
+                    "chartDatasource": {
+                        "dashboardQuery": "468d99e4-eee6-40dc-85f1-cc376bc9015f",
+                        "dataSources": [
+                            "ENTITY"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "TEXT",
+                                "label": "CAMPAIGNS AND REPORTS",
+                                "field": "count",
+                                "metricTrendConfig": {
+                                    "metricFormat": "METRIC_FORMAT_PLAIN_TEXT",
+                                    "metricDisplayTrend": "METRIC_DISPLAY_TREND_ABSOLUTE_VALUE",
+                                    "metricTrendType": "METRIC_TREND_TYPE_REGULAR"
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "c846470fab7e74722d6b7428fcac1badc7df5b67a0092513d38599fea41ca9db",
+                    "drillDownConfig": {}
+                },
+                {
+                    "name": "a5d5d6fc-cd20-4cd7-88f4-f4c219e7b0a5",
+                    "displayName": "IOC BY ASSOCIATION TYPE",
+                    "chartDatasource": {
+                        "dashboardQuery": "1dde350d-13f5-423b-b02e-966cd4db08b3",
+                        "dataSources": [
+                            "ENTITY"
+                        ]
+                    },
+                    "visualization": {
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "columnDefs": [
+                            {
+                                "field": "assosicationtype",
+                                "header": "ASSOCIATION TYPE[Filter]"
+                            },
+                            {
+                                "field": "count",
+                                "header": "TOTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "29afdbf024d81882be02a9f77e7950c05de4d589c6c5d6671b11b62b80431f86",
+                    "drillDownConfig": {
+                        "leftDrillDowns": [
+                            {
+                                "id": "DE5D7495-1D37-4CBC-B41E-2E140088D769",
+                                "displayName": "ASSOCIATION TYPE FILTER",
+                                "customSettings": {
+                                    "newTab": true,
+                                    "leftClickColumn": "assosicationtype",
+                                    "filter": {
+                                        "dashboardFilters": [
+                                            {
+                                                "dashboardFilterId": "bbbd4cec-7e58-4527-8ea7-f5da9b0b65b8",
+                                                "filterOperatorAndValues": [
+                                                    {
+                                                        "filterOperator": "EQUAL",
+                                                        "fieldValues": [
+                                                            "${assosicationtype}"
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "80c66009-d8d1-4466-b14e-67a39b158f55",
+                    "displayName": "CAMPAIGNS AND REPORTS",
+                    "chartDatasource": {
+                        "dashboardQuery": "2b7ad450-c62b-471e-bbb6-1c8d5e6027a3",
+                        "dataSources": [
+                            "ENTITY"
+                        ]
+                    },
+                    "visualization": {
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "columnDefs": [
+                            {
+                                "field": "assoction_name",
+                                "header": "ASSOCIATION NAME[Redirect To GTI]"
+                            },
+                            {
+                                "field": "metadata.threat.associations.type",
+                                "header": "ASSOCIATION TYPE"
+                            },
+                            {
+                                "field": "ioc",
+                                "header": "IOC VALUE[Redirect To GTI]"
+                            },
+                            {
+                                "field": "entity_type",
+                                "header": "IOC TYPE"
+                            },
+                            {
+                                "field": "time",
+                                "header": "CAMPAIGNS AND REPORTS INGESTION IN SECOPS"
+                            },
+                            {
+                                "field": "metadata.product_entity_id",
+                                "header": "ENTITY ID"
+                            },
+                            {
+                                "field": "association_id",
+                                "header": "ASSOCIATION ID"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "6e22574281e9c9c8f19b254738eeb0dddf61837f7770c2880855c80f96aa7651",
+                    "drillDownConfig": {
+                        "leftDrillDowns": [
+                            {
+                                "id": "1A21DA2C-F64B-43B0-9EFA-3E357FE7D419",
+                                "displayName": "Full Report",
+                                "customSettings": {
+                                    "newTab": true,
+                                    "leftClickColumn": "ioc",
+                                    "externalLink": {
+                                        "link": "https://www.virustotal.com/gui/${entity_type}/${metadata.product_entity_id}"
+                                    }
+                                }
+                            },
+                            {
+                                "id": "D7DAA1F9-561D-4F3A-9176-F7F9B2686EDB",
+                                "displayName": "COLLECTION_DETAILS",
+                                "customSettings": {
+                                    "newTab": true,
+                                    "leftClickColumn": "assoction_name",
+                                    "externalLink": {
+                                        "link": "https://www.virustotal.com/gui/collection/${association_id}"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "de906ecc-a32d-41d6-a98d-91e9bb2e6621",
+                    "displayName": "THREAT ACTORS FOUND",
+                    "chartDatasource": {
+                        "dashboardQuery": "2935c9a9-45d8-4405-a206-5663ad8ad8e8",
+                        "dataSources": [
+                            "ENTITY"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "TEXT",
+                                "label": "THREAT ACTORS",
+                                "field": "count",
+                                "metricTrendConfig": {
+                                    "metricFormat": "METRIC_FORMAT_PLAIN_TEXT",
+                                    "metricDisplayTrend": "METRIC_DISPLAY_TREND_ABSOLUTE_VALUE",
+                                    "metricTrendType": "METRIC_TREND_TYPE_REGULAR"
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "f996699eac21b4a23d66d2455f97e41b99d4796d1b46e75b4bb3ef6a6757ecf4",
+                    "drillDownConfig": {}
+                },
+                {
+                    "name": "f6892a43-56c9-47f0-bd7e-cebfff29f712",
+                    "displayName": "IOC ASSOCIATIONS BY GTI THREAT SCORE",
+                    "chartDatasource": {
+                        "dashboardQuery": "80d9ea17-a3cf-43c5-b800-2dd2304ef163",
+                        "dataSources": [
+                            "ENTITY"
+                        ]
+                    },
+                    "visualization": {
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "columnDefs": [
+                            {
+                                "field": "assosicationname",
+                                "header": "ASSOCIATION NAME"
+                            },
+                            {
+                                "field": "assosicationtype",
+                                "header": "ASSOCIATION TYPE"
+                            },
+                            {
+                                "field": "risk_score",
+                                "header": "THREAT SCORE"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "85cfb50967c90ed4947146f6d895ab661ce0cec584fd0f36d27545e31adba30e",
+                    "drillDownConfig": {}
+                },
+                {
+                    "name": "02a0dcdc-3303-458b-8e00-3e888e3a0cbb",
+                    "displayName": "markdown",
+                    "visualization": {
+                        "markdown": {
+                            "content": "## GTI Adversary Intelligence ![alt text](https://files.readme.io/2bd0d6e09e34d1a8075ca7c9fb7a1ff76a11f2636cef55fbcdc89017121f9724-gti-favicon-colored.svg)\n---\t\n#### This dashboard shows GTI  Associations  as normalized into the Google SecOps Entity Context Graph (ECG).\n&nbsp;\n#### Associations related to the IoCs such as malware families, campaigns, threat actors and reports.\n---\t\n",
+                            "properties": {
+                                "backgroundColor": "transparent"
+                            }
+                        }
+                    },
+                    "tileType": "TILE_TYPE_MARKDOWN",
+                    "etag": "78175173f33f66b104d668281a0674834a4df5e67d2bca81e10b6e13c2f074b8"
+                },
+                {
+                    "name": "73ba036d-e895-4456-8608-2cedb306e64f",
+                    "displayName": "MALWARES FOUND",
+                    "chartDatasource": {
+                        "dashboardQuery": "4570e0cf-cb6e-4a33-a843-5985137a98aa",
+                        "dataSources": [
+                            "ENTITY"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "TEXT",
+                                "label": "MALWARE",
+                                "field": "count",
+                                "metricTrendConfig": {
+                                    "metricFormat": "METRIC_FORMAT_PLAIN_TEXT",
+                                    "metricDisplayTrend": "METRIC_DISPLAY_TREND_ABSOLUTE_VALUE",
+                                    "metricTrendType": "METRIC_TREND_TYPE_REGULAR"
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "52b45d191e107941b6320967f76fdad9d6f639787ce9e426cd82a2e79470bb99",
+                    "drillDownConfig": {}
+                }
+            ],
+            "dashboardQueries": [
+                {
+                    "name": "4570e0cf-cb6e-4a33-a843-5985137a98aa",
+                    "query": "graph.metadata.vendor_name = \"Google\"\r\ngraph.metadata.product_name = \"Google Threat Intelligence\"\r\ngraph.metadata.threat.associations.type = \"MALWARE\"\r\n$assosicationid = graph.metadata.threat.associations.id\r\n$assosicationid != \"\"\r\nmatch:\r\n    graph.metadata.threat.associations.type\r\noutcome:\r\n    $count=count_distinct($assosicationid)\r\norder:\r\n    $count desc",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "90"
+                        }
+                    },
+                    "etag": "2f4a8486a3b6f03fcb48df15f412497fbcce8acecf6f2df45751b4878419cd49"
+                },
+                {
+                    "name": "1dde350d-13f5-423b-b02e-966cd4db08b3",
+                    "query": "graph.metadata.vendor_name = \"Google\"\r\ngraph.metadata.product_name = \"Google Threat Intelligence\"\r\n$assosicationid = graph.metadata.threat.associations.id\r\n$assosicationtype = graph.metadata.threat.associations.type\r\n$assosicationid != \"\"\r\nmatch:\r\n    $assosicationtype\r\noutcome:\r\n    $count=count_distinct($assosicationid)\r\norder:\r\n    $count desc\r\nlimit:\r\n    10000",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "90"
+                        }
+                    },
+                    "etag": "492fa00f67adb871ded92457a431f1ff0265f06266bda7607d09f00510244469"
+                },
+                {
+                    "name": "2b7ad450-c62b-471e-bbb6-1c8d5e6027a3",
+                    "query": "graph.metadata.vendor_name = \"Google\"\r\ngraph.metadata.product_name = \"Google Threat Intelligence\"\r\ngraph.metadata.threat.associations.type = \"ASSOCIATION_TYPE_UNSPECIFIED\"\r\n$association_id = graph.metadata.threat.associations.id\r\n$assoction_name = graph.metadata.threat.associations.name\r\n$ioc = if(graph.metadata.entity_type = \"URL\",graph.entity.url,graph.metadata.product_entity_id)\r\n$entity_type = if(graph.metadata.entity_type = \"URL\",\"url\", if(graph.metadata.entity_type = \"DOMAIN_NAME\",\"domain\",if(graph.metadata.entity_type = \"IP_ADDRESS\",\"ip-address\",\"file\")))\r\n$association_id != \"\"\r\nmatch:\r\n    $association_id,graph.metadata.threat.associations.type,graph.metadata.product_entity_id, $assoction_name, $ioc, $entity_type\r\noutcome:\r\n    $time = window.last(cast.as_int(timestamp.get_timestamp(graph.metadata.collected_timestamp.seconds)), timestamp.get_timestamp(graph.metadata.collected_timestamp.seconds))\r\norder:\r\n    $time desc\r\nlimit:\r\n    10000",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "90"
+                        }
+                    },
+                    "etag": "38d62eb9ad0e31c5e24f9b2c586ee2d66a55c64c710567c84aa601ad55a41715"
+                },
+                {
+                    "name": "2935c9a9-45d8-4405-a206-5663ad8ad8e8",
+                    "query": "graph.metadata.vendor_name = \"Google\"\r\ngraph.metadata.product_name = \"Google Threat Intelligence\"\r\ngraph.metadata.threat.associations.type = \"THREAT_ACTOR\"\r\n$assosicationid = graph.metadata.threat.associations.id\r\n$assosicationid != \"\"\r\nmatch:\r\n    graph.metadata.threat.associations.type\r\noutcome:\r\n    $count=count_distinct($assosicationid)\r\norder:\r\n    $count desc",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "90"
+                        }
+                    },
+                    "etag": "05c6bc318c2961fafbfc363d16e1c385c3cb50fa8b9774a0e38096214e13ca5b"
+                },
+                {
+                    "name": "80d9ea17-a3cf-43c5-b800-2dd2304ef163",
+                    "query": "graph.metadata.vendor_name = \"Google\"\r\ngraph.metadata.product_name = \"Google Threat Intelligence\"\r\n$association_id = graph.metadata.threat.associations.id\r\n$risk_score = graph.metadata.threat.risk_score\r\n$assosicationtype = graph.metadata.threat.associations.type\r\n$assosicationname = graph.metadata.threat.associations.name\r\n$association_id != \"\"\r\nmatch:\r\n    $assosicationname, $assosicationtype, $risk_score\r\norder:\r\n    $risk_score desc\r\nlimit:\r\n    10000",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "90"
+                        }
+                    },
+                    "etag": "1316726f8639bcb9195de11ff0853bbf0be87f96ede78f72f7317ae7e92287f6"
+                },
+                {
+                    "name": "d55ec086-64e2-4e82-be47-43afc7d03b89",
+                    "query": "graph.metadata.vendor_name = \"Google\"\r\ngraph.metadata.product_name = \"Google Threat Intelligence\"\r\ngraph.metadata.threat.associations.type = \"MALWARE\"\r\n$association_id = graph.metadata.threat.associations.id\r\n$assoction_name = graph.metadata.threat.associations.name\r\n$ioc = if(graph.metadata.entity_type = \"URL\",graph.entity.url,graph.metadata.product_entity_id)\r\n$entity_type = if(graph.metadata.entity_type = \"URL\",\"url\", if(graph.metadata.entity_type = \"DOMAIN_NAME\",\"domain\",if(graph.metadata.entity_type = \"IP_ADDRESS\",\"ip-address\",\"file\")))\r\n$association_id != \"\"\r\nmatch:\r\n    $association_id,graph.metadata.threat.associations.type,graph.metadata.product_entity_id, $assoction_name, $ioc, $entity_type\r\noutcome:\r\n    $time = window.last(cast.as_int(timestamp.get_timestamp(graph.metadata.collected_timestamp.seconds)), timestamp.get_timestamp(graph.metadata.collected_timestamp.seconds))\r\norder:\r\n    $time desc\r\nlimit:\r\n    10000",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "90"
+                        }
+                    },
+                    "etag": "ddd2a56a761ed0a3908cb562357d9d3271d3ccd7d8de3467dd33026e4982e20d"
+                },
+                {
+                    "name": "83cad874-4e52-494e-9b09-9e3e0b5b48f6",
+                    "query": "graph.metadata.vendor_name = \"Google\"\r\ngraph.metadata.product_name = \"Google Threat Intelligence\"\r\ngraph.metadata.threat.associations.type = \"THREAT_ACTOR\"\r\n$association_id = graph.metadata.threat.associations.id\r\n$assoction_name = graph.metadata.threat.associations.name\r\n$ioc = if(graph.metadata.entity_type = \"URL\",graph.entity.url,graph.metadata.product_entity_id)\r\n$entity_type = if(graph.metadata.entity_type = \"URL\",\"url\", if(graph.metadata.entity_type = \"DOMAIN_NAME\",\"domain\",if(graph.metadata.entity_type = \"IP_ADDRESS\",\"ip-address\",\"file\")))\r\n$association_id != \"\"\r\nmatch:\r\n    $association_id,graph.metadata.threat.associations.type,graph.metadata.product_entity_id, $assoction_name, $ioc, $entity_type\r\noutcome:\r\n    $time = window.last(cast.as_int(timestamp.get_timestamp(graph.metadata.collected_timestamp.seconds)), timestamp.get_timestamp(graph.metadata.collected_timestamp.seconds))\r\norder:\r\n    $time desc\r\nlimit:\r\n    10000",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "90"
+                        }
+                    },
+                    "etag": "ec68779ffa22546a6be54708508f3373baa6c15ce3d6c3d816b3e0349ad52d94"
+                },
+                {
+                    "name": "468d99e4-eee6-40dc-85f1-cc376bc9015f",
+                    "query": " graph.metadata.vendor_name = \"Google\"\r\ngraph.metadata.product_name = \"Google Threat Intelligence\"\r\ngraph.metadata.threat.associations.type = \"ASSOCIATION_TYPE_UNSPECIFIED\"\r\n$assosicationid = graph.metadata.threat.associations.id\r\n$assosicationid != \"\"\r\nmatch:\r\n    graph.metadata.threat.associations.type\r\noutcome:\r\n    $count=count_distinct($assosicationid)\r\norder:\r\n    $count desc",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "90"
+                        }
+                    },
+                    "etag": "02430cafb9f0176f951c25b74713ed2bdddc3f37bb19905c2a6be3b93142a8cc"
+                }
+            ]
+        }
+    ]
+}
