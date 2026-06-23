@@ -1,0 +1,955 @@
+{
+    "dashboards": [
+        {
+            "dashboard": {
+                "name": "bc5152e7-9042-469b-a6bb-d599d530f7db",
+                "displayName": "GTI Correlation Overview",
+                "description": "This dashboard provides a consolidated view of Google Threat Intelligence Indicators of Compromise (IOCs) and their relationships with security events across multiple data sources. It enables visualization and correlation of threat intelligence with observed activity, helping analysts quickly identify patterns and validate threats.",
+                "definition": {
+                    "filters": [
+                        {
+                            "id": "GlobalTimeFilter",
+                            "dataSource": "GLOBAL",
+                            "filterOperatorAndFieldValues": [
+                                {
+                                    "filterOperator": "PAST",
+                                    "fieldValues": [
+                                        "7",
+                                        "DAY"
+                                    ]
+                                }
+                            ],
+                            "displayName": "Global Time Filter",
+                            "chartIds": [
+                                "b174f55e-0f57-4f0e-b2c1-5e07c6a73e59",
+                                "7870174c-c02a-42f6-9c8c-060d0999cdcd",
+                                "bf011519-57f5-4955-8d80-4d8bd89588e8",
+                                "b79c9869-f08a-434b-aa13-b3d5f232fad6",
+                                "232f1d7e-f862-4eff-bb2d-a4948ba62c32",
+                                "d43662d1-7027-4b45-a6a7-7aac4b13b242",
+                                "446b14ec-0c65-4893-a3a0-12f0e9503167",
+                                "030e8e09-2d45-4e16-a7fb-664eda391d4f"
+                            ],
+                            "isStandardTimeRangeFilter": true,
+                            "isStandardTimeRangeFilterEnabled": true
+                        },
+                        {
+                            "id": "2a006479-309d-4506-bdc1-712d7d8c2e4b",
+                            "dataSource": "IOC_MATCHES",
+                            "fieldPath": "ioc.severity",
+                            "filterOperatorAndFieldValues": [
+                                {
+                                    "filterOperator": "EQUAL",
+                                    "fieldValues": [
+                                        ""
+                                    ]
+                                }
+                            ],
+                            "displayName": "ioc.severity",
+                            "chartIds": [
+                                "b174f55e-0f57-4f0e-b2c1-5e07c6a73e59",
+                                "030e8e09-2d45-4e16-a7fb-664eda391d4f",
+                                "232f1d7e-f862-4eff-bb2d-a4948ba62c32",
+                                "7870174c-c02a-42f6-9c8c-060d0999cdcd",
+                                "b79c9869-f08a-434b-aa13-b3d5f232fad6",
+                                "bf011519-57f5-4955-8d80-4d8bd89588e8",
+                                "d43662d1-7027-4b45-a6a7-7aac4b13b242",
+                                "446b14ec-0c65-4893-a3a0-12f0e9503167"
+                            ]
+                        },
+                        {
+                            "id": "3cbe19f7-70ae-4113-9b15-9941668290de",
+                            "dataSource": "IOC_MATCHES",
+                            "fieldPath": "ioc.ioc_type",
+                            "filterOperatorAndFieldValues": [
+                                {
+                                    "filterOperator": "EQUAL",
+                                    "fieldValues": [
+                                        ""
+                                    ]
+                                }
+                            ],
+                            "displayName": "ioc.ioc_type",
+                            "chartIds": [
+                                "b174f55e-0f57-4f0e-b2c1-5e07c6a73e59",
+                                "030e8e09-2d45-4e16-a7fb-664eda391d4f",
+                                "446b14ec-0c65-4893-a3a0-12f0e9503167",
+                                "7870174c-c02a-42f6-9c8c-060d0999cdcd",
+                                "b79c9869-f08a-434b-aa13-b3d5f232fad6",
+                                "d43662d1-7027-4b45-a6a7-7aac4b13b242",
+                                "bf011519-57f5-4955-8d80-4d8bd89588e8",
+                                "232f1d7e-f862-4eff-bb2d-a4948ba62c32"
+                            ]
+                        },
+                        {
+                            "id": "a7147300-c85e-4090-8886-7fe042213471",
+                            "dataSource": "IOC_MATCHES",
+                            "fieldPath": "ioc.category",
+                            "filterOperatorAndFieldValues": [
+                                {
+                                    "filterOperator": "CONTAINS",
+                                    "fieldValues": [
+                                        ""
+                                    ]
+                                }
+                            ],
+                            "displayName": "ioc.category",
+                            "chartIds": [
+                                "b174f55e-0f57-4f0e-b2c1-5e07c6a73e59",
+                                "030e8e09-2d45-4e16-a7fb-664eda391d4f",
+                                "446b14ec-0c65-4893-a3a0-12f0e9503167",
+                                "232f1d7e-f862-4eff-bb2d-a4948ba62c32",
+                                "7870174c-c02a-42f6-9c8c-060d0999cdcd",
+                                "b79c9869-f08a-434b-aa13-b3d5f232fad6",
+                                "d43662d1-7027-4b45-a6a7-7aac4b13b242",
+                                "bf011519-57f5-4955-8d80-4d8bd89588e8"
+                            ]
+                        }
+                    ],
+                    "charts": [
+                        {
+                            "dashboardChart": "b79c9869-f08a-434b-aa13-b3d5f232fad6",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 48,
+                                "startY": 10,
+                                "spanY": 12
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "2a006479-309d-4506-bdc1-712d7d8c2e4b",
+                                "3cbe19f7-70ae-4113-9b15-9941668290de",
+                                "a7147300-c85e-4090-8886-7fe042213471"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "b174f55e-0f57-4f0e-b2c1-5e07c6a73e59",
+                            "chartLayout": {
+                                "startX": 48,
+                                "spanX": 48,
+                                "startY": 10,
+                                "spanY": 35
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "2a006479-309d-4506-bdc1-712d7d8c2e4b",
+                                "3cbe19f7-70ae-4113-9b15-9941668290de",
+                                "a7147300-c85e-4090-8886-7fe042213471"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "bf011519-57f5-4955-8d80-4d8bd89588e8",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 96,
+                                "startY": 115,
+                                "spanY": 33
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "2a006479-309d-4506-bdc1-712d7d8c2e4b",
+                                "3cbe19f7-70ae-4113-9b15-9941668290de",
+                                "a7147300-c85e-4090-8886-7fe042213471"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "cf43a14f-021a-4985-97ab-0ebb78d8676f",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 96,
+                                "startY": 0,
+                                "spanY": 10
+                            }
+                        },
+                        {
+                            "dashboardChart": "7870174c-c02a-42f6-9c8c-060d0999cdcd",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 96,
+                                "startY": 148,
+                                "spanY": 33
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "2a006479-309d-4506-bdc1-712d7d8c2e4b",
+                                "3cbe19f7-70ae-4113-9b15-9941668290de",
+                                "a7147300-c85e-4090-8886-7fe042213471"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "d43662d1-7027-4b45-a6a7-7aac4b13b242",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 96,
+                                "startY": 80,
+                                "spanY": 35
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "2a006479-309d-4506-bdc1-712d7d8c2e4b",
+                                "3cbe19f7-70ae-4113-9b15-9941668290de",
+                                "a7147300-c85e-4090-8886-7fe042213471"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "232f1d7e-f862-4eff-bb2d-a4948ba62c32",
+                            "chartLayout": {
+                                "startX": 48,
+                                "spanX": 48,
+                                "startY": 45,
+                                "spanY": 35
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "2a006479-309d-4506-bdc1-712d7d8c2e4b",
+                                "3cbe19f7-70ae-4113-9b15-9941668290de",
+                                "a7147300-c85e-4090-8886-7fe042213471"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "030e8e09-2d45-4e16-a7fb-664eda391d4f",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 48,
+                                "startY": 45,
+                                "spanY": 35
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "2a006479-309d-4506-bdc1-712d7d8c2e4b",
+                                "3cbe19f7-70ae-4113-9b15-9941668290de",
+                                "a7147300-c85e-4090-8886-7fe042213471"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "446b14ec-0c65-4893-a3a0-12f0e9503167",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 48,
+                                "startY": 22,
+                                "spanY": 23
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "2a006479-309d-4506-bdc1-712d7d8c2e4b",
+                                "3cbe19f7-70ae-4113-9b15-9941668290de",
+                                "a7147300-c85e-4090-8886-7fe042213471"
+                            ]
+                        }
+                    ]
+                },
+                "type": "CUSTOM",
+                "etag": "c8f9867ba1aff31ed8296329cb9a501de4de7deb3ba85eef8670131aeeee57fb",
+                "access": "DASHBOARD_PRIVATE"
+            },
+            "dashboardCharts": [
+                {
+                    "name": "7870174c-c02a-42f6-9c8c-060d0999cdcd",
+                    "displayName": "IOCs Geolocation Overview",
+                    "description": "Shows the geographic source of the most frequent IOC matches within the specified global time filter.  Google SecOps enriches events containing external IP addresses with geolocation data. This provides additional context during an investigation.",
+                    "chartDatasource": {
+                        "dashboardQuery": "f78dcefd-638b-4ada-aecb-6f5e882bed47",
+                        "dataSources": [
+                            "IOC_MATCHES"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "MAP",
+                                "encode": {},
+                                "dataLabel": {}
+                            }
+                        ],
+                        "googleMapsConfig": {
+                            "dataSettings": {
+                                "latitudeColumn": "max_latitude",
+                                "longitudeColumn": "max_longitude",
+                                "countColumn": "count"
+                            },
+                            "plotMode": "PLOT_MODE_BOTH",
+                            "mapPosition": {
+                                "fitData": true,
+                                "latitudeValue": 27.341143150000008,
+                                "longitudeValue": 32.54352865790159,
+                                "zoomScaleValue": 2.6117413958191067
+                            },
+                            "pointSettings": {
+                                "pointSizeType": "POINT_SIZE_TYPE_FIXED",
+                                "color": "#009886"
+                            }
+                        }
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "49dfa25d69446742188a32d501a6d3706b6136ef65352e81c03557cbe24b112f",
+                    "drillDownConfig": {}
+                },
+                {
+                    "name": "cf43a14f-021a-4985-97ab-0ebb78d8676f",
+                    "displayName": "markdown",
+                    "visualization": {
+                        "markdown": {
+                            "content": "## GTI Correlation Overview ![alt text](https://files.readme.io/2bd0d6e09e34d1a8075ca7c9fb7a1ff76a11f2636cef55fbcdc89017121f9724-gti-favicon-colored.svg)\n---\t\n\n#### The Correlation Overview dashboard is designed to identify relationships between Google Threat Intelligence's IOCs and events from other sources.\n\n**IOC Match Visibility**: Monitor IOCs matched in your environment\n",
+                            "properties": {
+                                "backgroundColor": "transparent"
+                            }
+                        }
+                    },
+                    "tileType": "TILE_TYPE_MARKDOWN",
+                    "etag": "981f2c25b8c45ea68f9a570300bd39d77e19d4819f7a30a00ca255f90976665e"
+                },
+                {
+                    "name": "446b14ec-0c65-4893-a3a0-12f0e9503167",
+                    "displayName": "Number of IOC Matches By Severity",
+                    "description": "Displays number of IOC matches that have matched over time within the specified global time filter.",
+                    "chartDatasource": {
+                        "dashboardQuery": "5beaa2b6-ce67-4707-93e6-8ea058d940c6",
+                        "dataSources": [
+                            "IOC_MATCHES"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "PIE",
+                                "encode": {
+                                    "value": "count",
+                                    "itemName": "severity"
+                                },
+                                "dataLabel": {
+                                    "show": true
+                                },
+                                "radius": [
+                                    "0%",
+                                    "70%"
+                                ],
+                                "itemStyle": {
+                                    "color": "b=>{var {map:c}=aqg(this.theme);b=Hrg(b,vqg(this.form.controls.seriesConfig.getRawValue()),a);a=b.nextColorIndex;var d;return(d=\nc.get(b.color))!=null?d:b.color}"
+                                },
+                                "itemColors": {
+                                    "colors": [
+                                        {
+                                            "key": "SEVERITY_NONE",
+                                            "value": {
+                                                "color": "#1a73e8",
+                                                "label": "SEVERITY_NONE"
+                                            }
+                                        },
+                                        {
+                                            "key": "SEVERITY_MEDIUM",
+                                            "value": {
+                                                "color": "#eb730a",
+                                                "label": "SEVERITY_MEDIUM"
+                                            }
+                                        },
+                                        {
+                                            "key": "SEVERITY_HIGH",
+                                            "value": {
+                                                "color": "#ec453b",
+                                                "label": "SEVERITY_HIGH"
+                                            }
+                                        },
+                                        {
+                                            "key": "SEVERITY_LOW",
+                                            "value": {
+                                                "color": "#4aa207",
+                                                "label": "SEVERITY_LOW"
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "top": 12,
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "7ac15868c6e1cdef5a06755add9136287979c3d3dd12e68394bfb5b9217b62a4",
+                    "drillDownConfig": {}
+                },
+                {
+                    "name": "030e8e09-2d45-4e16-a7fb-664eda391d4f",
+                    "displayName": "Top 10 Rarely Seen IOC Values",
+                    "description": "Displays the top 10 IOC values with the lowest match frequency within the selected global time filter. This view helps SOC teams identify uncommon or newly observed indicators that may represent emerging threats. ",
+                    "chartDatasource": {
+                        "dashboardQuery": "b417f59f-0658-4d65-be85-c012fe914176",
+                        "dataSources": [
+                            "IOC_MATCHES"
+                        ]
+                    },
+                    "visualization": {
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "columnDefs": [
+                            {
+                                "field": "ioc_val",
+                                "header": "ioc value"
+                            },
+                            {
+                                "field": "ioc_type",
+                                "header": "ioc type"
+                            },
+                            {
+                                "field": "count",
+                                "header": "count"
+                            },
+                            {
+                                "field": "confidence_score",
+                                "header": "confidence score"
+                            },
+                            {
+                                "field": "asset_hostname",
+                                "header": "asset hostname"
+                            },
+                            {
+                                "field": "asset_ip_address",
+                                "header": "asset ip address"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "e544b009a16884a6f43f13347a0b2aaf9df025c3029394ca2af3536d2925a32b",
+                    "drillDownConfig": {
+                        "leftDrillDowns": [
+                            {
+                                "id": "25E59845-BF85-499B-80E3-CC73A7260E7A",
+                                "displayName": "IOC drilldown",
+                                "customSettings": {
+                                    "newTab": true,
+                                    "leftClickColumn": "ioc_val",
+                                    "query": {
+                                        "query": "(\r\n    ${ioc_type} = \"IOC_TYPE_DOMAIN\"\r\n    and (target.hostname=${ioc_val} OR network.dns.questions.name=${ioc_val})\r\n)\r\nOR\r\n(\r\n    ${ioc_type} = \"IOC_TYPE_IP\"\r\n    and (target.ip = ${ioc_val} OR network.dns.answers.data = ${ioc_val})\r\n)\r\nOR\r\n(\r\n    ${ioc_type} = \"IOC_TYPE_FILE_HASH_MD5\"\r\n    and (principal.file.md5 = ${ioc_val} OR principal.process.file.md5 = ${ioc_val} OR target.file.md5 = ${ioc_val} OR target.process.file.md5 = ${ioc_val} OR security_result.about.file.md5 = ${ioc_val} OR src.file.md5 = ${ioc_val} OR src.process.file.md5 = ${ioc_val})\r\n)\r\nOR\r\n(\r\n    ${ioc_type} = \"IOC_TYPE_FILE_HASH_SHA256\"\r\n    and (principal.file.sha256 = ${ioc_val} OR principal.process.file.sha256 = ${ioc_val} OR target.file.sha256 = ${ioc_val} OR target.process.file.sha256 = ${ioc_val} OR security_result.about.file.sha256 = ${ioc_val} OR src.file.sha256 = ${ioc_val} OR src.process.file.sha256 = ${ioc_val})\r\n)\r\nOR\r\n(\r\n    ${ioc_type} = \"IOC_TYPE_FILE_HASH_SHA1\"\r\n    and (principal.file.sha1 = ${ioc_val} OR principal.process.file.sha1 = ${ioc_val} OR target.file.sha1 = ${ioc_val} OR target.process.file.sha1 = ${ioc_val} OR security_result.about.file.sha1 = ${ioc_val} OR src.file.sha1 = ${ioc_val} OR src.process.file.sha1 = ${ioc_val})\r\n)"
+                                    }
+                                }
+                            }
+                        ],
+                        "rightDrillDowns": [
+                            {
+                                "id": "635A6B19-4A1A-4131-9A50-FA8ABAE144B9",
+                                "displayName": "GTI IOC Link",
+                                "customSettings": {
+                                    "newTab": true,
+                                    "externalLink": {
+                                        "link": "https://www.virustotal.com/gui/${ioc_type}/${ioc_val}"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "d43662d1-7027-4b45-a6a7-7aac4b13b242",
+                    "displayName": "IOC Matches Over Time By Severity",
+                    "description": "Displays number of IOC matches that have matched over time within the specified global time filter.",
+                    "chartDatasource": {
+                        "dashboardQuery": "e9e7e858-c6f9-44c1-9d5a-6c31e042d156",
+                        "dataSources": [
+                            "IOC_MATCHES"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesName": "SEVERITY_NONE",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "match_bucket",
+                                    "y": "count"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#1a73e8"
+                                },
+                                "seriesUniqueValue": "SEVERITY_NONE"
+                            },
+                            {
+                                "seriesName": "SEVERITY_MEDIUM",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "match_bucket",
+                                    "y": "count"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#eb730a"
+                                },
+                                "seriesUniqueValue": "SEVERITY_MEDIUM"
+                            },
+                            {
+                                "seriesName": "SEVERITY_LOW",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "match_bucket",
+                                    "y": "count"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#4aa207"
+                                },
+                                "seriesUniqueValue": "SEVERITY_LOW"
+                            },
+                            {
+                                "seriesName": "SEVERITY_HIGH",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "match_bucket",
+                                    "y": "count"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#ec453b"
+                                },
+                                "seriesUniqueValue": "SEVERITY_HIGH"
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "CATEGORY",
+                                "displayName": "DATE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE",
+                                "displayName": "IOCs"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "top": 12,
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "seriesColumn": [
+                            "severity"
+                        ],
+                        "groupingType": "Grouped"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "3c309714c5fd8c90bbd1f52f5131a654fe9806a3092a864898cd9aea9084c794",
+                    "drillDownConfig": {}
+                },
+                {
+                    "name": "b174f55e-0f57-4f0e-b2c1-5e07c6a73e59",
+                    "displayName": "Top 10 Frequently Seen IOC Values",
+                    "description": "Lists the top 10 IOCs that repeatedly appear in IOC matches within the specified global time filter. This helps SOC teams identify persistent attackers. ",
+                    "chartDatasource": {
+                        "dashboardQuery": "255bc0c4-9ef3-4dbb-a00f-adf363c6d2d0",
+                        "dataSources": [
+                            "IOC_MATCHES"
+                        ]
+                    },
+                    "visualization": {
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "columnDefs": [
+                            {
+                                "field": "ioc_val",
+                                "header": "ioc_val"
+                            },
+                            {
+                                "field": "ioc_type",
+                                "header": "ioc_type"
+                            },
+                            {
+                                "field": "count",
+                                "header": "count"
+                            },
+                            {
+                                "field": "confidence_score",
+                                "header": "confidence score"
+                            },
+                            {
+                                "field": "asset_hostname",
+                                "header": "asset hostname"
+                            },
+                            {
+                                "field": "asset_ip_address",
+                                "header": "asset ip address"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "c71e9fae4ffff341662782bfaeec35d62f306cecd290c1e80c90dc13455a092a",
+                    "drillDownConfig": {
+                        "leftDrillDowns": [
+                            {
+                                "id": "25E59845-BF85-499B-80E3-CC73A7260E7A",
+                                "displayName": "IOC drilldown",
+                                "customSettings": {
+                                    "newTab": true,
+                                    "leftClickColumn": "ioc_val",
+                                    "query": {
+                                        "query": "(\r\n    ${ioc_type} = \"IOC_TYPE_DOMAIN\"\r\n    and (target.hostname=${ioc_val} OR network.dns.questions.name=${ioc_val})\r\n)\r\nOR\r\n(\r\n    ${ioc_type} = \"IOC_TYPE_IP\"\r\n    and (target.ip = ${ioc_val} OR network.dns.answers.data = ${ioc_val})\r\n)\r\nOR\r\n(\r\n    ${ioc_type} = \"IOC_TYPE_FILE_HASH_MD5\"\r\n    and (principal.file.md5 = ${ioc_val} OR principal.process.file.md5 = ${ioc_val} OR target.file.md5 = ${ioc_val} OR target.process.file.md5 = ${ioc_val} OR security_result.about.file.md5 = ${ioc_val} OR src.file.md5 = ${ioc_val} OR src.process.file.md5 = ${ioc_val})\r\n)\r\nOR\r\n(\r\n    ${ioc_type} = \"IOC_TYPE_FILE_HASH_SHA256\"\r\n    and (principal.file.sha256 = ${ioc_val} OR principal.process.file.sha256 = ${ioc_val} OR target.file.sha256 = ${ioc_val} OR target.process.file.sha256 = ${ioc_val} OR security_result.about.file.sha256 = ${ioc_val} OR src.file.sha256 = ${ioc_val} OR src.process.file.sha256 = ${ioc_val})\r\n)\r\nOR\r\n(\r\n    ${ioc_type} = \"IOC_TYPE_FILE_HASH_SHA1\"\r\n    and (principal.file.sha1 = ${ioc_val} OR principal.process.file.sha1 = ${ioc_val} OR target.file.sha1 = ${ioc_val} OR target.process.file.sha1 = ${ioc_val} OR security_result.about.file.sha1 = ${ioc_val} OR src.file.sha1 = ${ioc_val} OR src.process.file.sha1 = ${ioc_val})\r\n)"
+                                    }
+                                }
+                            }
+                        ],
+                        "rightDrillDowns": [
+                            {
+                                "id": "D2861B1C-9BCF-483D-B641-B9E1698A89E0",
+                                "displayName": "GTI link for IOC",
+                                "customSettings": {
+                                    "newTab": true,
+                                    "externalLink": {
+                                        "link": "https://www.virustotal.com/gui/${ioc_type}/${ioc_val}"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "bf011519-57f5-4955-8d80-4d8bd89588e8",
+                    "displayName": "IOCs Matched",
+                    "description": "Provides a detailed list of all IOCs that have matched in the environment within the specified global time filter.",
+                    "chartDatasource": {
+                        "dashboardQuery": "f1060cfc-b9d4-4493-a57d-619b4044b21d",
+                        "dataSources": [
+                            "IOC_MATCHES"
+                        ]
+                    },
+                    "visualization": {
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "columnDefs": [
+                            {
+                                "field": "ioc_val",
+                                "header": "IOC Value"
+                            },
+                            {
+                                "field": "ioc_type",
+                                "header": "IOC Type"
+                            },
+                            {
+                                "field": "latitude",
+                                "header": "Latitude"
+                            },
+                            {
+                                "field": "longitude",
+                                "header": "Longitude"
+                            },
+                            {
+                                "field": "match_bucket",
+                                "header": "IOC Match Date"
+                            },
+                            {
+                                "field": "country",
+                                "header": "Country"
+                            },
+                            {
+                                "field": "confidence",
+                                "header": "Threat Score"
+                            },
+                            {
+                                "field": "gti_ioc_link",
+                                "header": "gti_ioc_link"
+                            },
+                            {
+                                "field": "classification",
+                                "header": "Severity"
+                            },
+                            {
+                                "field": "category",
+                                "header": "Categories"
+                            },
+                            {
+                                "field": "hostname",
+                                "header": "Hostname"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "02a6fd3f8f6d5f6a06f0d77898a8444216b136194cb3c47b4b3bb2c4677568ad",
+                    "drillDownConfig": {
+                        "leftDrillDowns": [
+                            {
+                                "id": "6A6A35C2-C76F-4E7B-8864-753A798AD03B",
+                                "displayName": "IOC match drilldown",
+                                "customSettings": {
+                                    "newTab": true,
+                                    "leftClickColumn": "ioc_val",
+                                    "query": {
+                                        "query": "(\r\n    ${ioc_type} = \"IOC_TYPE_DOMAIN\"\r\n    and (target.hostname=${ioc_val} OR network.dns.questions.name=${ioc_val})\r\n)\r\nOR\r\n(\r\n    ${ioc_type} = \"IOC_TYPE_IP\"\r\n    and (target.ip = ${ioc_val} OR network.dns.answers.data = ${ioc_val})\r\n)\r\nOR\r\n(\r\n    ${ioc_type} = \"IOC_TYPE_FILE_HASH_MD5\"\r\n    and (principal.file.md5 = ${ioc_val} OR principal.process.file.md5 = ${ioc_val} OR target.file.md5 = ${ioc_val} OR target.process.file.md5 = ${ioc_val} OR security_result.about.file.md5 = ${ioc_val} OR src.file.md5 = ${ioc_val} OR src.process.file.md5 = ${ioc_val})\r\n)\r\nOR\r\n(\r\n    ${ioc_type} = \"IOC_TYPE_FILE_HASH_SHA256\"\r\n    and (principal.file.sha256 = ${ioc_val} OR principal.process.file.sha256 = ${ioc_val} OR target.file.sha256 = ${ioc_val} OR target.process.file.sha256 = ${ioc_val} OR security_result.about.file.sha256 = ${ioc_val} OR src.file.sha256 = ${ioc_val} OR src.process.file.sha256 = ${ioc_val})\r\n)\r\nOR\r\n(\r\n    ${ioc_type} = \"IOC_TYPE_FILE_HASH_SHA1\"\r\n    and (principal.file.sha1 = ${ioc_val} OR principal.process.file.sha1 = ${ioc_val} OR target.file.sha1 = ${ioc_val} OR target.process.file.sha1 = ${ioc_val} OR security_result.about.file.sha1 = ${ioc_val} OR src.file.sha1 = ${ioc_val} OR src.process.file.sha1 = ${ioc_val})\r\n)"
+                                    }
+                                }
+                            },
+                            {
+                                "id": "70FDEEFE-0675-4FFC-9346-751FDE3568C3",
+                                "displayName": "GTI IOC Link",
+                                "customSettings": {
+                                    "newTab": true,
+                                    "leftClickColumn": "gti_ioc_link",
+                                    "externalLink": {
+                                        "link": "${gti_ioc_link}"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "b79c9869-f08a-434b-aa13-b3d5f232fad6",
+                    "displayName": "Unique IOC Matches",
+                    "description": "Displays number of unique Google Threat Intelligence IOCs that were matched in the environment within the specified global time filter.",
+                    "chartDatasource": {
+                        "dashboardQuery": "527b268a-d1cb-4d13-b375-1bd320acdb44",
+                        "dataSources": [
+                            "IOC_MATCHES"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "TEXT",
+                                "label": "IOCs",
+                                "field": "ioc_count",
+                                "metricTrendConfig": {
+                                    "metricFormat": "METRIC_FORMAT_PLAIN_TEXT",
+                                    "metricDisplayTrend": "METRIC_DISPLAY_TREND_ABSOLUTE_VALUE",
+                                    "metricTrendType": "METRIC_TREND_TYPE_REGULAR"
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "833023c2306ab29a46e29b17336d1f6cd2c682d455d4ff2222ecf89d07c42271",
+                    "drillDownConfig": {}
+                },
+                {
+                    "name": "232f1d7e-f862-4eff-bb2d-a4948ba62c32",
+                    "displayName": "Number of IOC Matches by IOC Type",
+                    "description": "Displays the number of IOC Matches for each IOC type within the specified global time filter. ",
+                    "chartDatasource": {
+                        "dashboardQuery": "fcdc3354-448b-4a4d-97f3-928ec40a1ef5",
+                        "dataSources": [
+                            "IOC_MATCHES"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "PIE",
+                                "encode": {
+                                    "value": "count",
+                                    "itemName": "ioc_type"
+                                },
+                                "dataLabel": {
+                                    "show": true
+                                },
+                                "radius": [
+                                    "40%",
+                                    "70%"
+                                ],
+                                "itemStyle": {
+                                    "color": "b=>{var {map:c}=aqg(this.theme);b=Hrg(b,vqg(this.form.controls.seriesConfig.getRawValue()),a);a=b.nextColorIndex;var d;return(d=\nc.get(b.color))!=null?d:b.color}"
+                                },
+                                "itemColors": {
+                                    "colors": [
+                                        {
+                                            "key": "IOC_TYPE_IP",
+                                            "value": {
+                                                "color": "#009886",
+                                                "label": "IOC_TYPE_IP"
+                                            }
+                                        },
+                                        {
+                                            "key": "IOC_TYPE_DOMAIN",
+                                            "value": {
+                                                "color": "#5350fb",
+                                                "label": "IOC_TYPE_DOMAIN"
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "top": 12,
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "35576a527d08cc910faa4b9d4aa0f28db7a5cd76896c49bd6de8fde97073d0bf",
+                    "drillDownConfig": {}
+                }
+            ],
+            "dashboardQueries": [
+                {
+                    "name": "fcdc3354-448b-4a4d-97f3-928ec40a1ef5",
+                    "query": "ioc.feed_log_type = \"GCP_THREATINTEL\"\r\nioc.feed_name = \"Google Threat Intelligence\"\r\n$ioc_val = ioc.ioc_value\r\n$ioc_type = ioc.ioc_type\r\n$latitude = ioc.location.region_coordinates.latitude\r\n$longitude = ioc.location.region_coordinates.longitude \r\n$country = if(ioc.location.country_or_region != \"\", ioc.location.country_or_region, \"-\") \r\n$match_bucket = timestamp.get_date(ioc.day_bucket_seconds) \r\nmatch: \r\n    $ioc_type\r\noutcome: \r\n    $count = count_distinct(strings.concat($ioc_val, \"|\", $ioc_type, \"|\", $match_bucket, \"|\", cast.as_string(cast.as_int($latitude * 1000000)), \"|\", cast.as_string(cast.as_int($longitude * 1000000)), \"|\", $country))\r\norder: \r\n    $count desc \r\nlimit: \r\n    10",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "7"
+                        }
+                    },
+                    "etag": "b9cb461da7d3c7afbafb5ec145990067d9b3d5bbd5ebf086ef749bbcf38d50a2"
+                },
+                {
+                    "name": "f78dcefd-638b-4ada-aecb-6f5e882bed47",
+                    "query": "ioc.feed_log_type = \"GCP_THREATINTEL\"\r\nioc.feed_name = \"Google Threat Intelligence\"\r\n$ioc = ioc.ioc_value \r\n$ioc_type = ioc.ioc_type \r\n$match_bucket = timestamp.get_date(ioc.day_bucket_seconds) \r\n$latitude = ioc.location.region_coordinates.latitude\r\n$longitude = ioc.location.region_coordinates.longitude\r\nioc.location.country_or_region != \"\"\r\n$country = if(ioc.location.country_or_region != \"\", ioc.location.country_or_region, \"-\") \r\nmatch:\r\n    $country\r\noutcome:\r\n    $count = count_distinct(strings.concat($ioc, \"|\", $ioc_type, \"|\", cast.as_string(cast.as_int($latitude * 1000000)), \"|\", cast.as_string(cast.as_int($longitude * 1000000)), \"|\", $country, $match_bucket))\r\n    $max_latitude = max(ioc.location.region_coordinates.latitude)\r\n    $max_longitude = max(ioc.location.region_coordinates.longitude)\r\norder:\r\n    $count desc\r\nlimit:\r\n    10000",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "90"
+                        }
+                    },
+                    "etag": "137a555fe27af46937cf9b7eb007f64366cce74dcf4ce9b0eff227eb8bab8d14"
+                },
+                {
+                    "name": "255bc0c4-9ef3-4dbb-a00f-adf363c6d2d0",
+                    "query": "ioc.feed_log_type = \"GCP_THREATINTEL\"\r\nioc.feed_name = \"Google Threat Intelligence\"\r\n\r\n\r\n$ioc_val = ioc.ioc_value \r\n// $ioc_type = ioc.ioc_type\r\n$confidence_score_val = ioc.confidence_score \r\n$match_bucket = timestamp.get_timestamp(ioc.day_bucket_seconds) \r\n$category = ioc.category\r\n$latitude = ioc.location.region_coordinates.latitude\r\n$longitude = ioc.location.region_coordinates.longitude\r\n$country = if(ioc.location.country_or_region != \"\", ioc.location.country_or_region, \"-\") \r\n$ioc_type = (if(ioc.ioc_type = \"IOC_TYPE_IP\", \"ip-address\",\r\n            if(ioc.ioc_type = \"IOC_TYPE_DOMAIN\", \"domain\",\r\n                if(ioc.ioc_type = \"IOC_TYPE_FILE\", \"file\",\r\n                    if(ioc.ioc_type = \"IOC_TYPE_FILE_HASH_MD5\", \"file-hash-md5\",\r\n                        if(ioc.ioc_type = \"IOC_TYPE_FILE_HASH_SHA256\", \"file-hash-sha256\",\r\n                            if(ioc.ioc_type = \"IOC_TYPE_FILE_HASH_SHA1\", \"file-hash-sha1\", \"unknown\")\r\n                        )\r\n                    )\r\n                )\r\n            )\r\n        )\r\n    )\r\nmatch: \r\n    $ioc_val, $ioc_type\r\noutcome: \r\n    $count = count_distinct(strings.concat($ioc_val, \"|\", $ioc_type, \"|\", cast.as_string(cast.as_int($latitude * 1000000)), \"|\", cast.as_string(cast.as_int($longitude * 1000000)), \"|\", $country, \"|\", $match_bucket))\r\n    $confidence_score = array_distinct($confidence_score_val)\r\n    $asset_hostname = re.replace((arrays.join_string(array_distinct(if(ioc.asset.hostname!=\"\", ioc.asset.hostname, \"-\")),\", \")), \"(, -)|(-, )\",\"\")\r\n    $asset_ip_address = re.replace((arrays.join_string(array_distinct(if(ioc.asset.asset_ip_address!=\"\", ioc.asset.asset_ip_address, \"-\")),\", \")), \"(, -)|(-, )\",\"\")\r\n    \r\norder: \r\n    $count desc\r\nlimit: \r\n    10",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "90"
+                        }
+                    },
+                    "etag": "065b1c8f6be502ec1248d80e547513e327aa37bf3332125fc5454e96829ad142"
+                },
+                {
+                    "name": "5beaa2b6-ce67-4707-93e6-8ea058d940c6",
+                    "query": "ioc.feed_log_type = \"GCP_THREATINTEL\"\r\nioc.feed_name = \"Google Threat Intelligence\"\r\n$ioc_val = ioc.ioc_value\r\n$ioc_type = ioc.ioc_type\r\n$latitude = ioc.location.region_coordinates.latitude\r\n$longitude = ioc.location.region_coordinates.longitude \r\n$country = if(ioc.location.country_or_region != \"\", ioc.location.country_or_region, \"-\") \r\n$classification = ioc.category\r\n$match_bucket = timestamp.get_date(ioc.day_bucket_seconds) \r\n$severity = strings.to_upper(ioc.severity)\r\nmatch: \r\n    $severity\r\noutcome: \r\n    $count = count_distinct(strings.concat($ioc_val, \"|\", $ioc_type, \"|\", $match_bucket, \"|\" cast.as_string(cast.as_int($latitude * 1000000)), \"|\", cast.as_string(cast.as_int($longitude * 1000000)), \"|\", $country))\r\norder: \r\n    $count desc\r\nlimit:\r\n    10",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "90"
+                        }
+                    },
+                    "etag": "75768ba8815d34fdc98e0084e42049c94299e87f4760011ae285e274d39ff817"
+                },
+                {
+                    "name": "b417f59f-0658-4d65-be85-c012fe914176",
+                    "query": "ioc.feed_log_type = \"GCP_THREATINTEL\"\r\nioc.feed_name = \"Google Threat Intelligence\"\r\n\r\n$ioc_val = ioc.ioc_value \r\n$confidence_score_val = ioc.confidence_score \r\n$match_bucket = timestamp.get_timestamp(ioc.day_bucket_seconds) \r\n$category = ioc.category\r\n$latitude = ioc.location.region_coordinates.latitude\r\n$longitude = ioc.location.region_coordinates.longitude\r\n$country = if(ioc.location.country_or_region != \"\", ioc.location.country_or_region, \"-\") \r\n$ioc_type = (if(ioc.ioc_type = \"IOC_TYPE_IP\", \"ip-address\",\r\n            if(ioc.ioc_type = \"IOC_TYPE_DOMAIN\", \"domain\",\r\n                if(ioc.ioc_type = \"IOC_TYPE_FILE\", \"file\",\r\n                    if(ioc.ioc_type = \"IOC_TYPE_FILE_HASH_MD5\", \"file-hash-md5\",\r\n                        if(ioc.ioc_type = \"IOC_TYPE_FILE_HASH_SHA256\", \"file-hash-sha256\",\r\n                            if(ioc.ioc_type = \"IOC_TYPE_FILE_HASH_SHA1\", \"file-hash-sha1\", \"unknown\")\r\n                        )\r\n                    )\r\n                )\r\n            )\r\n        )\r\n    )\r\nmatch: \r\n    $ioc_val, $ioc_type\r\noutcome: \r\n    $count = count_distinct(strings.concat($ioc_val, \"|\", $ioc_type, \"|\", cast.as_string(cast.as_int($latitude * 1000000)), \"|\", cast.as_string(cast.as_int($longitude * 1000000)), \"|\", $country, \"|\", $match_bucket))\r\n    $confidence_score = array_distinct($confidence_score_val)\r\n    $asset_hostname = re.replace((arrays.join_string(array_distinct(if(ioc.asset.hostname!=\"\", ioc.asset.hostname, \"-\")),\", \")), \"(, -)|(-, )\",\"\")\r\n    $asset_ip_address = re.replace((arrays.join_string(array_distinct(if(ioc.asset.asset_ip_address!=\"\", ioc.asset.asset_ip_address, \"-\")),\", \")), \"(, -)|(-, )\",\"\")\r\norder: \r\n    $count asc\r\nlimit: \r\n    10",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "90"
+                        }
+                    },
+                    "etag": "822a1627b5032db12258fb19ac67b2d8ea40af7f5750930ffe5706954996ce13"
+                },
+                {
+                    "name": "f1060cfc-b9d4-4493-a57d-619b4044b21d",
+                    "query": "ioc.feed_log_type = \"GCP_THREATINTEL\"\nioc.feed_name = \"Google Threat Intelligence\"\n$ioc_val = ioc.ioc_value\n$ioc_type = ioc.ioc_type\n$confidence = ioc.confidence_score\n$match_bucket = timestamp.get_date(ioc.day_bucket_seconds)\n$latitude = ioc.location.region_coordinates.latitude\n$longitude = ioc.location.region_coordinates.latitude\n$country = if(ioc.location.country_or_region!=\"\", ioc.location.country_or_region, \"-\") \nmatch: \n    $ioc_val, $ioc_type, $latitude, $longitude, $match_bucket, $country, $confidence\noutcome:\n    $gti_ioc_link = array_distinct(\n        strings.concat(\"https://virustotal.com/gui/\", (if(ioc.ioc_type = \"IOC_TYPE_IP\", \"ip-address\",\n            if(ioc.ioc_type = \"IOC_TYPE_DOMAIN\", \"domain\",\n                if(ioc.ioc_type = \"IOC_TYPE_FILE\", \"file\",\n                    if(ioc.ioc_type = \"IOC_TYPE_FILE_HASH_MD5\", \"file-hash-md5\",\n                        if(ioc.ioc_type = \"IOC_TYPE_FILE_HASH_SHA256\", \"file-hash-sha256\",\n                            if(ioc.ioc_type = \"IOC_TYPE_FILE_HASH_SHA1\", \"file-hash-sha1\", \"unknown\")\n                        )\n                    )\n                )\n            )\n        )),\"/\",$ioc_val)\n    )\n    $classification = array_distinct(strings.to_upper(ioc.severity))\n    $category = array_distinct(ioc.category)\n    $hostname = re.replace(re.replace(re.replace(arrays.join_string(array_distinct(ioc.asset.hostname), \",\"), \",,+\", \",\"), \"^,|,$\", \"\"), \"^\\\\s*$|^$\", \"-\")\norder:\n    $match_bucket desc\nlimit:\n    10000\n",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "90"
+                        }
+                    },
+                    "etag": "fffba9f613a9855b1b137eae603e0ed60ffbc72c57e60f5da441db0170fb12a7"
+                },
+                {
+                    "name": "e9e7e858-c6f9-44c1-9d5a-6c31e042d156",
+                    "query": "ioc.feed_log_type = \"GCP_THREATINTEL\"\r\nioc.feed_name = \"Google Threat Intelligence\"\r\n$ioc_val = ioc.ioc_value\r\n$match_bucket=timestamp.get_date(ioc.day_bucket_seconds)\r\n$severity = strings.to_upper(ioc.severity)\r\n$latitude = ioc.location.region_coordinates.latitude\r\n$longitude = ioc.location.region_coordinates.longitude \r\n$country = if(ioc.location.country_or_region != \"\", ioc.location.country_or_region, \"-\") \r\nmatch:\r\n    $match_bucket, $severity\r\noutcome:\r\n    $count = count_distinct(strings.concat($ioc_val, \"|\", cast.as_string(cast.as_int($latitude * 1000000)), \"|\", cast.as_string(cast.as_int($longitude * 1000000)), \"|\", $country))\r\nlimit:\r\n    10000",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "90"
+                        }
+                    },
+                    "etag": "fa1a4de84016991bc19445ba4eb6533a4ea87210af9d746a9eba450c92f3cd38"
+                },
+                {
+                    "name": "527b268a-d1cb-4d13-b375-1bd320acdb44",
+                    "query": "ioc.feed_log_type = \"GCP_THREATINTEL\"\r\nioc.feed_name = \"Google Threat Intelligence\"\r\n$ioc_val = ioc.ioc_value \r\n$ioc_type = ioc.ioc_type\r\n$latitude = ioc.location.region_coordinates.latitude\r\n$longitude = ioc.location.region_coordinates.longitude \r\n$country = if(ioc.location.country_or_region != \"\", ioc.location.country_or_region, \"-\") \r\noutcome:\r\n    $ioc_count = count_distinct(strings.concat($ioc_val, \"|\", $ioc_type, \"|\", cast.as_string(cast.as_int($latitude * 1000000)), \"|\", cast.as_string(cast.as_int($longitude * 1000000)), \"|\", $country))",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "90"
+                        }
+                    },
+                    "etag": "03caf1f26f5aa2008144b53759980a3c568f2abdda023bd03cce5f818ba4d29b"
+                }
+            ]
+        }
+    ]
+}
