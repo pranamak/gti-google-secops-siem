@@ -1,0 +1,23 @@
+$gti.graph.metadata.vendor_name = "Google"
+$gti.graph.metadata.product_name = "Google Threat Intelligence"
+$gti.graph.metadata.event_metadata.base_labels.log_types = "GCP_THREATINTEL"
+$entity = $gti.graph.metadata.product_entity_id
+$entity_type = $gti.graph.metadata.entity_type
+$description = $gti.graph.metadata.description
+$classification = $gti.graph.metadata.threat.threat_verdict
+$confidence_score = $gti.graph.metadata.threat.risk_score
+$severity = $gti.graph.metadata.threat.severity
+$country =$gti.graph.entity.artifact.location.country_or_region
+$continent =$gti.graph.entity.artifact.location.name
+$time = timestamp.get_timestamp($gti.graph.metadata.threat.last_discovered_time.seconds , "%Y-%m-%d %H:%M:%S")
+$updated_time = timestamp.get_timestamp($gti.graph.metadata.threat.last_updated_time.seconds, "%Y-%m-%d %H:%M:%S")
+match:
+    $entity, $entity_type, $description, $classification, $confidence_score, $severity, $country, $continent
+outcome:
+    $last_discovered = window.last($gti.graph.metadata.threat.last_discovered_time.seconds, $time)
+    $last_updated = window.last($gti.graph.metadata.threat.last_updated_time.seconds, $updated_time)
+    $tags = re.replace((arrays.join_string(array_distinct(if($gti.graph.entity.artifact.tags!="", $gti.graph.entity.artifact.tags, "-")),", ")), "(, -)|(-, )","")
+order:
+    $last_discovered desc
+limit:
+    10000

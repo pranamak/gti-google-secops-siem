@@ -1,0 +1,5 @@
+$gti.graph.metadata.vendor_name = "Google"
+$gti.graph.metadata.product_name = "Google Threat Intelligence"
+$gti.graph.metadata.event_metadata.base_labels.log_types = "GCP_THREATINTEL"
+$gti.graph.metadata.product_entity_id != ""
+    
