@@ -1,8 +1,8 @@
-## Create Search Queries
+# Google Threat Intelligence Saved Searches for Google SecOps SIEM
 
 After the data is ingested into Google SecOps SIEM as events, you can use predefined search queries to visualize and analyze the data. Google Threat Intelligence provides 5 search queries that you can modify or copy to get started. You can find the Google Threat Intelligence search queries in the following [GitHub](https://github.com/VirusTotal/gti-google-secops-siem/tree/main/Search%20Queries) repository or in the SIEM User Guide.
 
-### Create a New Search Query
+## Create a New Search Query
 
 1. From Google SecOps SIEM, navigate to **Investigation** > **SIEM Search**.
 2. Go to **Search Manager**, click on **+** icon.
