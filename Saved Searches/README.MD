@@ -2,11 +2,11 @@
 
 After the data is ingested into Google SecOps SIEM as events, you can use predefined search queries to visualize and analyze the data. Google Threat Intelligence provides 5 search queries that you can modify or copy to get started. You can find the Google Threat Intelligence search queries in the following [GitHub](https://github.com/VirusTotal/gti-google-secops-siem/tree/main/Search%20Searches) repository or in the SIEM User Guide.
 
-## Create a New Search Query
+## Create a New Saved Search
 
 1. From Google SecOps SIEM, navigate to **Investigation** > **SIEM Search**.
 2. Go to **Search Manager**, click on **+** icon.
-3. Copy and paste the Search Query in **UDM SEARCH**, Title in **Title** and Description in **Description** from the Search Queries listed in [GitHub](https://github.com/VirusTotal/gti-google-secops-siem/tree/main/Search%20Searches) repository or from the SIEM User guide.
+3. Copy and paste the Saved Search in **UDM SEARCH**, Title in **Title** and Description in **Description** from the Search Queries listed in [GitHub](https://github.com/VirusTotal/gti-google-secops-siem/tree/main/Search%20Searches) repository or from the SIEM User guide.
 4. Click on **SAVE EDITS**.
 
 ## Saved Search with input
